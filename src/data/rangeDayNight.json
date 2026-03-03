@@ -1,0 +1,90 @@
+[
+  {
+    "name": "range_day_0_night",
+    "conditions": {
+      "daycount": "repeat(110,0,9)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_10_night",
+    "conditions": {
+      "daycount": "repeat(110,10,19)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_20_night",
+    "conditions": {
+      "daycount": "repeat(110,20,29)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_30_night",
+    "conditions": {
+      "daycount": "repeat(110,30,39)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_40_night",
+    "conditions": {
+      "daycount": "repeat(110,40,49)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_50_night",
+    "conditions": {
+      "daycount": "repeat(110,50,59)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_60_night",
+    "conditions": {
+      "daycount": "repeat(110,60,69)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_70_night",
+    "conditions": {
+      "daycount": "repeat(110,70,79)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_80_night",
+    "conditions": {
+      "daycount": "repeat(110,80,89)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_90_night",
+    "conditions": {
+      "daycount": "repeat(110,90,99)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "range_day_100_night",
+    "conditions": {
+      "daycount": "repeat(110,100,109)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  }
+]

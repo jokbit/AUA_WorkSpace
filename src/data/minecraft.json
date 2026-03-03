@@ -1,0 +1,7 @@
+[
+{"mod":"minecraft","name":"zombie","level":1,"type":"zombie"},
+{"mod":"minecraft","name":"skeleton","level":8,"type":"skeleton"},
+{"mod":"minecraft","name":"husk","level":1,"type":"zombie"},
+{"mod":"minecraft","name":"drowned","level":1,"type":"zombie"},
+{"mod":"minecraft","name":"ghast","level":7,"type":"ghost"}
+]

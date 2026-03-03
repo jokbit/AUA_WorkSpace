@@ -1,0 +1,90 @@
+[
+ {
+  "name": "after_day_0_daytime",
+  "conditions": {
+   "mindaycount": 0,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_10_daytime",
+  "conditions": {
+   "mindaycount": 10,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_20_daytime",
+  "conditions": {
+   "mindaycount": 20,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_30_daytime",
+  "conditions": {
+   "mindaycount": 30,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_40_daytime",
+  "conditions": {
+   "mindaycount": 40,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_50_daytime",
+  "conditions": {
+   "mindaycount": 50,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_60_daytime",
+  "conditions": {
+   "mindaycount": 60,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_70_daytime",
+  "conditions": {
+   "mindaycount": 70,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_80_daytime",
+  "conditions": {
+   "mindaycount": 80,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_90_daytime",
+  "conditions": {
+   "mindaycount": 90,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ },
+ {
+  "name": "after_day_100_daytime",
+  "conditions": {
+   "mindaycount": 100,
+   "mintime": 0,
+   "maxtime": 13000
+  }
+ }
+]

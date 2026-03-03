@@ -1,0 +1,67 @@
+[{
+    "name": "after_day_0",
+    "conditions": {
+        "mindaycount": 0
+    }
+  },
+  {
+    "name": "after_day_10",
+    "conditions": {
+        "mindaycount": 10
+    }
+  },
+  {
+    "name": "after_day_20",
+    "conditions": {
+        "mindaycount": 20
+    }
+  },
+  {
+    "name": "after_day_30",
+    "conditions": {
+        "mindaycount": 30
+    }
+  },
+  {
+    "name": "after_day_40",
+    "conditions": {
+        "mindaycount": 40
+    }
+  },
+  {
+    "name": "after_day_50",
+    "conditions": {
+        "mindaycount": 50
+    }
+  },
+  {
+    "name": "after_day_60",
+    "conditions": {
+        "mindaycount": 60
+    }
+  },
+  {
+    "name": "after_day_70",
+    "conditions": {
+        "mindaycount": 70
+    }
+  },
+  {
+    "name": "after_day_80",
+    "conditions": {
+        "mindaycount": 80
+    }
+  },
+  {
+    "name": "after_day_90",
+    "conditions": {
+        "mindaycount": 90
+    }
+  },
+  {
+    "name": "after_day_100",
+    "conditions": {
+        "mindaycount": 100
+    }
+  }
+]

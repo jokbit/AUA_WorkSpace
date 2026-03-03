@@ -1,0 +1,21 @@
+[
+  'spartanweaponry:enderman_head',
+  'spartanweaponry:spider_head',
+  'spartanweaponry:cave_spider_head',
+  'spartanweaponry:zombified_piglin_head',
+  'spartanweaponry:husk_head',
+  'spartanweaponry:drowned_head',
+  'spartanweaponry:blaze_head',
+  'spartanweaponry:stray_skull'
+]
+
+[
+  'tconstruct:enderman_head',
+  'tconstruct:spider_head',
+  'tconstruct:cave_spider_head',
+  'tconstruct:zombified_piglin_head',
+  'tconstruct:husk_head',
+  'tconstruct:drowned_head',
+  'tconstruct:blaze_head',
+  'tconstruct:stray_head'
+]

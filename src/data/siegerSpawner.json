@@ -1,0 +1,224 @@
+[
+  {
+    "mob": [
+      "angry_animals:angry_bee",
+      "born_in_chaos_v1:restless_spirit",
+      "infectious:balloon_zombie",
+      "infectious:zombie_scientist",
+      "infectious:zombified_bird"
+    ],
+    "phase": "on_day_40_night",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inair": true,
+      "norestrictions": true,
+      "mindist": 48,
+      "maxdist": 128,
+      "maxthis": 150
+    }
+  },
+  {
+    "mob": [
+      "minecraft:creeper",
+      "angry_animals:angry_bee",
+      "born_in_chaos_v1:restless_spirit",
+      "born_in_chaos_v1:scarlet_persecutor",
+      "infectious:balloon_zombie",
+      "infectious:zombie_scientist",
+      "infectious:zombified_bird",
+      "mozombies_wave:zombie_creeper",
+      "graveyard:reaper",
+      "graveyard:wraith"
+    ],
+    "phase": "on_day_50_night",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inair": true,
+      "norestrictions": true,
+      "mindist": 48,
+      "maxdist": 128,
+      "maxthis": 150
+    }
+  },
+  {
+    "mob": [
+      "minecraft:creeper",
+      "angry_animals:angry_bee",
+      "born_in_chaos_v1:restless_spirit",
+      "born_in_chaos_v1:scarlet_persecutor",
+      "infectious:balloon_zombie",
+      "infectious:zombie_scientist",
+      "infectious:zombified_bird",
+      "undead_revamp2:sucker",
+      "undead_revamp2:thehunter",
+      "undead_revamp2:bigsucker",
+      "mozombies_wave:zombie_creeper",
+      "graveyard:reaper",
+      "graveyard:wraith"
+    ],
+    "phase": "on_day_60_night",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inair": true,
+      "norestrictions": true,
+      "mindist": 48,
+      "maxdist": 128,
+      "maxthis": 150
+    }
+  },
+  {
+    "mob": [
+      "minecraft:ghast",
+      "minecraft:creeper",
+      "apocalypse:seeker",
+      "angry_animals:angry_bee",
+      "born_in_chaos_v1:restless_spirit",
+      "born_in_chaos_v1:scarlet_persecutor",
+      "infectious:balloon_zombie",
+      "infectious:zombie_scientist",
+      "infectious:zombified_bird",
+      "undead_revamp2:sucker",
+      "undead_revamp2:thehunter",
+      "undead_revamp2:bigsucker",
+      "mozombies_wave:zombie_creeper",
+      "graveyard:reaper",
+      "graveyard:wraith"
+    ],
+    "phase": "on_day_70_night",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inair": true,
+      "norestrictions": true,
+      "mindist": 48,
+      "maxdist": 128,
+      "maxthis": 150
+    }
+  },
+  {
+    "mob": [
+      "minecraft:ghast",
+      "minecraft:creeper",
+      "apocalypse:seeker",
+      "angry_animals:angry_bee",
+      "born_in_chaos_v1:restless_spirit",
+      "born_in_chaos_v1:scarlet_persecutor",
+      "infectious:balloon_zombie",
+      "infectious:zombie_scientist",
+      "infectious:zombified_bird",
+      "undead_revamp2:sucker",
+      "undead_revamp2:thehunter",
+      "undead_revamp2:bigsucker",
+      "mozombies_wave:zombie_creeper",
+      "graveyard:reaper",
+      "graveyard:wraith"
+    ],
+    "phase": "on_day_80_night",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inair": true,
+      "norestrictions": true,
+      "mindist": 48,
+      "maxdist": 128,
+      "maxthis": 150
+    }
+  },
+  {
+    "mob": [
+      "minecraft:ghast",
+      "minecraft:creeper",
+      "apocalypse:seeker",
+      "angry_animals:angry_bee",
+      "born_in_chaos_v1:restless_spirit",
+      "born_in_chaos_v1:scarlet_persecutor",
+      "infectious:balloon_zombie",
+      "infectious:zombie_scientist",
+      "infectious:zombified_bird",
+      "undead_revamp2:sucker",
+      "undead_revamp2:thehunter",
+      "undead_revamp2:bigsucker",
+      "mozombies_wave:zombie_creeper",
+      "graveyard:reaper",
+      "graveyard:wraith"
+    ],
+    "phase": "on_day_90_night",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inair": true,
+      "norestrictions": true,
+      "mindist": 48,
+      "maxdist": 128,
+      "maxthis": 150
+    }
+  },
+  {
+    "mob": [
+      "minecraft:ghast",
+      "minecraft:creeper",
+      "apocalypse:destroyer",
+      "apocalypse:seeker",
+      "angry_animals:angry_bee",
+      "born_in_chaos_v1:restless_spirit",
+      "born_in_chaos_v1:scarlet_persecutor",
+      "infectious:balloon_zombie",
+      "infectious:zombie_scientist",
+      "infectious:zombified_bird",
+      "undead_revamp2:sucker",
+      "undead_revamp2:thehunter",
+      "undead_revamp2:bigsucker",
+      "mozombies_wave:zombie_creeper",
+      "graveyard:reaper",
+      "graveyard:wraith"
+    ],
+    "phase": "on_day_100_night",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inair": true,
+      "norestrictions": true,
+      "mindist": 48,
+      "maxdist": 128,
+      "maxthis": 150
+    }
+  }
+]

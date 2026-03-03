@@ -1,0 +1,90 @@
+[
+  {
+    "name": "reach_day_0_night",
+    "conditions": {
+      "daycount": "repeat(110,0,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_10_night",
+    "conditions": {
+      "daycount": "repeat(110,10,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_20_night",
+    "conditions": {
+      "daycount": "repeat(110,20,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_30_night",
+    "conditions": {
+      "daycount": "repeat(110,30,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_40_night",
+    "conditions": {
+      "daycount": "repeat(110,40,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_50_night",
+    "conditions": {
+      "daycount": "repeat(110,50,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_60_night",
+    "conditions": {
+      "daycount": "repeat(110,60,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_70_night",
+    "conditions": {
+      "daycount": "repeat(110,70,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_80_night",
+    "conditions": {
+      "daycount": "repeat(110,80,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_90_night",
+    "conditions": {
+      "daycount": "repeat(110,90,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  },
+  {
+    "name": "reach_day_100_night",
+    "conditions": {
+      "daycount": "repeat(110,100,110)",
+      "mintime": 13000,
+      "maxtime": 24000
+    }
+  }
+]

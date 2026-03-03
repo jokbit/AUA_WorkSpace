@@ -1,0 +1,6 @@
+[
+{"mod":"mutantmore","name":"mutant_wither_skeleton","level":1,"type":"skeleton"},
+{"mod":"mutantmore","name":"mutant_husk","level":7,"type":"zombie"},
+{"mod":"mutantmore","name":"mutant_frozen_zombie","level":7,"type":"zombie"},
+{"mod":"mutantmore","name":"mutant_jungle_zombie","level":7,"type":"zombie"}
+]

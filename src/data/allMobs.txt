@@ -1,0 +1,2 @@
+
+mobz:bowman,mobz:archer,mobz:templar,mobz:warrior,mobz:iron_steve,mobz:knight,mobz:william,mobz:andriu,mobz:charles,zombie_extreme:military,zombie_extreme:assasin_black_ops,mozombies_wave:survivor
