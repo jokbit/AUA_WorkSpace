@@ -1,3 +1,53 @@
+import {Entity, EntityType, modSpawnInfo} from "./base/common";
+import fs from 'fs'
+
+const DEFAULT_MOB_COUNT = 30;
+
+const MOB_COUNT_HIGH = 60;
+
+const MOB_COUNT_LOW = 10;
+
+const MOB_NO_LIMIT = 500;
+
+const DAY_RANGE = 110;
+
+function addEntities(entities: Entity[]) {
+    for (let entity of entities) {
+        console.log(JSON.stringify(entity))
+    }
+}
+
+function createMobSpawn(mod: string, entities: Entity[], maxCount: number): modSpawnInfo {
+    return {
+        mod,
+        entities,
+        maxCount
+    }
+}
+
+function outputEntities(entities: Entity[], fileName?: string) {
+    try {
+        if (!fileName) {
+            fileName = entities[0].mod;
+        }
+        const json = entities.map(entity => JSON.stringify(entity))
+            .join(',\n');
+        fs.writeFileSync(`./data/${fileName}.json`, `[\n${json}\n]`)
+        console.log(`write mod file ${fileName} successfully.`);
+    } catch (error) {
+        console.error(`write mod file ${fileName} failed: ${error}.`);
+    }
+}
+
+function outputContent(content: string, fileName: string) {
+    try {
+        fs.writeFileSync(`./data/${fileName}`, `${content}`)
+        console.log(`write mod file ${fileName} successfully.`);
+    } catch (error) {
+        console.error(`write mod file ${fileName} failed: ${error}.`);
+    }
+}
+
 const minecraftEntities = [
     {mod: 'minecraft', name: 'zombie', level: 1, type: EntityType.zombie},
     {mod: 'minecraft', name: 'zombie_villager', level: 1, type: EntityType.zombie},
@@ -375,7 +425,737 @@ const tinyskeletonsEntities: Entity[] = [
 const tinyskeletonsSpawn = createMobSpawn('tinyskeletons', tinyskeletonsEntities, DEFAULT_MOB_COUNT);
 
 const giants_overhaulEntities: Entity[] = [
-    {mod: 'giants_overhaul', name: 'giant_drowned', level: 5, type: EntityType.skeleton},
-    {mod: 'giants_overhaul', name: 'giant_husk', level: 5, type: EntityType.skeleton},
+    {mod: 'giants_overhaul', name: 'giant_drowned', level: 5, type: EntityType.zombie},
+    {mod: 'giants_overhaul', name: 'giant_husk', level: 5, type: EntityType.zombie},
 ]
 const giants_overhaulSpawn = createMobSpawn('giants_overhaul', giants_overhaulEntities, DEFAULT_MOB_COUNT);
+
+
+const rottedEntities: Entity[] = [
+    {mod: 'rotted', name: 'marine', level: 1, type: EntityType.zombie},
+    {mod: 'rotted', name: 'doctor', level: 1, type: EntityType.zombie},
+    {mod: 'rotted', name: 'farmer', level: 1, type: EntityType.zombie},
+    {mod: 'rotted', name: 'shielder', level: 1, type: EntityType.zombie},
+    {mod: 'rotted', name: 'miner', level: 1, type: EntityType.zombie},
+    {mod: 'rotted', name: 'adventurer', level: 1, type: EntityType.zombie},
+    {mod: 'rotted', name: 'flusk', level: 5, type: EntityType.zombie, sieger: true},
+]
+const rottedSpawn = createMobSpawn('rotted', rottedEntities, MOB_COUNT_LOW);
+
+const rottencreaturesEntities: Entity[] = [
+    {mod: 'rottencreatures', name: 'burned', level: 1, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'frostbitten', level: 1, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'swampy', level: 3, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'undead_miner', level: 2, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'mummy', level: 3, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'glacial_hunter', level: 1, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'hunter_wolf', level: 1, type: EntityType.animal},
+    {mod: 'rottencreatures', name: 'dead_beard', level: 1, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'zombie_lackey', level: 1, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'skeleton_lackey', level: 1, type: EntityType.skeleton},
+    {mod: 'rottencreatures', name: 'immortal', level: 1, type: EntityType.zombie},
+    {mod: 'rottencreatures', name: 'zap', level: 1, type: EntityType.zombie},
+]
+
+const rottencreaturesSpawn = createMobSpawn('rottencreatures', rottencreaturesEntities, DEFAULT_MOB_COUNT);
+
+const undeadvariantsEntities: Entity[] = [
+    {mod: 'undeadvariants', name: 'zombified_piglin_brute', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'husk_villager', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'drowned_piglin', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'drowning_piglin', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'drowned_villager', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'drowning_zombie_villager', level: 1, type: EntityType.zombie},
+]
+
+const undeadvariantsSpawn = createMobSpawn('undeadvariants', undeadvariantsEntities, DEFAULT_MOB_COUNT);
+
+
+const mods: string[] = [
+    "apocalypse",
+    "mutantszombies",
+    "angry_animals",
+    "much_more_skeletons",
+    "mobz",
+    "born_in_chaos_v1",
+    "infectious",
+    "undead_revamp2",
+    "zombie_extreme",
+    "mutantmonsters",
+    "mutantmore",
+    "specialmobs",
+    "mozombies_wave",
+    "graveyard",
+    "tinyskeletons",
+    "giants_overhaul",
+    "rotted",
+    "rottencreatures",
+    "undeadvariants"
+]
+
+const spawns: modSpawnInfo[] = [
+    apocalypseSpawn,
+    mutantszombiesSpawn,
+    angry_animalsSpawn,
+    much_more_skeletonsSpawn,
+    mobzSpawn,
+    born_in_chaos_v1Spawn,
+    infectiousSpawn,
+    undead_revamp2Spawn,
+    zombie_extremeSpawn,
+    mutantmonstersSpawn,
+    mutantmoreSpawn,
+    specialmobsSpawn,
+    mozombies_waveSpawn,
+    graveyardEntitiesSpawn,
+    tinyskeletonsSpawn,
+    giants_overhaulSpawn,
+    rottedSpawn,
+    rottencreaturesSpawn,
+    undeadvariantsSpawn
+]
+
+
+const allEntitiesArr: Entity[][] = [
+    minecraftEntities,
+    apocalypseEntities,
+    mutantszombiesEntities,
+    angry_animalsEntities,
+    much_more_skeletonsEntities,
+    mobzEntities,
+    born_in_chaos_v1Entities,
+    infectiousEntities,
+    undead_revamp2Entities,
+    zombie_extremeEntities,
+    mutantmonstersEntities,
+    mutantmoreEntities,
+    specialmobsEntities,
+    mozombies_waveEntities,
+    graveyardEntities,
+    tinyskeletonsEntities,
+    giants_overhaulEntities,
+    rottedEntities,
+    rottencreaturesEntities,
+    undeadvariantsEntities
+]
+
+function getAllEntities() {
+    const allEntities: Entity[] = []
+    for (let entities of allEntitiesArr) {
+        allEntities.push(...entities);
+    }
+    return allEntities;
+}
+
+// for (let entities of allEntitiesArr) {
+//     outputEntities(entities)
+// }
+
+function outputMods() {
+    let modStr = ``
+    for (let mod of mods) {
+        modStr += `"${mod}", `
+    }
+    console.log(`"mods": [${modStr}]`)
+}
+
+function spawnDeny() {
+    let content = '';
+    for (let spawn of spawns) {
+        const entityName = spawn.entities
+            .filter(entity => entity.type !== EntityType.human)
+            // .filter(entity => !entity.sieger)
+            .map(entity => `"${entity.mod}:${entity.name}"`);
+        if (entityName.length === 0)
+            continue;
+        content += `
+  {
+    "mob": [${entityName.join(',')}],
+    "mincount": {
+       "amount": ${spawn.maxCount},
+                    "mob": [${entityName.join(',')}],
+                    "perplayer": true
+                },
+                "result": "deny"
+            },
+            `
+    }
+    console.log(content)
+    outputContent(`[\n${content}\n]`, 'deny.json')
+}
+
+function spawnMobs() {
+    let content = '';
+    for (let i = 0; i < 10; i++) {
+        const day = i * 10;
+        const names = getAllEntities()
+            .filter(entity => i >= entity.level - 1)
+            // .filter(entity => !entity.sieger)
+            .filter(entity => entity.type !== EntityType.human)
+            .map(entity => `"${entity.mod}:${entity.name}"`);
+        if (names.length === 0)
+            continue;
+        const equipment =
+            `"armorhelmet": "morevanillaarmor:paper_helmet",`
+        const potion = `"potion": "minecraft:fire_resistance,24000,1",`
+        content += `
+  {
+    "mob": [${names.join(',')}],
+    "dimension": "minecraft:overworld",
+    "phase": "range_day_${day}",
+    "damagemultiply": ${Math.max(1, Math.floor((i - 1) / 2) + 1)},
+    "speedmultiply": ${1 + Math.max(Math.floor(i / 2) * 0.1, 0.0)},
+    ${day === 90 ? potion : ''}
+    "result": "allow"
+  },
+            `
+    }
+    console.log(content)
+    outputContent(`[\n${content}\n]`, 'spawn.json')
+}
+
+function rangeDay() {
+    let output = '';
+    for (let i = 0; i < 11; i++) {
+        const day = i * 10;
+        output += `{
+ "name": "range_day_${day}",
+ "conditions": {
+  "daycount": "repeat(${DAY_RANGE},${day},${day + 9})"
+  }
+ },
+  `
+    }
+    const content = `[${output} ]`
+    outputContent(content, 'rangeDay.json');
+}
+
+function rangeDayNight() {
+    let output = '';
+    for (let i = 0; i < 11; i++) {
+        const day = i * 10;
+        output += `{
+ "name": "range_day_${day}_night",
+ "conditions": {
+  "daycount": "repeat(${DAY_RANGE},${day},${day + 9})",
+   "mintime": 13000,
+  "maxtime": 24000
+  }
+ },
+  `
+    }
+    const content = `[${output} ]`
+    outputContent(content, 'rangeDayNight.json');
+}
+
+function opAfterDayPhase() {
+    let output = '';
+    for (let i = 0; i < 11; i++) {
+        const day = i * 10;
+        output += `{
+ "name": "reach_day_${day}",
+ "conditions": {
+  "daycount": "repeat(${DAY_RANGE},${day},${DAY_RANGE})"
+  }
+ },
+  `
+    }
+    const content = `[${output} ]`
+    outputContent(content, 'AfterDayPhase.json');
+}
+
+const invadeMobs: [Entity, string][] = [
+    [{mod: 'minecraft', name: 'zombie', level: 1, type: EntityType.zombie}, ""],
+    [{mod: 'minecraft', name: 'drowned', level: 1, type: EntityType.zombie}, "inliquid"],
+    [{mod: 'infectious', name: 'balloon_zombie', level: 4, type: EntityType.zombie}, "inair"],
+]
+
+function opDayNightPhase() {
+    let output = '';
+    for (let i = 1; i <= 11; i++) {
+        const day = i * 10 - 1;
+        output += `{
+ "name": "on_day_${day}_night",
+ "conditions": {
+  "daycount": "repeat(${DAY_RANGE},${day},${day})",
+  "mintime": 13000,
+  "maxtime": 24000
+  }
+ },
+  `
+    }
+    const content = `[\n${output}\n]`
+    outputContent(content, 'at_day_night_phase.json');
+}
+
+function opDayTimePhase() {
+    let output = '';
+    for (let i = 0; i <= 10; i++) {
+        output += `{
+ "name": "after_day_${i * 10}_daytime",
+ "conditions": {
+  "mindaycount": ${i * 10},
+   "mintime": 0,
+  "maxtime": 13000
+  }
+ },
+  `
+    }
+    const content = `[${output} ]`
+    outputContent(content, 'after_daytime_phase.json');
+}
+
+function opAllMobs() {
+    const name = getAllEntities()
+        .filter(entity => entity.type === EntityType.human)
+        .map(entity => `${entity.mod}:${entity.name}`);
+    const content: string = `\n${name.join(',')}\n`;
+    outputContent(`${content}`, 'allMobs.txt');
+}
+
+function tags() {
+    let content = ''
+    const allEntities = getAllEntities()
+        .filter(entity => entity.mod !== "minecraft")
+        .filter(entity => entity.type !== EntityType.human)
+    for (let entity of allEntities) {
+        content += `
+        {
+            "required": false,
+            "id": "${entity.mod}:${entity.name}"
+        },\n
+        `
+    }
+    outputContent(`[\n${content}\n]`, 'tags.json');
+}
+
+const nightSiegers: [Entity, number, string][] = [
+    [{mod: 'minecraft', name: 'ghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'specialmobs', name: 'babyghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'specialmobs', name: 'corporealshiftghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'specialmobs', name: 'fighterghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'specialmobs', name: 'kingghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'specialmobs', name: 'queenghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'specialmobs', name: 'slabghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'specialmobs', name: 'unholyghast', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'minecraft', name: 'creeper', level: 5, type: EntityType.zombie, sieger: true}, 8, ""],
+    [{mod: 'apocalypse', name: 'destroyer', level: 10, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'apocalypse', name: 'seeker', level: 7, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'angry_animals', name: 'angry_bee', level: 4, type: EntityType.animal, sieger: true}, 3, "inair"],
+    [{mod: 'born_in_chaos_v1', name: 'restless_spirit', level: 4, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'born_in_chaos_v1', name: 'scarlet_persecutor', level: 5, type: EntityType.ghost, sieger: true}, 3, "inair"],
+    [{mod: 'infectious', name: 'balloon_zombie', level: 4, type: EntityType.zombie, sieger: true}, 3, "inair"],
+    [{mod: 'infectious', name: 'zombie_scientist', level: 4, type: EntityType.zombie, sieger: true}, 3, "inair"],
+    [{mod: 'infectious', name: 'zombified_bird', level: 4, type: EntityType.zombie, sieger: true}, 3, "inair"],
+    [{mod: 'undead_revamp2', name: 'sucker', level: 6, type: EntityType.zombie, sieger: true}, 3, "inair"],
+    [{mod: 'undead_revamp2', name: 'thehunter', level: 6, type: EntityType.zombie, sieger: true}, 3, "inair"],
+    [{mod: 'undead_revamp2', name: 'bigsucker', level: 6, type: EntityType.zombie, sieger: true}, 3, "inair"],
+    [{mod: 'mozombies_wave', name: 'zombie_creeper', level: 5, type: EntityType.zombie, sieger: true}, 8, "inair"],
+    [{mod: 'minecraft', name: 'drowned', level: 1, type: EntityType.zombie}, 15, "inliquid"],
+    [{mod: 'infectious', name: 'pool_tube_zombie', level: 1, type: EntityType.zombie}, 10, "inliquid"],
+    [{mod: 'infectious', name: 'zombie_diver', level: 1, type: EntityType.zombie}, 10, "inliquid"],
+    [{mod: 'graveyard', name: 'reaper', level: 5, type: EntityType.zombie}, 10, "inair"],
+    [{mod: 'graveyard', name: 'wraith', level: 5, type: EntityType.zombie}, 10, "inair"],
+    [{mod: 'rotted', name: 'flusk', level: 5, type: EntityType.zombie, sieger: true}, 3, 'inair'],
+]
+
+
+function spawnerSiegers() {
+    let content = '';
+    for (let i = 0; i < 10; i++) {
+        const day = (i * 10) + 9;
+        const entities = nightSiegers
+            .filter(sieger => sieger[0].level - 1 <= i);
+        const persecond = (day + 1) % 50 === 0 ? 0.034 : 0.017;
+        const baseCount = (day + 1) % 50 === 0 ? 5 : 2;
+        for (let entity of entities) {
+            content += `
+            {
+            "mob": "${entity[0].mod}:${entity[0].name}",
+            "phase": "on_day_${day}_night",
+            "persecond": ${persecond},
+            "attempts": 20,
+            "amount": { "minimum": ${Math.max(Math.floor(entity[1] / 3), 1)}, "maximum": ${entity[1]} },
+            "conditions": {
+              "dimension": "minecraft:overworld",
+              ${entity[2] === "" ? "" : `"${entity[2]}": true,`}
+              "norestrictions": true,
+              "mindist": 24,
+              "maxdist": 64,
+              "maxthis": ${Math.max(1, Math.floor(entity[1] / 2)) * 10}
+              }
+            },\n`
+        }
+    }
+    outputContent(`[\n${content}\n]`, 'spawnerSiegers.json');
+}
+
+function spawnerinvade() {
+    let content = '';
+    for (let i = 0; i < 10; i++) {
+        const day = i * 10;
+        const entities = invadeMobs
+            .filter(sieger => sieger[0].level - 1 <= i);
+        const persecond = 0.0167;
+        const count = i + 1
+        for (let entity of entities) {
+            content += `
+            {
+            "mob": "${entity[0].mod}:${entity[0].name}",
+            "phase": "range_day_${day}",
+            "persecond": ${persecond},
+            "attempts": 20,
+            "amount": { "minimum": ${count}, "maximum": ${count} },
+            "conditions": {
+              "dimension": "minecraft:overworld",
+              ${entity[1] === "" ? "" : `"${entity[1]}": true,`}
+              "norestrictions": true,
+              "mindist": 24,
+              "maxdist": 64
+              }
+            },\n`
+        }
+    }
+    outputContent(`[\n${content}\n]`, 'spawnerinvade.json');
+}
+
+function commonDayNight() {
+    let output = '';
+    for (let i = 0; i < 11; i++) {
+        const day = i * 10;
+        output += `{
+ "name": "reach_day_${day}_night",
+ "conditions": {
+  "daycount": "repeat(${DAY_RANGE},${day},${DAY_RANGE})",
+  "mintime": 13000,
+  "maxtime": 24000
+  }
+ },
+  `
+    }
+    const content = `[\n${output}\n]`
+    outputContent(content, 'commonDayNight.json');
+}
+
+const commonSiegers: [Entity, string][] = [
+    [{mod: 'minecraft', name: 'ghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'specialmobs', name: 'babyghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'specialmobs', name: 'corporealshiftghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'specialmobs', name: 'fighterghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'specialmobs', name: 'kingghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'specialmobs', name: 'queenghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'specialmobs', name: 'slabghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'specialmobs', name: 'unholyghast', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'apocalypse', name: 'seeker', level: 7, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'angry_animals', name: 'angry_bee', level: 4, type: EntityType.animal, sieger: true}, "inair"],
+    [{mod: 'born_in_chaos_v1', name: 'restless_spirit', level: 4, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'born_in_chaos_v1', name: 'scarlet_persecutor', level: 5, type: EntityType.ghost, sieger: true}, "inair"],
+    [{mod: 'infectious', name: 'balloon_zombie', level: 4, type: EntityType.zombie, sieger: true}, "inair"],
+    [{mod: 'infectious', name: 'zombie_scientist', level: 4, type: EntityType.zombie, sieger: true}, "inair"],
+    [{mod: 'infectious', name: 'zombified_bird', level: 4, type: EntityType.zombie, sieger: true}, "inair"],
+    [{mod: 'undead_revamp2', name: 'sucker', level: 6, type: EntityType.zombie, sieger: true}, "inair"],
+    [{mod: 'undead_revamp2', name: 'thehunter', level: 6, type: EntityType.zombie, sieger: true}, "inair"],
+    [{mod: 'undead_revamp2', name: 'bigsucker', level: 6, type: EntityType.zombie, sieger: true}, "inair"],
+    [{mod: 'mozombies_wave', name: 'zombie_creeper', level: 5, type: EntityType.zombie, sieger: true}, "inair"],
+    [{mod: 'minecraft', name: 'drowned', level: 1, type: EntityType.zombie}, "inliquid"],
+    [{mod: 'infectious', name: 'pool_tube_zombie', level: 1, type: EntityType.zombie}, "inliquid"],
+    [{mod: 'infectious', name: 'zombie_diver', level: 1, type: EntityType.zombie}, "inliquid"],
+    [{mod: 'graveyard', name: 'reaper', level: 5, type: EntityType.zombie}, "inair"],
+    [{mod: 'graveyard', name: 'wraith', level: 5, type: EntityType.zombie}, "inair"],
+]
+
+const humans: string[] = [
+    "minecraft:iron_golem",
+    "guardvillagers:guard",
+    "roamers:bandit",
+    "roamers:hermit",
+    "roamers:player_descendant",
+    "roamers:roamer",
+    "minecraft:evoker",
+    "minecraft:witch",
+    "minecraft:pillager",
+    "minecraft:vindicator",
+    "minecraft:ravager",
+    "minecraft:vex",
+    "minecraft:witch",
+    "minecraft:villager",
+    "player_mobs:player_mob",
+    "players:fake_player",
+    "mobz:bowman",
+    "mobz:archer",
+    "mobz:templar",
+    "mobz:warrior",
+    "mobz:iron_steve",
+    "mobz:knight",
+    "mobz:william",
+    "mobz:andriu",
+    "mobz:charles",
+    "zombie_extreme:military",
+    "zombie_extreme:assasin_black_ops",
+    "mozombies_wave:survivor",
+    "humancompanions:knight",
+    "humancompanions:archer",
+    "humancompanions:arbalist",
+    "humancompanions:axeguard",
+]
+
+const humanVillager = [
+    "guardvillagers:guard",
+    "roamers:bandit",
+    "roamers:hermit",
+    "roamers:player_descendant",
+    "roamers:roamer",
+    "minecraft:evoker",
+    "minecraft:pillager",
+    "minecraft:vindicator",
+    "minecraft:ravager",
+    "minecraft:witch",
+    "player_mobs:player_mob",
+    "players:fake_player",
+    "mobz:bowman",
+    "mobz:archer",
+    "mobz:templar",
+    "mobz:warrior",
+    "mobz:iron_steve",
+    "mobz:knight",
+    "mobz:william",
+    "mobz:andriu",
+    "mobz:charles",
+    "zombie_extreme:military",
+    "zombie_extreme:assasin_black_ops",
+    "mozombies_wave:survivor",
+    "humancompanions:knight",
+    "humancompanions:archer",
+    "humancompanions:arbalist",
+    "humancompanions:axeguard",
+]
+
+const equipHumans = [
+    "guardvillagers:guard",
+    "roamers:bandit",
+    "roamers:hermit",
+    "roamers:player_descendant",
+    "roamers:roamer",
+    "minecraft:evoker",
+    "minecraft:witch",
+    "minecraft:pillager",
+    "minecraft:ravager",
+    "minecraft:villager",
+    "player_mobs:player_mob",
+    "players:fake_player",
+    "mobz:bowman",
+    "mobz:archer",
+    "mobz:templar",
+    "mobz:warrior",
+    "mobz:iron_steve",
+    "mobz:knight",
+    "mobz:william",
+    "mobz:andriu",
+    "mobz:charles",
+    "zombie_extreme:military",
+    "zombie_extreme:assasin_black_ops",
+    "mozombies_wave:survivor",
+    "humancompanions:knight",
+    "humancompanions:archer",
+    "humancompanions:arbalist",
+    "humancompanions:axeguard",
+]
+
+function commonSiegersSpawner() {
+    let content = '';
+    for (let i = 0; i < 10; i++) {
+        const siegers = commonSiegers
+            .filter(sieger => sieger[0].level - 1 <= i)
+        const names =
+            siegers.map(sieger => `"${sieger[0].mod}:${sieger[0].name}"`)
+        const day = i * 10;
+        const persecond = 0.0167;
+        const count = Math.floor(i / 2) + 1
+        content += `
+            {
+            "mob": [${names.join(',')}],
+            "phase": "range_day_${day}_night",
+            "persecond": ${persecond},
+            "attempts": 20,
+            "amount": { "minimum": ${count}, "maximum": ${count} },
+            "conditions": {
+              "dimension": "minecraft:overworld",
+              "norestrictions": true,
+              "mindist": 24,
+              "maxdist": 64
+              }
+            },\n`
+    }
+    outputContent(`[\n${content}\n]`, 'commonSiegers.json');
+
+}
+
+
+function osHumans() {
+    const content = humans
+        // .map(human => `"${human}"`)
+        .join(',');
+    console.log(content)
+    outputContent(`[\n${content}\n]`, 'osHumans.json');
+}
+
+function osMobs() {
+    const content = getAllEntities()
+        .filter(entity => entity.type !== EntityType.human)
+        .map(entity => `${entity.mod}:${entity.name}`)
+        .join(',');
+    console.log(content)
+}
+
+function osHumanVillagers() {
+    let contents = [];
+    for (let i = 0; i < humanVillager.length - 1; i++) {
+        const villager = humanVillager[i];
+        const mod1 = villager.split(":")[0];
+        const name1 = villager.split(":")[1];
+        let flag = false;
+        for (let j = i + 1; j < humanVillager.length; j++) {
+            const villager1 = humanVillager[j];
+            const mod2 = villager1.split(':')[0];
+            const name2 = villager1.split(':')[1];
+            if (mod1 === mod2) {
+                flag = true;
+                const content = `"${mod1}:${name1};${mod2}:${name2};2;10"`;
+                console.log(content)
+                contents.push(content);
+            }
+        }
+        if (!flag) {
+            const content = `"${mod1}:${name1};${mod1}:${name1};2;10"`;
+            contents.push(content);
+        }
+    }
+    outputContent(`[${contents.join(',')}]`, 'osHumanVillagers.json');
+}
+
+function osMobLevel(level: number) {
+    let content = ''
+    const allEntities = getAllEntities()
+        .filter(entity => entity.mod !== "minecraft")
+        .filter(entity => entity.level === level)
+        .filter(entity => entity.type !== EntityType.human)
+    for (let entity of allEntities) {
+        content += `
+        {
+            "required": false,
+            "id": "${entity.mod}:${entity.name}"
+        },\n
+        `
+    }
+    outputContent(`[\n${content}\n]`, 'level1s.json');
+}
+
+const replacers = [
+    "minecraft:evoker",
+    "minecraft:witch",
+    "minecraft:pillager",
+    "mobz:bowman",
+    "mobz:archer",
+    "minecraft:vindicator",
+    "humancompanions:archer",
+    "humancompanions:arbalist",
+    "guardvillagers:guard",
+    "roamers:bandit",
+    "roamers:hermit",
+    "roamers:player_descendant",
+    "roamers:roamer",
+    "player_mobs:player_mob",
+    "players:fake_player",
+    "mobz:templar",
+    "mobz:warrior",
+    "mobz:iron_steve",
+    "mobz:knight",
+    "mobz:william",
+    "mobz:andriu",
+    "mobz:charles",
+    "zombie_extreme:military",
+    "zombie_extreme:assasin_black_ops",
+    "mozombies_wave:survivor",
+    "humancompanions:knight",
+    "humancompanions:axeguard"
+]
+
+function osReplacers() {
+    let content = '';
+    for (let replacer of replacers) {
+        content += `
+        {
+        "mobId": "${replacer}",
+        "weight": 10
+      },
+        `
+    }
+    outputContent(`[${content}]`, 'replacers.json');
+}
+
+function replacerTags() {
+    let content = ''
+    for (let replacer of replacers) {
+        content += `
+        {
+            "required": false,
+            "id": "${replacer}"
+        },\n
+        `
+    }
+    outputContent(`[\n${content}\n]`, 'replacerTags.json');
+}
+
+const drowneds = [
+    {mod: 'specialmobs', name: 'abyssaldrowned', level: 1, type: EntityType.zombie},
+    {mod: 'specialmobs', name: 'brutedrowned', level: 1, type: EntityType.zombie},
+    {mod: 'specialmobs', name: 'frozendrowned', level: 1, type: EntityType.zombie},
+    {mod: 'specialmobs', name: 'giantdrowned', level: 1, type: EntityType.zombie},
+    {mod: 'specialmobs', name: 'hungrydrowned', level: 1, type: EntityType.zombie},
+    {mod: 'specialmobs', name: 'knightdrowned', level: 2, type: EntityType.zombie},
+    {mod: 'specialmobs', name: 'plaguedrowned', level: 1, type: EntityType.zombie},
+    {mod: 'minecraft', name: 'drowned', level: 1, type: EntityType.zombie},
+    {mod: 'infectious', name: 'pool_tube_zombie', level: 1, type: EntityType.zombie},
+    {mod: 'infectious', name: 'zombie_diver', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'drowned_piglin', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'drowning_piglin', level: 1, type: EntityType.zombie},
+    {mod: 'undeadvariants', name: 'drowned_villager', level: 1, type: EntityType.zombie},
+    {mod: 'giants_overhaul', name: 'giant_drowned', level: 5, type: EntityType.zombie},
+]
+
+function tagDrowneds() {
+    let content = ''
+    for (let drowned of drowneds) {
+        content += `
+        {
+            "required": false,
+            "id": "${drowned.mod}:${drowned.name}"
+        },\n
+        `
+    }
+    outputContent(`[\n${content}\n]`, 'tagDrowneds.json');
+}
+
+function test() {
+    const entities = getAllEntities()
+        .filter(entity =>  entity.type === EntityType.zombie)
+        .map(entity => `${entity.mod}:${entity.name}`)
+    outputContent(JSON.stringify(entities ), 'zombiessss.json');
+}
+
+function osAllMobs() {
+    const entities = getAllEntities()
+        .filter(entity => entity.type !== EntityType.human)
+        .map(entity => `"${entity.mod}:${entity.name}"`)
+        .join(',')
+    console.log(entities)
+    outputContent(`[${entities}]`, 'allMobs.json');
+}
+
+function main() {
+    osAllMobs();
+}
+
+main();
+
+console.log('============================Done==========================');
