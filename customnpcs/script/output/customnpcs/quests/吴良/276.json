@@ -1,0 +1,50 @@
+
+        {
+    "Type": 2,
+    "QuestCompletion": 0,
+    "QuestCommand": "",
+    "QuestFactionPoints": {
+        "DecreaseFaction2Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFaction1Points": 100,
+        "OptionFactions2": -1,
+        "OptionFactions1": -1,
+        "DecreaseFaction1Points": 0b
+    },
+    
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "CompleterNpc": "吴良",
+    "NextQuestId": -1,
+    "CompleteText": "交付 速度的威胁",
+    "Text": "击杀4只快速僵尸（mobz:fast_zombie）",
+    "QuestMail": {
+        "Subject": "",
+        "MailQuest": -1,
+        "BeenRead": 0b,
+        "MailItems": [
+        ],
+        "Sender": "",
+        "Message": {
+        },
+        "Time": 0L,
+        "TimePast": 1775662558498L
+    },
+    "RandomReward": 0b,
+    
+       "Title": "任务 速度的威胁",
+    
+        "QuestDialogs": [
+            {
+                "Value": 4,
+                "Slot": "mobz:fast_zombie"
+            }
+        ],
+        
+    "QuestRepeat": 0,
+    "RewardExp": 0,
+    "ModRev": 18
+}
+        

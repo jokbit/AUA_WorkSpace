@@ -1,0 +1,144 @@
+{
+  "name": "银花",
+  "weapon": "mob_breaker:netherite_hammer",
+  "armors": [
+    "morevanillaarmor:lapis_helmet",
+    "morevanillaarmor:nether_chestplate",
+    "morevanillaarmor:obsidian_leggings",
+    "morevanillaarmor:paper_boots"
+  ],
+  "npcLines": [
+    "今天在电梯里遇到了大老板，尴尬得不知道该说什么",
+    "公司的饮水机水桶又空了，渴了一上午没人换",
+    "同事今天请客喝奶茶，我点了一杯最贵的，不好意思了",
+    "下午茶时间大家都在讨论八卦，我假装在认真工作其实也在听",
+    "今天开会的时候肚子叫了一声，全场安静了两秒，我想钻地缝",
+    "领导让我写个方案，我憋了一下午憋出三行字，太难了",
+    "今天在食堂吃饭不小心把汤洒了，赶紧擦了假装什么都没发生",
+    "下班的时候发现自行车胎没气了，推了一路回家，累死了"
+  ],
+  "texture": "customnpcs:textures/entity/humanfemale/tribegirl.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理僵尸伐木工",
+          "text": "僵尸伐木工在我家门口转悠，烦死人了。我这个人就是容易遇到尴尬事，干啥都不顺。你帮我干掉3只，我请你喝奶茶！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅劫掠者",
+          "text": "骷髅劫掠者越来越多了，搞得我都不敢出门。我这个人就是容易遇到尴尬事，干啥都不顺。你帮我收拾4只，我请你吃顿好的！",
+          "taskId": 1
+        },
+        {
+          "label": "收集金锭",
+          "text": "我需要12个金锭做装备，这东西不好找啊。我这个人就是容易遇到尴尬事，干啥都不顺。你要是能帮我弄点来，回头我请你喝最贵的那种！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化山羊",
+          "text": "丧尸化的山羊到处惹事，太嚣张了。我这个人就是容易遇到尴尬事，干啥都不顺。你帮我干掉5只，我好好谢谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点尴尬事儿，还有几个麻烦想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "金锭",
+          "text": "我想要一个金锭，做装备用。我这个人就是容易遇到尴尬事，干啥都不顺。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "青金石",
+          "text": "青金石我盯着好久了。我这个人就是容易遇到尴尬事，干啥都不顺。你要是能送我一个，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "墨鱼",
+          "text": "想吃墨鱼了。我这个人就是容易遇到尴尬事，干啥都不顺。你要是能送我一条，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理僵尸伐木工",
+      "text": "击杀3只僵尸伐木工（born_in_chaos_v1:zombie_lumberjack）",
+      "completeText": "交付 清理僵尸伐木工",
+      "id": 0,
+      "mob": "born_in_chaos_v1:zombie_lumberjack"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败骷髅劫掠者",
+      "text": "击杀4只骷髅劫掠者（much_more_skeletons:skeleton_pillager）",
+      "completeText": "交付 击败骷髅劫掠者",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_pillager"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:gold_ingot",
+      "count": 12,
+      "label": "任务 收集金锭",
+      "text": "收集12个金锭（minecraft:gold_ingot）",
+      "completeText": "交付 收集金锭",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化山羊",
+      "text": "击杀5只丧尸化的山羊（angry_animals:angry_goat）",
+      "completeText": "交付 消灭丧尸化山羊",
+      "id": 3,
+      "mob": "angry_animals:angry_goat"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:gold_ingot",
+      "count": 1,
+      "label": "赠礼 金锭",
+      "text": "赠送1个金锭（minecraft:gold_ingot）",
+      "completeText": "交付 金锭"
+    },
+    {
+      "id": 1,
+      "item": "minecraft:lapis_lazuli",
+      "count": 1,
+      "label": "赠礼 青金石",
+      "text": "赠送1个青金石（minecraft:lapis_lazuli）",
+      "completeText": "交付 青金石"
+    },
+    {
+      "id": 2,
+      "item": "minecraft:squid",
+      "count": 1,
+      "label": "赠礼 墨鱼",
+      "text": "赠送1条墨鱼（minecraft:squid）",
+      "completeText": "交付 墨鱼"
+    }
+  ],
+  "id": 148
+}

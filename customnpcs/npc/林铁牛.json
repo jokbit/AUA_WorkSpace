@@ -1,0 +1,144 @@
+{
+  "name": "林铁牛",
+  "weapon": "spartanweaponry:invar_warhammer",
+  "armors": [
+    "morevanillaarmor:redstone_helmet",
+    "morevanillaarmor:slime_chestplate",
+    "morevanillaarmor:stone_leggings",
+    "morevanillaarmor:wood_boots"
+  ],
+  "npcLines": [
+    "哥们，这整合包的矿脉生成也太离谱了，挖半天全是石头",
+    "这整合包的怪物血量厚得离谱",
+    "挖矿挖到怀疑人生，全是垃圾",
+    "这整合包的食物回复饥饿值太低",
+    "挖矿遇到洞穴蜘蛛，毒到崩溃",
+    "僵尸围城，家门都守不住",
+    "骷髅射箭太准，躲都躲不开",
+    "这整合包没有末影龙，少了乐趣"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/steve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "变异的巨兽",
+          "text": "变异僵尸这帮家伙太烦了！这整合包的怪物血量厚得离谱，我打了半天都打不死。你帮我处理掉5只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "地狱的守卫",
+          "text": "地狱骷髅最近特别猖狂！这整合包没有末影龙，少了乐趣，但是地狱骷髅太多了也很烦。你帮我解决5只，我请你吃饭！",
+          "taskId": 1
+        },
+        {
+          "label": "烈焰的精华",
+          "text": "烈焰骨这玩意儿我需要12个！我上次去地狱找，结果挖矿挖到怀疑人生，全是垃圾，根本没找到烈焰骨。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "深渊的威胁",
+          "text": "深渊溺尸最近特别猖狂！我上次遇到它们，结果骷髅射箭太准，躲都躲不开，差点被打死。你帮我解决5只，我好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "钻石",
+          "text": "钻石这玩意儿我需要！这整合包的矿脉生成也太离谱了，挖半天全是石头，根本找不到钻石。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "烈焰剑",
+          "text": "烈焰剑这玩意儿我想要一把！这整合包的食物回复饥饿值太低，我饿得没力气去打烈焰人了。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "披萨",
+          "text": "披萨这玩意儿我馋好久了，好吃得很！挖矿遇到洞穴蜘蛛，毒到崩溃，我想吃点东西补补。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 变异的巨兽",
+      "text": "击杀5只变异僵尸（mutantszombies:mutant_brute）",
+      "completeText": "交付 变异的巨兽",
+      "id": 0,
+      "mob": "mutantszombies:mutant_brute"
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 地狱的守卫",
+      "text": "击杀5只地狱骷髅（much_more_skeletons:nether_skeleton）",
+      "completeText": "交付 地狱的守卫",
+      "id": 1,
+      "mob": "much_more_skeletons:nether_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "tconstruct:blazing_bone",
+      "count": 12,
+      "label": "任务 烈焰的精华",
+      "text": "收集12个烈焰骨（tconstruct:blazing_bone）",
+      "completeText": "交付 烈焰的精华",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 深渊的威胁",
+      "text": "击杀5只深渊溺尸（specialmobs:abyssaldrowned）",
+      "completeText": "交付 深渊的威胁",
+      "id": 3,
+      "mob": "specialmobs:abyssaldrowned"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:diamond",
+      "count": 1,
+      "label": "赠礼 钻石",
+      "text": "赠送1个钻石（minecraft:diamond）",
+      "completeText": "交付 钻石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:fiery_sword",
+      "count": 1,
+      "label": "赠礼 烈焰剑",
+      "text": "赠送1把烈焰剑（morevanillatools:fiery_sword）",
+      "completeText": "交付 烈焰剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:pizza",
+      "count": 1,
+      "label": "赠礼 披萨",
+      "text": "赠送1个披萨（simplefarming:pizza）",
+      "completeText": "交付 披萨"
+    }
+  ],
+  "id": 117
+}

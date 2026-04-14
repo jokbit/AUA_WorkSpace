@@ -1,0 +1,144 @@
+{
+  "name": "狗蛋",
+  "weapon": "spartanweaponry:platinum_rapier",
+  "armors": [
+    "morevanillaarmor:nether_helmet",
+    "morevanillaarmor:obsidian_chestplate",
+    "morevanillaarmor:paper_leggings",
+    "morevanillaarmor:prismarine_boots"
+  ],
+  "npcLines": [
+    "女巫小屋，只有女巫",
+    "沼泽小屋，史莱姆多",
+    "掠夺者前哨站，全是掠夺者",
+    "这整合包的探索内容太无聊",
+    "跑图跑半天，全是一样的地形",
+    "蘑菇岛没怪，但是没资源",
+    "黑森林树太密，卡视野",
+    "繁花森林好看，但是没怪"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/tribeman.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理婴儿骷髅",
+          "text": "说真的，我跑了半天地图，要么是一样的地形，要么就是没资源没怪的地方，这探索内容太无聊了。不过现在家门口出现了一堆婴儿骷髅，烦死人了。你帮我干掉5只，我请你吃饭！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅末影人",
+          "text": "你去过黑森林吗？树密得要死，卡视野，上次我就在那迷路了。不过现在更麻烦的是骷髅末影人，到处都是。你帮我收拾3只，我记你一辈子！",
+          "taskId": 1
+        },
+        {
+          "label": "收集原木",
+          "text": "繁花森林好看是好看，但是没怪，也没什么好资源。我现在需要16块原木，黑森林树多是多，但太密了不好砍。你要是能帮我收集，回头我请你喝奶茶！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭愤怒牛",
+          "text": "蘑菇岛没怪，但是没资源；沼泽小屋史莱姆多，但是太臭；掠夺者前哨站全是掠夺者，太危险。现在愤怒的牛又开始猖狂了，你帮我干掉5只，我好好谢谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "说真的，这整合包探索太无聊了，但现在有点事儿想麻烦你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "原木",
+          "text": "我需要一块原木，懒得跑图了，跑半天也找不到合适的地方砍。你要是能送我一个，我记你一辈子！",
+          "giftId": 0
+        },
+        {
+          "label": "木剑",
+          "text": "木剑我盯着好久了，虽然不是什么好东西，但总比空手强。你要是能送我一把，回头我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "寿司",
+          "text": "想吃寿司了，跑图跑得太累了，不想自己弄。你要是能送我一份，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近不想跑图了，有几样东西你要是能送我就太好了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 清理婴儿骷髅",
+      "text": "击杀5只婴儿骷髅（born_in_chaos_v1:baby_skeleton）",
+      "completeText": "交付 清理婴儿骷髅",
+      "id": 0,
+      "mob": "born_in_chaos_v1:baby_skeleton"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败骷髅末影人",
+      "text": "击杀3只骷髅末影人（much_more_skeletons:skeleton_enderman）",
+      "completeText": "交付 击败骷髅末影人",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_enderman"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:oak_log",
+      "count": 16,
+      "label": "任务 收集原木",
+      "text": "收集16块原木",
+      "completeText": "交付 收集原木",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭愤怒牛",
+      "text": "击杀5只愤怒的牛（angry_animals:angry_cow）",
+      "completeText": "交付 消灭愤怒牛",
+      "id": 3,
+      "mob": "angry_animals:angry_cow"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:oak_log",
+      "count": 1,
+      "label": "赠礼 原木",
+      "text": "赠送1块原木",
+      "completeText": "交付 原木"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:wood_sword",
+      "count": 1,
+      "label": "赠礼 木剑",
+      "text": "赠送1把木剑（morevanillatools:wood_sword）",
+      "completeText": "交付 木剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:sushi",
+      "count": 1,
+      "label": "赠礼 寿司",
+      "text": "赠送1份寿司（simplefarming:sushi）",
+      "completeText": "交付 寿司"
+    }
+  ],
+  "id": 122
+}

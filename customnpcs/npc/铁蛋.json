@@ -1,0 +1,144 @@
+{
+  "name": "铁蛋",
+  "weapon": "spartanweaponry:platinum_warhammer",
+  "armors": [
+    "morevanillaarmor:wood_helmet",
+    "morevanillaarmor:bone_chestplate",
+    "morevanillaarmor:coal_leggings",
+    "morevanillaarmor:copper_boots"
+  ],
+  "npcLines": [
+    "针叶林雪多，走路慢",
+    "沙漠没水，渴死（饥饿）",
+    "草原平坦，但是没遮挡",
+    "平顶山好看，但是没资源",
+    "丛林树多，容易迷路",
+    "深海缺氧，容易淹死",
+    "冻洋全是冰，船开不动",
+    "这整合包的地形生成太单调"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/tribehunter1.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理骨灵",
+          "text": "骨灵这玩意儿太邪门了！那天我在遗迹里探险，突然就冒出来一堆，吓得我赶紧跑路。你帮我干掉4只，回头请你撸串！",
+          "taskId": 0
+        },
+        {
+          "label": "击败尸壳骷髅",
+          "text": "尸壳骷髅在沙漠里猖狂，射箭贼准！上次我去沙漠找神殿，差点被它们射成刺猬。你帮我收拾3只，我送你个好东西！",
+          "taskId": 1
+        },
+        {
+          "label": "收集圆石",
+          "text": "哎，我最近想盖个房子，但是圆石不够了。这玩意儿挖起来太费劲，我挖了好久才挖了一点点。你要是有多余的，能给我弄32块吗？回头肯定报答你！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化羊",
+          "text": "我滴妈，丧尸羊太恶心了，眼睛都是红的，还冲人叫！我上次去草原，差点被它们追上。你帮我干掉5只，我记你一辈子！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，还有几个破事儿想麻烦你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "圆石",
+          "text": "圆石盖房子贼好用，我最近想盖个房子，但是圆石不够了。你要是能送我一块，我肯定记着你的好！",
+          "giftId": 0
+        },
+        {
+          "label": "沙子",
+          "text": "沙子做玻璃用，我最近想盖个房子，需要点玻璃。你要是能送我一块，回头请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "生牛肉",
+          "text": "最近馋牛肉了，想吃顿好的。你要是能送我一块生牛肉，那可太感谢了！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太好了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 清理骨灵",
+      "text": "击杀4只骨灵（born_in_chaos_v1:bone_imp）",
+      "completeText": "交付 清理骨灵",
+      "id": 0,
+      "mob": "born_in_chaos_v1:bone_imp"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败尸壳骷髅",
+      "text": "击杀3只尸壳骷髅（much_more_skeletons:husk_skeleton）",
+      "completeText": "交付 击败尸壳骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:husk_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:cobblestone",
+      "count": 32,
+      "label": "任务 收集圆石",
+      "text": "收集32块圆石（minecraft:cobblestone）",
+      "completeText": "交付 收集圆石",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化羊",
+      "text": "击杀5只丧尸化的羊（angry_animals:angry_sheep）",
+      "completeText": "交付 消灭丧尸化羊",
+      "id": 3,
+      "mob": "angry_animals:angry_sheep"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:cobblestone",
+      "count": 1,
+      "label": "赠礼 圆石",
+      "text": "赠送1块圆石（minecraft:cobblestone）",
+      "completeText": "交付 圆石"
+    },
+    {
+      "id": 1,
+      "item": "minecraft:sand",
+      "count": 1,
+      "label": "赠礼 沙子",
+      "text": "赠送1块沙子（minecraft:sand）",
+      "completeText": "交付 沙子"
+    },
+    {
+      "id": 2,
+      "item": "minecraft:beef",
+      "count": 1,
+      "label": "赠礼 生牛肉",
+      "text": "赠送1块生牛肉（minecraft:beef）",
+      "completeText": "交付 生牛肉"
+    }
+  ],
+  "id": 146
+}

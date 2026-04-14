@@ -1,0 +1,144 @@
+{
+  "name": "史珍香",
+  "weapon": "spartanweaponry:bronze_halberd",
+  "armors": [
+    "minecraft:chainmail_helmet",
+    "minecraft:diamond_chestplate",
+    "minecraft:chainmail_leggings",
+    "minecraft:diamond_boots"
+  ],
+  "npcLines": [
+    "挖矿挖到怀疑人生，全是垃圾",
+    "下界探险没带防火药，纯纯找虐",
+    "红石机器越复杂，坏得越快",
+    "别人的整合包有神器，我只有木棍",
+    "小红书点赞比银行卡余额还少",
+    "游戏定价太贵，只能等打折",
+    "玩游戏被赖皮，对方说小名就叫赖皮",
+    "司机放臭屁说风油精味，绝了"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/chefsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "夜晚的爆炸声",
+          "text": "说真的，爬行者这玩意儿太烦了！我上次挖矿挖到怀疑人生，全是垃圾，结果出来还遇到爬行者，差点被炸飞。你帮我干掉3只，让我晚上睡个好觉！",
+          "taskId": 0
+        },
+        {
+          "label": "骷髅的牛",
+          "text": "骷髅牛这玩意儿太恶心了，骨头架子还能产奶，想想就反胃。别人的整合包有神器，我只有木棍，打这些玩意儿太费劲了。你帮我收拾4只，我请你吃饭！",
+          "taskId": 1
+        },
+        {
+          "label": "弓弦的材料",
+          "text": "线这玩意儿，蜘蛛身上掉下来的，黏糊糊的，恶心死了。我需要20根做弓，但是我红石机器越复杂，坏得越快，根本没时间弄这个。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "农场的麻烦",
+          "text": "丧尸鸡这玩意儿太恶心了，本来鸡挺香的，结果变成了丧尸，看着就想吐。我上次玩游戏被赖皮，对方说小名就叫赖皮，气死我了。你帮我干掉5只，让农场干净点！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "青金石",
+          "text": "青金石这玩意儿颜色真好看，我想要一个。我上次下界探险没带防火药，纯纯找虐，差点被烧死。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "烈焰剑",
+          "text": "烈焰剑这玩意儿火焰特效贼帅，我想要一把。我小红书点赞比银行卡余额还少，心情不好，想要把帅气的剑。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "巧克力蛋糕",
+          "text": "巧克力蛋糕这玩意儿看着就香，我想要一个。游戏定价太贵了，我只能等打折，连蛋糕都买不起。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 夜晚的爆炸声",
+      "text": "击杀3只爬行者（minecraft:creeper）",
+      "completeText": "交付 夜晚的爆炸声",
+      "id": 0,
+      "mob": "minecraft:creeper"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 骷髅的牛",
+      "text": "击杀4只骷髅牛（much_more_skeletons:skeleton_cow）",
+      "completeText": "交付 骷髅的牛",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_cow"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:string",
+      "count": 20,
+      "label": "任务 弓弦的材料",
+      "text": "收集20根线（minecraft:string）",
+      "completeText": "交付 弓弦的材料",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 农场的麻烦",
+      "text": "击杀5只丧尸鸡（angry_animals:angry_chicken）",
+      "completeText": "交付 农场的麻烦",
+      "id": 3,
+      "mob": "angry_animals:angry_chicken"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:lapis_lazuli",
+      "count": 1,
+      "label": "赠礼 青金石",
+      "text": "赠送1个青金石（minecraft:lapis_lazuli）",
+      "completeText": "交付 青金石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:fiery_sword",
+      "count": 1,
+      "label": "赠礼 烈焰剑",
+      "text": "赠送1把烈焰剑（morevanillatools:fiery_sword）",
+      "completeText": "交付 烈焰剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:chocolate_cake",
+      "count": 1,
+      "label": "赠礼 巧克力蛋糕",
+      "text": "赠送1个巧克力蛋糕（simplefarming:chocolate_cake）",
+      "completeText": "交付 巧克力蛋糕"
+    }
+  ],
+  "id": 104
+}

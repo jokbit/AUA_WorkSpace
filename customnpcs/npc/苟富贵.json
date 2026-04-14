@@ -1,0 +1,144 @@
+{
+  "name": "苟富贵",
+  "weapon": "morevanillatools:prismarine_sword",
+  "armors": [
+    "morevanillaarmor:slime_helmet",
+    "morevanillaarmor:stone_chestplate",
+    "morevanillaarmor:wood_leggings",
+    "morevanillaarmor:bone_boots"
+  ],
+  "npcLines": [
+    "钓鱼全是垃圾，钓不到宝藏",
+    "信标搭半天，效果还一般",
+    "书架摆错，附魔等级上不去",
+    "酿造台不会用，药水全做废",
+    "末影珍珠扔不准，直接掉虚空",
+    "烈焰弹炸自己，纯纯脑瘫操作",
+    "TNT挖山，把自己埋了",
+    "沙子卡脚，动都动不了"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/knightsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理裂头僵尸",
+          "text": "裂头僵尸这玩意儿太恶心了，脑袋都能裂开！钓鱼全是垃圾，钓不到宝藏，我心情不好，这些僵尸还来烦我。你帮我干掉3只，我肯定记着你的好！",
+          "taskId": 0
+        },
+        {
+          "label": "击败黑暗骷髅",
+          "text": "黑暗骷髅这玩意儿太阴了，在黑暗中突然就冒出来射你一箭！信标搭半天，效果还一般，我心情不好，这些骷髅还来烦我。你帮我收拾4只，我肯定好好谢你！",
+          "taskId": 1
+        },
+        {
+          "label": "收集蜘蛛眼",
+          "text": "蜘蛛眼这玩意儿我需要10个，做药水用！书架摆错，附魔等级上不去，我心情不好，没空去找蜘蛛眼。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "消灭愤怒羊驼",
+          "text": "愤怒的羊驼这玩意儿太烦人了，天天吐口水！酿造台不会用，药水全做废，我心情不好，这些羊驼还来烦我。你帮我干掉5只，我肯定好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "蜘蛛眼",
+          "text": "蜘蛛眼这玩意儿我需要，做药水用！末影珍珠扔不准，直接掉虚空，我心情不好，没空去找蜘蛛眼。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "烈焰剑",
+          "text": "烈焰剑这玩意儿我想要一把，砍人贼快！烈焰弹炸自己，纯纯脑瘫操作，我需要一把好武器防身。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "披萨",
+          "text": "披萨这玩意儿我馋好久了，好吃得很！TNT挖山，把自己埋了，我心情不好，想吃点披萨安慰一下自己。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理裂头僵尸",
+      "text": "击杀3只裂头僵尸（mutantszombies:split_head_zombie）",
+      "completeText": "交付 清理裂头僵尸",
+      "id": 0,
+      "mob": "mutantszombies:split_head_zombie"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败黑暗骷髅",
+      "text": "击杀4只黑暗骷髅（much_more_skeletons:dark_skeleton）",
+      "completeText": "交付 击败黑暗骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:dark_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:spider_eye",
+      "count": 10,
+      "label": "任务 收集蜘蛛眼",
+      "text": "收集10个蜘蛛眼（minecraft:spider_eye）",
+      "completeText": "交付 收集蜘蛛眼",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭愤怒羊驼",
+      "text": "击杀5只愤怒的羊驼（angry_animals:angry_llama）",
+      "completeText": "交付 消灭愤怒羊驼",
+      "id": 3,
+      "mob": "angry_animals:angry_llama"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:spider_eye",
+      "count": 1,
+      "label": "赠礼 蜘蛛眼",
+      "text": "赠送1个蜘蛛眼（minecraft:spider_eye）",
+      "completeText": "交付 蜘蛛眼"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:fiery_sword",
+      "count": 1,
+      "label": "赠礼 烈焰剑",
+      "text": "赠送1把烈焰剑（morevanillatools:fiery_sword）",
+      "completeText": "交付 烈焰剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:pizza",
+      "count": 1,
+      "label": "赠礼 披萨",
+      "text": "赠送1个披萨（simplefarming:pizza）",
+      "completeText": "交付 披萨"
+    }
+  ],
+  "id": 135
+}

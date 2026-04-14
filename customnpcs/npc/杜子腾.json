@@ -1,0 +1,144 @@
+{
+  "name": "杜子腾",
+  "weapon": "spartanweaponry:iron_pike",
+  "armors": [
+    "morevanillaarmor:obsidian_helmet",
+    "morevanillaarmor:paper_chestplate",
+    "morevanillaarmor:prismarine_leggings",
+    "morevanillaarmor:quartz_boots"
+  ],
+  "npcLines": [
+    "僵尸围城，家门都守不住",
+    "骷髅射箭太准，躲都躲不开",
+    "女巫扔药水，直接被控到死",
+    "铁傀儡叛变，反手打我",
+    "雪傀儡没用，打不动怪",
+    "这整合包没有末影龙，少了乐趣",
+    "下界合金锭太难搞，挖废好几把镐",
+    "远古残骸比钻石还稀有"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/magesteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "黑暗的喷吐",
+          "text": "喷吐者这玩意儿喷的毒液太恶心了！我上次遇到它们，差点被毒死，比女巫扔药水还烦。你帮我干掉3只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "末影的使者",
+          "text": "末影骷髅这玩意儿太诡异了，到处瞬移！我上次遇到它们，比骷髅射箭还难躲，根本打不到。你帮我收拾4只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "恶魂的眼泪",
+          "text": "恶魂之泪这玩意儿我需要8个，做药水用。我上次去地狱找，结果僵尸围城，家门都守不住，更别说找恶魂了。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "山地的冲击",
+          "text": "愤怒的山羊这玩意儿太凶了！我上次遇到它们，被顶飞了好几次，比铁傀儡叛变还离谱。你帮我干掉5只，我好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "恶魂之泪",
+          "text": "恶魂之泪这玩意儿我需要，做药水用。这整合包没有末影龙，少了乐趣，但是恶魂之泪还是需要的。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "黑曜石剑",
+          "text": "黑曜石剑这玩意儿我想要一把，砍人贼硬。下界合金锭太难搞，挖废好几把镐，先给我来把黑曜石剑用用。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "冰淇淋圣代",
+          "text": "冰淇淋圣代这玩意儿我馋好久了，凉快得很。远古残骸比钻石还稀有，我挖了好久都没找到，先给我来个冰淇淋安慰一下。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 黑暗的喷吐",
+      "text": "击杀3只喷吐者（mutantszombies:spitter）",
+      "completeText": "交付 黑暗的喷吐",
+      "id": 0,
+      "mob": "mutantszombies:spitter"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 末影的使者",
+      "text": "击杀4只末影骷髅（much_more_skeletons:ender_skeleton）",
+      "completeText": "交付 末影的使者",
+      "id": 1,
+      "mob": "much_more_skeletons:ender_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:ghast_tear",
+      "count": 8,
+      "label": "任务 恶魂的眼泪",
+      "text": "收集8个恶魂之泪（minecraft:ghast_tear）",
+      "completeText": "交付 恶魂的眼泪",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 山地的冲击",
+      "text": "击杀5只愤怒的山羊（angry_animals:angry_goat）",
+      "completeText": "交付 山地的冲击",
+      "id": 3,
+      "mob": "angry_animals:angry_goat"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:ghast_tear",
+      "count": 1,
+      "label": "赠礼 恶魂之泪",
+      "text": "赠送1个恶魂之泪（minecraft:ghast_tear）",
+      "completeText": "交付 恶魂之泪"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:obsidian_sword",
+      "count": 1,
+      "label": "赠礼 黑曜石剑",
+      "text": "赠送1把黑曜石剑（morevanillatools:obsidian_sword）",
+      "completeText": "交付 黑曜石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:ice_cream_sundae",
+      "count": 1,
+      "label": "赠礼 冰淇淋圣代",
+      "text": "赠送1个冰淇淋圣代（simplefarming:ice_cream_sundae）",
+      "completeText": "交付 冰淇淋圣代"
+    }
+  ],
+  "id": 116
+}

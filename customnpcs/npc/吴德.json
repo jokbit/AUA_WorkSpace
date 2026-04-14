@@ -1,0 +1,144 @@
+{
+  "name": "吴德",
+  "weapon": "spartanweaponry:copper_scythe",
+  "armors": [
+    "minecraft:turtle_helmet",
+    "minecraft:netherite_chestplate",
+    "minecraft:iron_leggings",
+    "minecraft:netherite_boots"
+  ],
+  "npcLines": [
+    "尸壳在沙漠，饿的更快",
+    "流浪者射箭，带减速效果",
+    "幻翼晚上来，没睡觉的人",
+    "掠夺者哨塔，全是厉害的",
+    "劫掠兽冲过来，直接撞碎盾",
+    "唤魔者召唤恼鬼，打不过",
+    "幻术师隐身，找不到人",
+    "这整合包的道具太多，记不住"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/townsmansteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "铁甲的威胁",
+          "text": "装甲僵尸这玩意儿太烦了，穿着铁甲到处跑，打都打不动！我上次遇到掠夺者哨塔，里面全是厉害的，差点被打死。你帮我干掉3只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "污染的骨头",
+          "text": "污染骷髅这玩意儿太毒了，射你一箭你就中毒！我上次遇到唤魔者召唤恼鬼，根本打不过，跑都跑不掉。你帮我收拾4只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "皮革的收集",
+          "text": "皮革这玩意儿我需要20块，做装备用。这整合包的道具太多，我根本记不住哪个是哪个，烦死了。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "森林的怒火",
+          "text": "丧尸狼这玩意儿太凶了，本来狼挺可爱的，结果变成了丧尸。我上次遇到劫掠兽冲过来，直接把我的盾撞碎了，吓死我了。你帮我干掉5只，让森林干净点！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "皮革",
+          "text": "皮革这玩意儿我需要，做装备用。我上次遇到幻翼晚上来，因为我没睡觉，差点被抓死。你要是能送我一�？我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "骨斧",
+          "text": "骨斧这玩意儿我想要一把，砍树贼快。我上次遇到幻术师隐身，找不到人，被射了好几箭。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "意大利面",
+          "text": "意大利面这玩意儿我馋好久了，好吃得很。我上次遇到流浪者射箭，带减速效果，差点被打死。你要是能送我一份，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 铁甲的威胁",
+      "text": "击杀3只装甲僵尸（mobz:armored_zombie）",
+      "completeText": "交付 铁甲的威胁",
+      "id": 0,
+      "mob": "mobz:armored_zombie"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 污染的骨头",
+      "text": "击杀4只污染骷髅（much_more_skeletons:tainted_skeleton）",
+      "completeText": "交付 污染的骨头",
+      "id": 1,
+      "mob": "much_more_skeletons:tainted_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:leather",
+      "count": 20,
+      "label": "任务 皮革的收集",
+      "text": "收集20块皮革（minecraft:leather）",
+      "completeText": "交付 皮革的收集",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 森林的怒火",
+      "text": "击杀5只丧尸狼（angry_animals:angry_wolf）",
+      "completeText": "交付 森林的怒火",
+      "id": 3,
+      "mob": "angry_animals:angry_wolf"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:leather",
+      "count": 1,
+      "label": "赠礼 皮革",
+      "text": "赠送1块皮革（minecraft:leather）",
+      "completeText": "交付 皮革"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:bone_axe",
+      "count": 1,
+      "label": "赠礼 骨斧",
+      "text": "赠送1把骨斧（morevanillatools:bone_axe）",
+      "completeText": "交付 骨斧"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:spaghetti",
+      "count": 1,
+      "label": "赠礼 意大利面",
+      "text": "赠送1份意大利面（simplefarming:spaghetti）",
+      "completeText": "交付 意大利面"
+    }
+  ],
+  "id": 105
+}

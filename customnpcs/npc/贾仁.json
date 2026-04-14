@@ -1,0 +1,144 @@
+{
+  "name": "贾仁",
+  "weapon": "minecraft:diamond_hoe",
+  "armors": [
+    "morevanillaarmor:coal_helmet",
+    "morevanillaarmor:copper_chestplate",
+    "morevanillaarmor:emerald_leggings",
+    "morevanillaarmor:ender_boots"
+  ],
+  "npcLines": [
+    "领地没圈好，被人偷家",
+    "聊天被禁言，只因吐槽一句",
+    "管理员乱踢人，服务器太烂",
+    "玩MC十年，还是不会玩红石",
+    "萌新问我怎么玩，我也不会",
+    "老玩家的默契，看到Creeper就跑",
+    "aww man，又是爬行者",
+    "MC里的科学，现实根本不适用"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/gangstersteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理搜寻者",
+          "text": "搜寻者这玩意儿太诡异了，到处找你。我上次在遗迹里探险，突然就冒出来一群，吓得我赶紧跑路。你帮我干掉3只，我肯定记着你的好！",
+          "taskId": 0
+        },
+        {
+          "label": "击败沼泽骷髅",
+          "text": "沼泽骷髅这玩意儿太阴了，在沼泽里突然就冒出来射你一箭。我上次去沼泽找史莱姆，结果被射得满地跑。你帮我收拾4只，我肯定好好谢你！",
+          "taskId": 1
+        },
+        {
+          "label": "收集红石",
+          "text": "我需要20个红石，做电路用，这东西不好找啊。我试了好几次去挖矿，结果挖了一堆石头，红石没找到几块。你要是能帮我弄点来，回头我请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化猪",
+          "text": "丧尸猪这玩意儿太恶心了！我上次去猪圈，以为猪是温顺的，结果被追着咬了好远。你帮我干掉5只，我肯定记着你的好！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点倒霉事，有点事儿想麻烦你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "红石",
+          "text": "我想要一个红石，做电路用。我试了好几次去挖矿，结果挖了一堆石头，红石没找到几块。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "红石剑",
+          "text": "红石剑我盯着好久了，砍人特别快。我试了好几次去挖红石，结果挖了一堆石头。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "香蕉",
+          "text": "想吃香蕉了，最近运气不太好，想找点甜的东西安慰一下自己。你要是能送我一个，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理搜寻者",
+      "text": "击杀3只搜寻者（apocalypse:seeker）",
+      "completeText": "交付 清理搜寻者",
+      "id": 0,
+      "mob": "apocalypse:seeker"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败沼泽骷髅",
+      "text": "击杀4只沼泽骷髅（much_more_skeletons:swamp_skeleton）",
+      "completeText": "交付 击败沼泽骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:swamp_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:redstone",
+      "count": 20,
+      "label": "任务 收集红石",
+      "text": "收集20个红石（minecraft:redstone）",
+      "completeText": "交付 收集红石",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化猪",
+      "text": "击杀5只丧尸化的猪（angry_animals:angry_pig）",
+      "completeText": "交付 消灭丧尸化猪",
+      "id": 3,
+      "mob": "angry_animals:angry_pig"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:redstone",
+      "count": 1,
+      "label": "赠礼 红石",
+      "text": "赠送1个红石（minecraft:redstone）",
+      "completeText": "交付 红石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:redstone_sword",
+      "count": 1,
+      "label": "赠礼 红石剑",
+      "text": "赠送1把红石剑（morevanillatools:redstone_sword）",
+      "completeText": "交付 红石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:banana",
+      "count": 1,
+      "label": "赠礼 香蕉",
+      "text": "赠送1个香蕉（simplefarming:banana）",
+      "completeText": "交付 香蕉"
+    }
+  ],
+  "id": 137
+}

@@ -1,0 +1,184 @@
+{AbsorptionAmount: 0.0f,Accuracy: 60,ActiveRange: 32,AggroRange: 16,AimWhileShooting: 0b,Air: 300s,Armor: [
+            {Count: 1b,Slot: 0b,id: "morevanillaarmor:iron_helmet",tag: {Damage: 0
+                }
+            },
+            {Count: 1b,Slot: 1b,id: "morevanillaarmor:iron_chestplate",tag: {Damage: 0
+                }
+            },
+            {Count: 1b,Slot: 2b,id: "minecraft:leather_leggings",tag: {Damage: 0
+                }
+            },
+            {Count: 1b,Slot: 3b,id: "morevanillaarmor:iron_boots",tag: {Damage: 0
+                }
+            }
+        ],ArmorDropChances: [
+            0.085f,
+            0.085f,
+            0.085f,
+            0.085f
+        ],ArmorItems: [
+            {},
+            {},
+            {},
+            {}
+        ],AttackInvisible: 0b,AttackOtherFactions: 1b,AttackRange: 2,AttackSpeed: 20,AttackStrenght: 5,Attributes: [
+            {Base: 0.0d,Name: "minecraft:generic.attack_knockback"
+            },
+            {Base: 16.0d,Name: "minecraft:generic.armor_toughness"
+            },
+            {Base: 0.0d,Name: "minecraft:generic.knockback_resistance"
+            },
+            {Base: 0.3499999940395355d,Name: "minecraft:generic.movement_speed"
+            },
+            {Base: 200.0d,Name: "minecraft:generic.max_health"
+            },
+            {Base: 0.08d,Name: "forge:entity_gravity"
+            },
+            {Base: 0.0d,Name: "forge:step_height_addition"
+            },
+            {Base: 0.8282856485126004d,Name: "forge:entity_reach"
+            },
+            {Base: 32.0d,Name: "minecraft:generic.follow_range"
+            },
+            {Base: 11.199999809265137d,Name: "forge:swim_speed"
+            },
+            {Base: 4.0d,Name: "minecraft:generic.attack_speed"
+            },
+            {Base: 0.699999988079071d,Name: "minecraft:generic.flying_speed"
+            },
+            {Base: 5.0d,Name: "minecraft:generic.attack_damage"
+            },
+            {Base: 0.0d,Name: "minecraft:generic.armor"
+            }
+        ],AvoidsSun: 0b,AvoidsWater: 1b,BossBar: 0b,BossColor: 0,Brain: {memories: {}
+        },BurnInSun: 0b,BurstCount: 1,CanDrown: 0b,CanLeap: 0b,CanPickUpLoot: 0b,CanSprint: 0b,CanSwim: 1b,CanUpdate: 1b,CitadelData: {},CloakTexture: "",CombatRegen: 0,CreatureType: 0,DeathTime: 0s,DefendFaction: 0b,DirectLOS: 1b,DisablePitch: 0b,DistanceToMelee: 0,DoorInteract: 1,DropChance: [
+            {Integer: 100.0f,Slot: 0
+            },
+            {Integer: 100.0f,Slot: 1
+            },
+            {Integer: 100.0f,Slot: 2
+            },
+            {Integer: 100.0f,Slot: 3
+            },
+            {Integer: 100.0f,Slot: 4
+            },
+            {Integer: 100.0f,Slot: 5
+            },
+            {Integer: 100.0f,Slot: 6
+            },
+            {Integer: 100.0f,Slot: 7
+            },
+            {Integer: 100.0f,Slot: 8
+            }
+        ],FactionID: 0,FactionPoints: {DecreaseFaction1Points: 0b,DecreaseFaction2Points: 0b,OptionFaction1Points: 100,OptionFaction2Points: 100,OptionFactions1: -1,OptionFactions2: -1
+        },FallDistance: 0.0f,FallFlying: 0b,FindShelter: 2,Fire: -1s,FireIndirect: 0,FireRate: 5,FiringSound: "minecraft:entity.arrow.shoot",ForgeCaps: {
+            "advancedhostility:hate": {},
+            "curios:inventory": {Curios: []
+            },
+            "mutantmore:entityheat": {CoolDelay: 0,HeatAmount: -0.025d
+            },
+            "mutantmore:mutantshulkershieldshoottimer": {ShootTime: 0
+            },
+            "tacz:synced_entity_data": [],
+            "tconstruct:persistent_data": {}
+        },ForgeData: {cnpcmarkdata: {marks: []
+            },enhancedai: {leaders: {},spawning: {},targeting: {alert_range: 32,follow_ranges_processed: 1b
+                }
+            },insanelib: {tags: {spawn_type: 2b
+                }
+            }
+        },GlowTexture: "",GroundSound: "minecraft:block.stone.break",GuardTargets: [],HandDropChances: [
+            0.085f,
+            0.085f
+        ],HandItems: [
+            {},
+            {}
+        ],Health: 200.0f,HealthRegen: 0,HideBodyWhenKilled: 0b,HitSound: "minecraft:entity.arrow.hit",HurtByTimestamp: 3907,HurtTime: 0s,IgnoreCobweb: 0b,ImmuneToFire: 0b,Invulnerable: 0b,IsStatue: 0b,KilledTime: 0L,KnockBack: 0,LeftHanded: 0b,LinkedNpcName: "",LootMode: 0,MarkovGender: 0,MarkovGeneratorId: 8,MaxExp: 0,MaxFiringRange: 15,MaxHealth: 200,MinExp: 0,ModRev: 18,Motion: [
+            0.0d,
+            -0.0784000015258789d,
+            0.0d
+        ],MountControl: 0b,MoveSpeed: 7,MoveState: 0,MovementType: 0,MovingPatern: 0,MovingPause: 1b,MovingPos: 0,MovingState: 1,NPCDialogOptions: [
+            {DialogSlot: 0,NPCDialog: {Dialog: 101,DialogColor: 14737632,DialogCommand: "",OptionType: 1,Title: "二狗"
+                }
+            }
+        ],Name: "二狗",NoFallDamage: 0b,NoLivingAnimation: 0b,NpcAngrySound: "",NpcAttackLines: {Lines: []
+        },NpcDeathSound: "minecraft:entity.player.hurt",NpcHurtSound: "minecraft:entity.player.hurt",NpcIdleSound: "",NpcInteractLines: {Lines: []
+        },NpcInteractNPCLines: {Lines: [
+                {Line: "海底遗迹难找，守卫者还多",Slot: 0,Song: ""
+                },
+                {Line: "沉船宝藏，全是垃圾",Slot: 1,Song: ""
+                },
+                {Line: "埋藏的宝藏，找不到坐标",Slot: 2,Song: ""
+                },
+                {Line: "废弃矿井，全是洞穴蜘蛛",Slot: 3,Song: ""
+                },
+                {Line: "要塞难找，末地传送门凑不齐",Slot: 4,Song: ""
+                },
+                {Line: "末地传送门，放错眼就废",Slot: 5,Song: ""
+                },
+                {Line: "地狱堡垒，全是烈焰人",Slot: 6,Song: ""
+                },
+                {Line: "堡垒遗迹，猪灵太多",Slot: 7,Song: ""
+                }
+            ]
+        },NpcInv: [],NpcJob: 3,NpcKillLines: {Lines: []
+        },NpcKilledLines: {Lines: []
+        },NpcLines: {Lines: [
+                {Line: "海底遗迹难找，守卫者还多",Slot: 0,Song: ""
+                },
+                {Line: "沉船宝藏，全是垃圾",Slot: 1,Song: ""
+                },
+                {Line: "埋藏的宝藏，找不到坐标",Slot: 2,Song: ""
+                },
+                {Line: "废弃矿井，全是洞穴蜘蛛",Slot: 3,Song: ""
+                },
+                {Line: "要塞难找，末地传送门凑不齐",Slot: 4,Song: ""
+                },
+                {Line: "末地传送门，放错眼就废",Slot: 5,Song: ""
+                },
+                {Line: "地狱堡垒，全是烈焰人",Slot: 6,Song: ""
+                },
+                {Line: "堡垒遗迹，猪灵太多",Slot: 7,Song: ""
+                }
+            ]
+        },NpcModelData: {Animation: 0,Arms2Config: {NotShared: 0b,ScaleX: 1.0f,ScaleY: 1.0f,ScaleZ: 1.0f,TransX: 0.0f,TransY: 0.0f,TransZ: 0.0f
+            },ArmsConfig: {NotShared: 0b,ScaleX: 1.0f,ScaleY: 1.0f,ScaleZ: 1.0f,TransX: 0.0f,TransY: 0.0f,TransZ: 0.0f
+            },BodyConfig: {NotShared: 0b,ScaleX: 1.0f,ScaleY: 1.0f,ScaleZ: 1.0f,TransX: 0.0f,TransY: 0.0f,TransZ: 0.0f
+            },CustomSkinUrl: "",DisplayName: "",ExtraData: {},HeadConfig: {NotShared: 0b,ScaleX: 1.0f,ScaleY: 1.0f,ScaleZ: 1.0f,TransX: 0.0f,TransY: 0.0f,TransZ: 0.0f
+            },LastEdited: 1775379687391L,Legs2Config: {NotShared: 0b,ScaleX: 1.0f,ScaleY: 1.0f,ScaleZ: 1.0f,TransX: 0.0f,TransY: 0.0f,TransZ: 0.0f
+            },LegsConfig: {NotShared: 0b,ScaleX: 1.0f,ScaleY: 1.0f,ScaleZ: 1.0f,TransX: 0.0f,TransY: 0.0f,TransZ: 0.0f
+            },ModelType: 0,MoveAnimation: 16,NewParts: [],Parts: [],SimpleRender: 0b,WingMode: 0
+        },NpcScenes: {Scenes: []
+        },NpcStepSound: "",NpcVisible: 0,NpcsTimers: [],OnAttack: 0,OnGround: 1b,OrderedLines: 0b,Orientation: 0,OverlayGlowing: 1b,PersistenceRequired: 0b,PortalCooldown: 0,PositionOffsetX: 5.0f,PositionOffsetY: 5.0f,PositionOffsetZ: 5.0f,PotionAmp: 0,PotionDuration: 5,PotionEffect: 0,PotionImmune: 0b,ReactsToFire: 0b,Resistances: {Arrow: 1.0f,Explosion: 1.0056338f,Knockback: 1.0084506f,Melee: 1.0028169f
+        },RespawnTime: 0,ReturnToStart: 1b,Role: 0,Rotation: [
+            58.035797f,
+            0.0f
+        ],ScriptEnabled: 1b,ScriptLanguage: "ECMAScript",Scripts: [
+            {Console: [],Script: "",ScriptList: [
+                    {Line: "01_asker.js"
+                    },
+                    {Line: "01_content.js"
+                    },
+                    {Line: "10_npc.js"
+                    },
+                    {Line: "00_common.js"
+                    }
+                ]
+            }
+        ],ShotCount: 1,ShowLayers: 1b,ShowName: 0,Size: 5,SkinColor: 16777215,SkinUrl: "",SpawnCycle: 3,StandingState: 0,StartPosNew: [I;455,
+            62,
+            -87
+        ],Tags: [
+            "ctrlArmorToM1",
+            "collective.checked",
+            "ctrlHealthM1",
+            "ctrlDamageM1",
+            "ctrlArmorM1",
+            "ctrlArmorToS1"
+        ],Texture: "customnpcs:textures/entity/humanmale/tribeboy.png",Title: "",TotalTicksAlive: 623374L,TrackedData: {},TransformEditingModus: 0b,TransformHasAI: 0b,TransformHasAdvanced: 0b,TransformHasDisplay: 0b,TransformHasInv: 0b,TransformHasJob: 0b,TransformHasRole: 0b,TransformHasStats: 0b,TransformIsActive: 0b,UsingSkinUrl: 0b,VisibleAvailability: {AvailabilityDayTime: 0,AvailabilityDialog: 0,AvailabilityDialog2: 0,AvailabilityDialog2Id: -1,AvailabilityDialog3: 0,AvailabilityDialog3Id: -1,AvailabilityDialog4: 0,AvailabilityDialog4Id: -1,AvailabilityDialogId: -1,AvailabilityFaction: 0,AvailabilityFaction2: 0,AvailabilityFaction2Id: -1,AvailabilityFaction2Stance: 0,AvailabilityFactionId: -1,AvailabilityFactionStance: 0,AvailabilityMinPlayerLevel: 0,AvailabilityQuest: 0,AvailabilityQuest2: 0,AvailabilityQuest2Id: -1,AvailabilityQuest3: 0,AvailabilityQuest3Id: -1,AvailabilityQuest4: 0,AvailabilityQuest4Id: -1,AvailabilityQuestId: -1,AvailabilityScoreboard2Objective: "",AvailabilityScoreboard2Type: 1,AvailabilityScoreboard2Value: 1,AvailabilityScoreboardObjective: "",AvailabilityScoreboardType: 1,AvailabilityScoreboardValue: 1,ModRev: 18
+        },WalkingRange: 10,Weapons: [
+            {Count: 1b,Slot: 0b,id: "spartanweaponry:iron_greatsword",tag: {Damage: 0
+                }
+            }
+        ],id: "customnpcs:customnpc",maxDelay: 40,minDelay: 20,npcInteracting: 1b,pArea: 0,pDamage: 4,pDur: 5,pEffAmp: 0,pEffect: 0,pGlows: 0b,pImpact: 0,pPhysics: 1b,pRender3D: 1b,pSize: 5,pSpeed: 10,pSpin: 0b,pStick: 0b,pTrail: 0,pXlr8: 0b,stopAndInteract: 1b
+    }

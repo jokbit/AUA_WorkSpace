@@ -1,0 +1,144 @@
+{
+  "name": "夏荷",
+  "weapon": "morevanillatools:redstone_pickaxe",
+  "armors": [
+    "morevanillaarmor:paper_helmet",
+    "morevanillaarmor:prismarine_chestplate",
+    "morevanillaarmor:redstone_leggings",
+    "morevanillaarmor:slime_boots"
+  ],
+  "npcLines": [
+    "写日报写了半小时，实际工作内容只有两行，剩下的全是编的",
+    "早九晚六的合同，早八晚九的命，这公司真是坑",
+    "今天面试了一个实习生，比我小五岁，感觉自己老了",
+    "同事又开始在工位上嗑瓜子，噼里啪啦的声音我要疯了",
+    "老板说明天团建，大家都不想去但是不敢说，我服了",
+    "今天在地铁上看到一个大哥站着睡着了，差点摔倒，太真实了",
+    "工资条上写着绩效奖金，一看数额，这叫奖金？这不叫羞辱吗？",
+    "午休时间大家都在刷手机，没人说话，仿佛全世界都自闭了"
+  ],
+  "texture": "customnpcs:textures/entity/humanfemale/tribewoman3.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "骨之领主",
+          "text": "高级骨召唤者这玩意儿太强了，我一个人搞不定！我最近加班加得头都大了，早九晚六的合同，早八晚九的命，这公司真是坑。你帮我干掉2只，让我早点下班！",
+          "taskId": 0
+        },
+        {
+          "label": "不死的骨头",
+          "text": "不死骷髅这玩意儿太恶心了，死了还能复活！我今天面试了一个实习生，比我小五岁，感觉自己老了，打这些玩意儿都费劲了。你帮我收拾4只，我请你喝奶茶！",
+          "taskId": 1
+        },
+        {
+          "label": "腐肉的收集",
+          "text": "腐肉这玩意儿我需要24块，喂狗用。我同事又开始在工位上嗑瓜子，噼里啪啦的声音我要疯了，根本没心思去弄这个。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "蜂巢的骚动",
+          "text": "丧尸蜜蜂这玩意儿太烦了，到处嗡嗡叫！老板说明天团建，大家都不想去但是不敢说，我服了。你帮我干掉5只，让我清静清静！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "腐肉",
+          "text": "腐肉这玩意儿我需要，喂狗用。我今天在地铁上看到一个大哥站着睡着了，差点摔倒，太真实了，我都没心思去弄这个。你要是能送我一�？我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "金剑",
+          "text": "金剑这玩意儿我想要一把，砍人贼快。工资条上写着绩效奖金，一看数额，这叫奖金？这不叫羞辱吗？我都没钱买剑了。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "草莓",
+          "text": "草莓这玩意儿我馋好久了，好吃得很。午休时间大家都在刷手机，没人说话，仿佛全世界都自闭了，我想吃点甜的安慰一下自己。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 2,
+      "label": "任务 骨之领主",
+      "text": "击杀2只高级骨召唤者（born_in_chaos_v1:supreme_bonescaller）",
+      "completeText": "交付 骨之领主",
+      "id": 0,
+      "mob": "born_in_chaos_v1:supreme_bonescaller"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 不死的骨头",
+      "text": "击杀4只不死骷髅（much_more_skeletons:undead_skeleton）",
+      "completeText": "交付 不死的骨头",
+      "id": 1,
+      "mob": "much_more_skeletons:undead_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:rotten_flesh",
+      "count": 24,
+      "label": "任务 腐肉的收集",
+      "text": "收集24块腐肉（minecraft:rotten_flesh）",
+      "completeText": "交付 腐肉的收集",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 蜂巢的骚动",
+      "text": "击杀5只丧尸化的蜜蜂（angry_animals:angry_bee）",
+      "completeText": "交付 蜂巢的骚动",
+      "id": 3,
+      "mob": "angry_animals:angry_bee"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:rotten_flesh",
+      "count": 1,
+      "label": "赠礼 腐肉",
+      "text": "赠送1块腐肉（minecraft:rotten_flesh）",
+      "completeText": "交付 腐肉"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:gold_sword",
+      "count": 1,
+      "label": "赠礼 金剑",
+      "text": "赠送1把金剑（morevanillatools:gold_sword）",
+      "completeText": "交付 金剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:strawberries",
+      "count": 1,
+      "label": "赠礼 草莓",
+      "text": "赠送1个草莓（simplefarming:strawberries）",
+      "completeText": "交付 草莓"
+    }
+  ],
+  "id": 108
+}

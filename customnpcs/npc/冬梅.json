@@ -1,0 +1,144 @@
+{
+  "name": "冬梅",
+  "weapon": "spartanweaponry:nickel_lance",
+  "armors": [
+    "minecraft:leather_helmet",
+    "minecraft:golden_chestplate",
+    "minecraft:leather_leggings",
+    "minecraft:golden_boots"
+  ],
+  "npcLines": [
+    "领导下午开了三个小时的会，我打了三个小时的瞌睡",
+    "公司的咖啡机又坏了，喝了一周的速溶，嘴里都苦了",
+    "早上出门太急忘带工牌了，被前台拦了五分钟，社死现场",
+    "今天项目上线了，忙了一整天，感觉整个人都要散架了",
+    "我怀疑我上辈子是个鼠标，这辈子每天在公司被疯狂点击",
+    "离职不敢离，上班想逃离，这就是当代打工人的真实写照",
+    "公司食堂的菜越来越难吃了，一个月的饭钱全贡献给外卖了",
+    "今天被领导怼了一顿，表面上笑嘻嘻心里已经骂了一百遍"
+  ],
+  "texture": "customnpcs:textures/entity/humanfemale/tribewoman2.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "骨头的召唤",
+          "text": "哎，上班累成狗，下班还要被这些骨头架子骚扰，真是没天理了。骨召唤者天天在我家门口晃悠，烦得要死。你帮我干掉3只吧，让我能好好休息一下！",
+          "taskId": 0
+        },
+        {
+          "label": "僵尸的骨头",
+          "text": "这些僵尸骷髅真是太恶心了，骨头架子还能动，看着就渗人。我每天在公司被各种破事折磨，回家还要看到这玩意儿，心态都要崩了。你帮我收拾4只，我请你喝咖啡！",
+          "taskId": 1
+        },
+        {
+          "label": "爆炸的材料",
+          "text": "最近工作压力太大了，真想炸点什么发泄一下。现在我需要16个火药做TNT，这东西不好找啊。你要是能帮我弄点来，回头我请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "丛林的烦躁",
+          "text": "这些丧尸豹猫到处乱跑，吵得我头疼。我每天在公司被各种会议和报表折磨，回家想清静清静都不行。你帮我干掉5只，让我能安静一会儿！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "哎，上班太累了，还有几个麻烦想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "火药",
+          "text": "我想要一个火药，做TNT用。最近工作压力大，想炸点什么发泄一下。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "消防斧",
+          "text": "消防斧我盯着好久了，砍人特别快。每天在公司被各种破事折磨，真想砍点什么发泄一下。你要是能送我一把，我请你喝咖啡！",
+          "giftId": 1
+        },
+        {
+          "label": "樱桃",
+          "text": "想吃樱桃了，最近工作太累了，想吃点甜的犒劳一下自己。你要是能送我一个，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 骨头的召唤",
+      "text": "击杀3只骨召唤者（born_in_chaos_v1:bonescaller）",
+      "completeText": "交付 骨头的召唤",
+      "id": 0,
+      "mob": "born_in_chaos_v1:bonescaller"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 僵尸的骨头",
+      "text": "击杀4只僵尸骷髅（much_more_skeletons:zombie_skeleton）",
+      "completeText": "交付 僵尸的骨头",
+      "id": 1,
+      "mob": "much_more_skeletons:zombie_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:gunpowder",
+      "count": 16,
+      "label": "任务 爆炸的材料",
+      "text": "收集16个火药（minecraft:gunpowder）",
+      "completeText": "交付 爆炸的材料",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 丛林的烦躁",
+      "text": "击杀5只丧尸豹猫（angry_animals:angry_ocelot）",
+      "completeText": "交付 丛林的烦躁",
+      "id": 3,
+      "mob": "angry_animals:angry_ocelot"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:gunpowder",
+      "count": 1,
+      "label": "赠礼 火药",
+      "text": "赠送1个火药（minecraft:gunpowder）",
+      "completeText": "交付 火药"
+    },
+    {
+      "id": 1,
+      "item": "zombie_extreme:fireaxe",
+      "count": 1,
+      "label": "赠礼 消防斧",
+      "text": "赠送1把消防斧（zombie_extreme:fireaxe）",
+      "completeText": "交付 消防斧"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:cherries",
+      "count": 1,
+      "label": "赠礼 樱桃",
+      "text": "赠送1个樱桃（simplefarming:cherries）",
+      "completeText": "交付 樱桃"
+    }
+  ],
+  "id": 103
+}

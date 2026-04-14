@@ -1,0 +1,144 @@
+{
+  "name": "郝仁",
+  "weapon": "spartanweaponry:lead_spear",
+  "armors": [
+    "minecraft:turtle_helmet",
+    "minecraft:iron_chestplate",
+    "minecraft:chainmail_leggings",
+    "minecraft:diamond_boots"
+  ],
+  "npcLines": [
+    "研究生延毕1000天，直接抑郁",
+    "感觉自己是NPC，每天重复对话",
+    "我是被忽略的宝箱，藏在角落没人理",
+    "煤炭镇小白炒到100多，离大谱",
+    "传奇草羊机，纯纯智商税",
+    "20铁很牛吗？我直接钻石套",
+    "steam上没有MC正版，别被忽悠",
+    "bud不是bug，是MC特性"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/guardsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理毁灭者",
+          "text": "毁灭者这玩意儿太强了，我一个人搞不定。哎，我现在状态不好，干啥都提不起劲。你帮我干掉3只，我肯定好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅鸡",
+          "text": "骷髅鸡这玩意儿太诡异了，骨头架子还能下蛋！我最近心情不太好，看啥都觉得烦。你帮我收拾4只，我肯定记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "收集羽毛",
+          "text": "我需要24根羽毛做箭，这东西不好找啊。我现在状态不好，干啥都没动力。你要是能帮我弄点来，回头我请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭愤怒狼",
+          "text": "愤怒的狼这玩意儿太凶了！我最近心情不太好，不想跟这些玩意儿纠缠。你帮我干掉5只，我肯定记着你的好！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近心情不太好，有点事儿想麻烦你，帮完我肯定好好谢你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "末影珍珠",
+          "text": "我想要一个末影珍珠，传送用。我现在状态不好，懒得跑路。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "钻石剑",
+          "text": "钻石剑我盯着好久了，砍人特别快。我现在心情不太好，需要一把好武器防身。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "葡萄",
+          "text": "想吃葡萄了，最近心情不太好，想吃点甜的安慰一下自己。你要是能送我一个，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理毁灭者",
+      "text": "击杀3只毁灭者（apocalypse:destroyer）",
+      "completeText": "交付 清理毁灭者",
+      "id": 0,
+      "mob": "apocalypse:destroyer"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败骷髅鸡",
+      "text": "击杀4只骷髅鸡（much_more_skeletons:skeleton_chicken）",
+      "completeText": "交付 击败骷髅鸡",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_chicken"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:feather",
+      "count": 24,
+      "label": "任务 收集羽毛",
+      "text": "收集24根羽毛（minecraft:feather）",
+      "completeText": "交付 收集羽毛",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭愤怒狼",
+      "text": "击杀5只愤怒的狼（angry_animals:angry_wolf）",
+      "completeText": "交付 消灭愤怒狼",
+      "id": 3,
+      "mob": "angry_animals:angry_wolf"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:ender_pearl",
+      "count": 1,
+      "label": "赠礼 末影珍珠",
+      "text": "赠送1个末影珍珠（minecraft:ender_pearl）",
+      "completeText": "交付 末影珍珠"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:diamond_sword",
+      "count": 1,
+      "label": "赠礼 钻石剑",
+      "text": "赠送1把钻石剑（morevanillatools:diamond_sword）",
+      "completeText": "交付 钻石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:grapes",
+      "count": 1,
+      "label": "赠礼 葡萄",
+      "text": "赠送1个葡萄（simplefarming:grapes）",
+      "completeText": "交付 葡萄"
+    }
+  ],
+  "id": 141
+}

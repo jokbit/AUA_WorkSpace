@@ -1,0 +1,144 @@
+{
+  "name": "陆仁贾",
+  "weapon": "morevanillatools:coal_sword",
+  "armors": [
+    "morevanillaarmor:prismarine_helmet",
+    "morevanillaarmor:quartz_chestplate",
+    "morevanillaarmor:redstone_leggings",
+    "morevanillaarmor:slime_boots"
+  ],
+  "npcLines": [
+    "哥们，这整合包的矿脉生成也太离谱了，挖半天全是石头",
+    "谁懂啊，MC的特性比bug还多，官方都懒得修",
+    "这整合包末影人是真少，想刷珍珠都难",
+    "玩三角洲天天被老六偷背身，心态炸了",
+    "从前有个小蔡，后来被端走了",
+    "MC玩家的浪漫，就是用红石做答辩制造机",
+    "砍手岩？那是基岩，萌新别瞎挖",
+    "恶魂叫得跟EOE似的，一听就想躲"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/villagersteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理僵尸",
+          "text": "嘿，兄弟！最近怎么样？我跟你说啊，最近僵尸这帮家伙太嚣张了，到处惹事。我上次差点栽在它们手里，现在想起来还后怕。你要是能帮我清理掉4只，那可就帮了大忙了！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅",
+          "text": "哎呀，你可算来了！我这正发愁呢。最近骷髅越来越多了，搞得我都不敢出门。这帮家伙可不好对付，但我需要有人帮我清理一下。你能帮我干掉3只吗？",
+          "taskId": 1
+        },
+        {
+          "label": "收集骨头",
+          "text": "哟，来了啊！最近忙啥呢？对了，我这儿有个事儿想请你帮个忙。你知道骨头吧？我现在特别需要这东西，大概16个。你要是能帮我找来，我肯定记着你的好！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭愤怒猪",
+          "text": "嘿，兄弟！最近怎么样？我跟你说啊，最近愤怒的猪这帮家伙太嚣张了，到处惹事。我上次差点栽在它们手里，现在想起来还后怕。你要是能帮我清理掉5只，那可就帮了大忙了！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦事儿，想请你帮个忙，肯定不会让你白干的！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "煤炭",
+          "text": "嘿，老朋友！最近怎么样？我跟你说个事儿，我最近特别想要煤炭。你要是能送我一个，回头肯定请你吃饭！",
+          "giftId": 0
+        },
+        {
+          "label": "铁锭",
+          "text": "哟，来了啊！最近忙啥呢？对了，我这儿有个小愿望，就是想要个铁锭。你要是能送我一个，我肯定记着你的好！",
+          "giftId": 1
+        },
+        {
+          "label": "面包",
+          "text": "哟，来了啊！最近忙啥呢？对了，我这儿有个小愿望，就是想要个面包。你要是能送我一个，我肯定记着你的好！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "有个小愿望，想请你帮忙实现一下！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 清理僵尸",
+      "text": "击杀4只僵尸（minecraft:zombie）",
+      "completeText": "交付 清理僵尸",
+      "id": 0,
+      "mob": "minecraft:zombie"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败骷髅",
+      "text": "击杀3只骷髅（minecraft:skeleton）",
+      "completeText": "交付 击败骷髅",
+      "id": 1,
+      "mob": "minecraft:skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:bone",
+      "count": 16,
+      "label": "任务 收集骨头",
+      "text": "收集16根骨头（minecraft:bone）",
+      "completeText": "交付 收集骨头",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭愤怒猪",
+      "text": "击杀5只愤怒的猪（angry_animals:angry_pig）",
+      "completeText": "交付 消灭愤怒猪",
+      "id": 3,
+      "mob": "angry_animals:angry_pig"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:coal",
+      "count": 1,
+      "label": "赠礼 煤炭",
+      "text": "赠送1个煤炭（minecraft:coal）",
+      "completeText": "交付 煤炭"
+    },
+    {
+      "id": 1,
+      "item": "minecraft:iron_ingot",
+      "count": 1,
+      "label": "赠礼 铁锭",
+      "text": "赠送1个铁锭（minecraft:iron_ingot）",
+      "completeText": "交付 铁锭"
+    },
+    {
+      "id": 2,
+      "item": "minecraft:bread",
+      "count": 1,
+      "label": "赠礼 面包",
+      "text": "赠送1个面包（minecraft:bread）",
+      "completeText": "交付 面包"
+    }
+  ],
+  "id": 150
+}

@@ -1,0 +1,50 @@
+
+        {
+    "Type": 2,
+    "QuestCompletion": 0,
+    "QuestCommand": "",
+    "QuestFactionPoints": {
+        "DecreaseFaction2Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFaction1Points": 100,
+        "OptionFactions2": -1,
+        "OptionFactions1": -1,
+        "DecreaseFaction1Points": 0b
+    },
+    
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "CompleterNpc": "二狗",
+    "NextQuestId": -1,
+    "CompleteText": "交付 地狱中的骨头",
+    "Text": "击杀3只下界骷髅（much_more_skeletons:nether_skeleton）",
+    "QuestMail": {
+        "Subject": "",
+        "MailQuest": -1,
+        "BeenRead": 0b,
+        "MailItems": [
+        ],
+        "Sender": "",
+        "Message": {
+        },
+        "Time": 0L,
+        "TimePast": 1775662558498L
+    },
+    "RandomReward": 0b,
+    
+       "Title": "任务 地狱中的骨头",
+    
+        "QuestDialogs": [
+            {
+                "Value": 3,
+                "Slot": "much_more_skeletons:nether_skeleton"
+            }
+        ],
+        
+    "QuestRepeat": 0,
+    "RewardExp": 0,
+    "ModRev": 18
+}
+        

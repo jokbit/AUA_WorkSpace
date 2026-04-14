@@ -1,0 +1,50 @@
+
+        {
+    "Type": 2,
+    "QuestCompletion": 0,
+    "QuestCommand": "",
+    "QuestFactionPoints": {
+        "DecreaseFaction2Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFaction1Points": 100,
+        "OptionFactions2": -1,
+        "OptionFactions1": -1,
+        "DecreaseFaction1Points": 0b
+    },
+    
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "CompleterNpc": "赵铁柱",
+    "NextQuestId": -1,
+    "CompleteText": "交付 小丑别闹了",
+    "Text": "击杀5只小丑僵尸（born_in_chaos_v1:zombie_clown）",
+    "QuestMail": {
+        "Subject": "",
+        "MailQuest": -1,
+        "BeenRead": 0b,
+        "MailItems": [
+        ],
+        "Sender": "",
+        "Message": {
+        },
+        "Time": 0L,
+        "TimePast": 1775662558498L
+    },
+    "RandomReward": 0b,
+    
+       "Title": "任务 小丑别闹了",
+    
+        "QuestDialogs": [
+            {
+                "Value": 5,
+                "Slot": "born_in_chaos_v1:zombie_clown"
+            }
+        ],
+        
+    "QuestRepeat": 0,
+    "RewardExp": 0,
+    "ModRev": 18
+}
+        

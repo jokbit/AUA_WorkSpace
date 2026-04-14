@@ -1,0 +1,144 @@
+{
+  "name": "秋月",
+  "weapon": "spartanweaponry:platinum_katana",
+  "armors": [
+    "morevanillaarmor:stone_helmet",
+    "morevanillaarmor:wood_chestplate",
+    "morevanillaarmor:bone_leggings",
+    "morevanillaarmor:coal_boots"
+  ],
+  "npcLines": [
+    "今天煮了一包泡面加了个蛋，感觉已经是人生巅峰了",
+    "下雨天不想出门，外卖点了两次，胖了三斤，我服了",
+    "早上闹钟响了三遍都没起来，迟到了半小时，扣了五十块钱",
+    "今天在地铁上站了一个小时，腿都麻了，打工人真难",
+    "午休的时候趴在桌上睡了一觉，醒来脖子疼得抬不起来",
+    "这个月的工资刚到手就没了，房租一交啥都不剩",
+    "今天加班到十点，出来的时候看到月亮还挺圆的，算了安慰自己",
+    "同事今天带了一大袋零食分了一圈，到我这就没了，尴尬"
+  ],
+  "texture": "customnpcs:textures/entity/humanfemale/tribegirl.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理骷髅鞭打者",
+          "text": "骷髅鞭打者这玩意儿太凶了，鞭子抽人贼疼！今天煮了一包泡面加了个蛋，感觉已经是人生巅峰了，但是这些骷髅鞭打者来烦我。你帮我干掉3只，让我清静清静！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅蜘蛛",
+          "text": "骷髅蜘蛛这玩意儿太恶心了，骨头架子还能爬墙！下雨天不想出门，外卖点了两次，胖了三斤，我心情不好，这些骷髅蜘蛛还来烦我。你帮我收拾4只，我请你喝奶茶！",
+          "taskId": 1
+        },
+        {
+          "label": "收集线",
+          "text": "线这玩意儿我需要24根，做弓用！早上闹钟响了三遍都没起来，迟到了半小时，扣了五十块钱，我心情不好，没空去找线。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化狼",
+          "text": "丧尸狼这玩意儿太凶了！今天在地铁上站了一个小时，腿都麻了，打工人真难，这些丧尸狼还来烦我。你帮我干掉5只，让我清静清静！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "线",
+          "text": "线这玩意儿我需要，做弓用！午休的时候趴在桌上睡了一觉，醒来脖子疼得抬不起来，我心情不好，没空去找线。你要是能送我一�，我请你喝奶茶！",
+          "giftId": 0
+        },
+        {
+          "label": "红石剑",
+          "text": "红石剑这玩意儿我想要一把，砍人贼快！这个月的工资刚到手就没了，房租一交啥都不剩，我没钱买好武器。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "香蕉",
+          "text": "香蕉这玩意儿我馋好久了，好吃得很！今天加班到十点，出来的时候看到月亮还挺圆的，算了安慰自己，我想吃点香蕉安慰一下自己。你要是能送我一个，我请你喝奶茶！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 0,
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理骷髅鞭打者",
+      "text": "击杀3只骷髅鞭打者（born_in_chaos_v1:skeleton_thrasher）",
+      "completeText": "交付 清理骷髅鞭打者",
+      "mob": "born_in_chaos_v1:skeleton_thrasher"
+    },
+    {
+      "id": 1,
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败骷髅蜘蛛",
+      "text": "击杀4只骷髅蜘蛛（much_more_skeletons:skeleton_spider）",
+      "completeText": "交付 击败骷髅蜘蛛",
+      "mob": "much_more_skeletons:skeleton_spider"
+    },
+    {
+      "id": 2,
+      "type": 0,
+      "item": "minecraft:string",
+      "count": 24,
+      "label": "任务 收集线",
+      "text": "收集24根线（minecraft:string）",
+      "completeText": "交付 收集线"
+    },
+    {
+      "id": 3,
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化狼",
+      "text": "击杀5只丧尸化的狼（angry_animals:angry_wolf）",
+      "completeText": "交付 消灭丧尸化狼",
+      "mob": "angry_animals:angry_wolf"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:string",
+      "count": 1,
+      "label": "赠礼 线",
+      "text": "赠送1根线（minecraft:string）",
+      "completeText": "交付 线"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:redstone_sword",
+      "count": 1,
+      "label": "赠礼 红石剑",
+      "text": "赠送1把红石剑（morevanillatools:redstone_sword）",
+      "completeText": "交付 红石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:banana",
+      "count": 1,
+      "label": "赠礼 香蕉",
+      "text": "赠送1个香蕉（simplefarming:banana）",
+      "completeText": "交付 香蕉"
+    }
+  ],
+  "id": 130
+}

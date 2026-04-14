@@ -1,0 +1,144 @@
+{
+  "name": "柳花墙",
+  "weapon": "spartanweaponry:silver_quarterstaff",
+  "armors": [
+    "minecraft:diamond_helmet",
+    "minecraft:netherite_chestplate",
+    "minecraft:chainmail_leggings",
+    "minecraft:iron_boots"
+  ],
+  "npcLines": [
+    "跟我柳花墙拼你有这个实力吗",
+    "你这武器是金子做的吗",
+    "哥们你有吸铁石吗",
+    "年轻人不狂能叫年轻人嘛",
+    "是龙你盘着，是虎你卧着",
+    "跟着我有吃有喝，天天嗦方便面",
+    "我猎枪哪去了",
+    "能搞条枪来吗"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/steve.png",
+  "dialogs": [
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "请教"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "播种的希望",
+          "text": "跟我柳花墙拼你有这个实力吗？小麦种子这玩意儿我需要16个，种地用。你帮我弄点来呗？",
+          "taskId": 0
+        },
+        {
+          "label": "橙色的收获",
+          "text": "你这武器是金子做的吗？胡萝卜这玩意儿我需要8个，喂猪用。你帮我弄点来呗？",
+          "taskId": 1
+        },
+        {
+          "label": "夜晚的安宁",
+          "text": "哥们你有吸铁石吗？僵尸这玩意儿太烦了，天天晚上出来晃悠。你帮我干掉3只，年轻人不狂能叫年轻人嘛！",
+          "taskId": 2
+        },
+        {
+          "label": "农具的修理",
+          "text": "木棍这玩意儿我需要12个，做工具用。是龙你盘着，是虎你卧着！你帮我弄点来呗？",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "跟我柳花墙拼你有这个实力吗？有点事儿想麻烦你，帮完跟着我有吃有喝，天天嗦方便面！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "向日葵",
+          "text": "向日葵这玩意儿我需要，装饰用！是龙你盘着，是虎你卧着，但是没向日葵真的很不爽。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "铁斧",
+          "text": "铁斧这玩意儿我想要一把，砍树贼快！你这武器是金子做的吗？我的武器太烂了，需要把好斧头。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "意大利面",
+          "text": "意大利面这玩意儿我馋好久了，好吃得很！跟着我有吃有喝，天天嗦方便面，但是方便面吃腻了，想换个口味。你要是能送我一份，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 0,
+      "item": "minecraft:wheat_seeds",
+      "count": 16,
+      "label": "任务 播种的希望",
+      "text": "收集16个小麦种子（minecraft:wheat_seeds）",
+      "completeText": "交付 播种的希望",
+      "id": 0
+    },
+    {
+      "type": 0,
+      "item": "minecraft:carrot",
+      "count": 8,
+      "label": "任务 橙色的收获",
+      "text": "收集8个胡萝卜（minecraft:carrot）",
+      "completeText": "交付 橙色的收获",
+      "id": 1
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 夜晚的安宁",
+      "text": "击杀3只僵尸（minecraft:zombie）",
+      "completeText": "交付 夜晚的安宁",
+      "id": 2,
+      "mob": "minecraft:zombie"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:stick",
+      "count": 12,
+      "label": "任务 农具的修理",
+      "text": "收集12个木棍（minecraft:stick）",
+      "completeText": "交付 农具的修理",
+      "id": 3
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:sunflower",
+      "count": 1,
+      "label": "赠礼 向日葵",
+      "text": "赠送1个向日葵（minecraft:sunflower）",
+      "completeText": "交付 向日葵"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:iron_axe",
+      "count": 1,
+      "label": "赠礼 铁斧",
+      "text": "赠送1把铁斧（morevanillatools:iron_axe）",
+      "completeText": "交付 铁斧"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:spaghetti",
+      "count": 1,
+      "label": "赠礼 意大利面",
+      "text": "赠送1份意大利面（simplefarming:spaghetti）",
+      "completeText": "交付 意大利面"
+    }
+  ],
+  "id": 118
+}

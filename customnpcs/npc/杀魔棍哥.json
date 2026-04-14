@@ -1,0 +1,144 @@
+{
+  "name": "杀魔棍哥",
+  "weapon": "zombie_extreme:stun_stick",
+  "armors": [
+    "morevanillaarmor:fiery_helmet",
+    "morevanillaarmor:glowstone_chestplate",
+    "morevanillaarmor:lapis_leggings",
+    "morevanillaarmor:nether_boots"
+  ],
+  "npcLines": [
+    "你白银觉得是我的锅，那就是我的锅，因为白银说的话，就好像癌症晚期说的话一样",
+    "我不是退役，只是没人要",
+    "我点了两个韭菜盒子，你少送了一个，那我缺的营养这一块谁给我补呢",
+    "Gogoing像座山一样，非常稳，仅次于我",
+    "他更强一点，他太稳健了，和平补刀吧还是，我们五五开好不好",
+    "我希望WE出一个兮夜被秀TOP10",
+    "这把已经寄了",
+    "Faker人称小otto"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/mercenarysteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "变异的威胁",
+          "text": "变异僵尸这玩意儿太强了，我一个人搞不定！我不是退役，只是没人要，打这些玩意儿太费劲了。你帮我干掉3只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "地狱的骷髅",
+          "text": "地狱骷髅这玩意儿太凶了，射箭还贼准！我上次遇到它们，差点被打死，这把已经寄了。你帮我收拾4只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "烈焰的骨头",
+          "text": "烈焰骨这玩意儿我需要8个，你帮我弄点来呗？我点了两个韭菜盒子，你少送了一个，那我缺的营养这一块谁给我补呢？",
+          "taskId": 2
+        },
+        {
+          "label": "深渊的溺尸",
+          "text": "深渊溺尸这玩意儿太凶了，在水里到处游！Gogoing像座山一样，非常稳，仅次于我，但是打这些溺尸还是有点费劲。你帮我干掉5只，我好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "钻石",
+          "text": "钻石这玩意儿我需要，做装备用。你白银觉得是我的锅，那就是我的锅，但是没钻石真的不是我的锅。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "绿宝石剑",
+          "text": "绿宝石剑这玩意儿我想要一把，砍人贼快。我希望WE出一个兮夜被秀TOP10，但是先给我来把剑。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "牛肉咖喱",
+          "text": "牛肉咖喱这玩意儿我馋好久了，好吃得很。他更强一点，他太稳健了，和平补刀吧还是，我们五五开好不好，但是先给我来份咖喱。你要是能送我一份，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 变异的威胁",
+      "text": "击杀3只变异僵尸（mutantszombies:mutant_brute）",
+      "completeText": "交付 变异的威胁",
+      "id": 0,
+      "mob": "mutantszombies:mutant_brute"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 地狱的骷髅",
+      "text": "击杀4只地狱骷髅（much_more_skeletons:nether_skeleton）",
+      "completeText": "交付 地狱的骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:nether_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "tconstruct:blazing_bone",
+      "count": 8,
+      "label": "任务 烈焰的骨头",
+      "text": "收集8个烈焰骨（tconstruct:blazing_bone）",
+      "completeText": "交付 烈焰的骨头",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 深渊的溺尸",
+      "text": "击杀5只深渊溺尸（specialmobs:abyssaldrowned）",
+      "completeText": "交付 深渊的溺尸",
+      "id": 3,
+      "mob": "specialmobs:abyssaldrowned"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:diamond",
+      "count": 1,
+      "label": "赠礼 钻石",
+      "text": "赠送1个钻石（minecraft:diamond）",
+      "completeText": "交付 钻石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:emerald_sword",
+      "count": 1,
+      "label": "赠礼 绿宝石剑",
+      "text": "赠送1把绿宝石剑（morevanillatools:emerald_sword）",
+      "completeText": "交付 绿宝石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:beef_curry",
+      "count": 1,
+      "label": "赠礼 牛肉咖喱",
+      "text": "赠送1份牛肉咖喱（simplefarming:beef_curry）",
+      "completeText": "交付 牛肉咖喱"
+    }
+  ],
+  "id": 115
+}

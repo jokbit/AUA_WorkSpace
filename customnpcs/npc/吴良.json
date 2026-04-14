@@ -1,0 +1,144 @@
+{
+  "name": "吴良",
+  "weapon": "spartanweaponry:invar_flanged_mace",
+  "armors": [
+    "morevanillaarmor:ender_helmet",
+    "morevanillaarmor:fiery_chestplate",
+    "morevanillaarmor:obsidian_leggings",
+    "morevanillaarmor:emerald_boots"
+  ],
+  "npcLines": [
+    "这整合包没有凋灵，少了挑战",
+    "打龙要准备半天，还打不过",
+    "末地船找不到，鞘翅拿不到",
+    "潜影贝teleport，直接被传送",
+    "末影螨烦人，到处爬",
+    "守卫者激光，打甲掉得快",
+    "远古守卫者，挖方块挖不动",
+    "溺尸在水里追，根本跑不掉"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/prisonersteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "速度的威胁",
+          "text": "快速僵尸这玩意儿跑得太快了，根本跑不过它！我上次在末地遇到潜影贝，直接被传送走了，找都找不到。你帮我干掉4只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "岩浆中的骨头",
+          "text": "岩浆骷髅这玩意儿太离谱了，在岩浆里还能射箭！我上次打龙准备半天，还打不过，白费功夫。你帮我收拾3只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "面包的原料",
+          "text": "小麦这玩意儿我需要16个，做面包用。我上次去海底遗迹，结果守卫者激光打甲掉得快，差点被淹死。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "农场的喧闹",
+          "text": "丧尸鸡这玩意儿太吵了，天天在农场里叫！我上次遇到溺尸在水里追，根本跑不掉，差点被淹死。你帮我干掉5只，让农场安静点！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "小麦",
+          "text": "小麦这玩意儿我需要，做面包用。我上次去末地船找鞘翅，结果找不到，白跑一趟。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "石英剑",
+          "text": "石英剑这玩意儿我想要一把，砍人贼快。这整合包没有凋灵，少了挑战，但我还是想要把好剑。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "玉米",
+          "text": "玉米这玩意儿我馋好久了，好吃得很。我上次遇到末影螨，到处爬，烦死了。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 速度的威胁",
+      "text": "击杀4只快速僵尸（mobz:fast_zombie）",
+      "completeText": "交付 速度的威胁",
+      "id": 0,
+      "mob": "mobz:fast_zombie"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 岩浆中的骨头",
+      "text": "击杀3只岩浆骷髅（much_more_skeletons:lava_skeleton）",
+      "completeText": "交付 岩浆中的骨头",
+      "id": 1,
+      "mob": "much_more_skeletons:lava_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:wheat",
+      "count": 16,
+      "label": "任务 面包的原料",
+      "text": "收集16个小麦（minecraft:wheat）",
+      "completeText": "交付 面包的原料",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 农场的喧闹",
+      "text": "击杀5只丧尸鸡（angry_animals:angry_chicken）",
+      "completeText": "交付 农场的喧闹",
+      "id": 3,
+      "mob": "angry_animals:angry_chicken"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:wheat",
+      "count": 1,
+      "label": "赠礼 小麦",
+      "text": "赠送1个小麦（minecraft:wheat）",
+      "completeText": "交付 小麦"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:quartz_sword",
+      "count": 1,
+      "label": "赠礼 石英剑",
+      "text": "赠送1把石英剑（morevanillatools:quartz_sword）",
+      "completeText": "交付 石英剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:corn",
+      "count": 1,
+      "label": "赠礼 玉米",
+      "text": "赠送1个玉米（simplefarming:corn）",
+      "completeText": "交付 玉米"
+    }
+  ],
+  "id": 106
+}

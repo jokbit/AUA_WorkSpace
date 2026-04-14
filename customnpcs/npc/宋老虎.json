@@ -1,0 +1,144 @@
+{
+  "name": "宋老虎",
+  "weapon": "minecraft:stone_shovel",
+  "armors": [
+    "morevanillaarmor:redstone_helmet",
+    "morevanillaarmor:slime_chestplate",
+    "morevanillaarmor:stone_leggings",
+    "morevanillaarmor:wood_boots"
+  ],
+  "npcLines": [
+    "都给我听好了，我叫宋老虎",
+    "我弟弟振涛呢",
+    "我宋老虎为人实在，挨五枪都不说话，就怕被听出来保定口音",
+    "年轻人不要太气盛",
+    "痛快，我就喜欢你这脾气",
+    "两千块钱不要了",
+    "柳花墙呢，别让我碰见他",
+    "这小子背的他吗什么包"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/villagersteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "河边的威胁",
+          "text": "溺尸这玩意儿太烦了，天天在河边晃悠！我弟弟振涛呢？他上次去河边差点被溺尸抓走。你帮我干掉4只，我记着你的好！",
+          "taskId": 0
+        },
+        {
+          "label": "农场的骷髅猪",
+          "text": "骷髅猪这玩意儿太烦了，天天在农场晃悠！年轻人不要太气盛，我上次想自己收拾它们，结果被打回来了。你帮我收拾3只，痛快！",
+          "taskId": 1
+        },
+        {
+          "label": "解渴的西瓜",
+          "text": "西瓜片这玩意儿我需要16片，解渴用。我宋老虎为人实在，挨五枪都不说话，就怕被听出来保定口音，但是口渴了实在忍不住。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "山地的草泥马",
+          "text": "丧尸羊驼这玩意儿太烦了，天天在山地晃悠！柳花墙呢，别让我碰见他，他上次说羊驼是他养的，我差点信了。你帮我干掉5只，痛快！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "西瓜",
+          "text": "西瓜这玩意儿我需要，解渴用。我上次去河边找西瓜，结果差点被溺尸抓走。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "铁剑",
+          "text": "铁剑这玩意儿我想要一把，砍人贼快。我弟弟振涛呢？他说要送我一把剑，结果到现在都没送。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "葡萄",
+          "text": "葡萄这玩意儿我馋好久了，好吃得很。我上次想自己种葡萄，结果被骷髅猪拱了。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 河边的威胁",
+      "text": "击杀4只溺尸（minecraft:drowned）",
+      "completeText": "交付 河边的威胁",
+      "id": 0,
+      "mob": "minecraft:drowned"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 农场的骷髅猪",
+      "text": "击杀3只骷髅猪（much_more_skeletons:skeleton_pig）",
+      "completeText": "交付 农场的骷髅猪",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_pig"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:melon_slice",
+      "count": 16,
+      "label": "任务 解渴的西瓜",
+      "text": "收集16片西瓜片（minecraft:melon_slice）",
+      "completeText": "交付 解渴的西瓜",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 山地的草泥马",
+      "text": "击杀5只丧尸化的羊驼（angry_animals:angry_llama）",
+      "completeText": "交付 山地的草泥马",
+      "id": 3,
+      "mob": "angry_animals:angry_llama"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:melon",
+      "count": 1,
+      "label": "赠礼 西瓜",
+      "text": "赠送1个西瓜（minecraft:melon）",
+      "completeText": "交付 西瓜"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:iron_sword",
+      "count": 1,
+      "label": "赠礼 铁剑",
+      "text": "赠送1把铁剑（morevanillatools:iron_sword）",
+      "completeText": "交付 铁剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:grapes",
+      "count": 1,
+      "label": "赠礼 葡萄",
+      "text": "赠送1个葡萄（simplefarming:grapes）",
+      "completeText": "交付 葡萄"
+    }
+  ],
+  "id": 110
+}

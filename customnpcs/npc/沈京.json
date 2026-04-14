@@ -1,0 +1,144 @@
+{
+  "name": "沈京",
+  "weapon": "morevanillatools:nether_hoe",
+  "armors": [
+    "minecraft:golden_helmet",
+    "minecraft:iron_chestplate",
+    "minecraft:leather_leggings",
+    "minecraft:chainmail_boots"
+  ],
+  "npcLines": [
+    "这整合包的合成表改得乱七八糟",
+    "新更新的内容全是bug，不如不更",
+    "某些MC博主只会水视频，没干货",
+    "红石大佬的操作，我一辈子学不会",
+    "整合包任务多到做不完，摆烂了",
+    "生存模式饿肚子，找食物找疯了",
+    "建房子建一半，材料不够用",
+    "被怪追着打，躲都躲不掉"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/doctorsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理爬行僵尸",
+          "text": "爬行僵尸这玩意儿太恶心了，爬来爬去的！这整合包的合成表改得乱七八糟，我连对付它们的武器都做不出来。你帮我干掉3只，让我清静清静！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅猫",
+          "text": "骷髅猫这玩意儿太诡异了，骨头架子还能跑那么快！新更新的内容全是bug，不如不更，这些骷髅猫就是bug的产物。你帮我收拾4只，我请你吃饭！",
+          "taskId": 1
+        },
+        {
+          "label": "收集皮革",
+          "text": "皮革这玩意儿我需要16块，做装备用。某些MC博主只会水视频，没干货，我看了半天教程还是不会弄皮革。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化蜜蜂",
+          "text": "丧尸蜜蜂这玩意儿太烦了，到处嗡嗡叫！红石大佬的操作，我一辈子学不会，连个简单的陷阱都做不出来对付它们。你帮我干掉5只，让我清静清静！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "海龟壳",
+          "text": "海龟壳这玩意儿我需要，做头盔用！整合包任务多到做不完，摆烂了，但是海龟壳还是需要的。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "海晶剑",
+          "text": "海晶剑这玩意儿我想要一把，砍人贼快！生存模式饿肚子，找食物找疯了，根本没力气去打海晶。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "巧克力蛋糕",
+          "text": "巧克力蛋糕这玩意儿我馋好久了，好吃得很！建房子建一半，材料不够用，心情不好，想吃点甜的安慰一下自己。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理爬行僵尸",
+      "text": "击杀3只爬行僵尸（mutantszombies:crawler）",
+      "completeText": "交付 清理爬行僵尸",
+      "id": 0,
+      "mob": "mutantszombies:crawler"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败骷髅猫",
+      "text": "击杀4只骷髅猫（much_more_skeletons:skeleton_cat）",
+      "completeText": "交付 击败骷髅猫",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_cat"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:leather",
+      "count": 16,
+      "label": "任务 收集皮革",
+      "text": "收集16块皮革（minecraft:leather）",
+      "completeText": "交付 收集皮革",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化蜜蜂",
+      "text": "击杀5只丧尸化的蜜蜂（angry_animals:angry_bee）",
+      "completeText": "交付 消灭丧尸化蜜蜂",
+      "id": 3,
+      "mob": "angry_animals:angry_bee"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:scute",
+      "count": 1,
+      "label": "赠礼 海龟壳",
+      "text": "赠送1个海龟壳（minecraft:scute）",
+      "completeText": "交付 海龟壳"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:prismarine_sword",
+      "count": 1,
+      "label": "赠礼 海晶剑",
+      "text": "赠送1把海晶剑（morevanillatools:prismarine_sword）",
+      "completeText": "交付 海晶剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:chocolate_cake",
+      "count": 1,
+      "label": "赠礼 巧克力蛋糕",
+      "text": "赠送1个巧克力蛋糕（simplefarming:chocolate_cake）",
+      "completeText": "交付 巧克力蛋糕"
+    }
+  ],
+  "id": 120
+}

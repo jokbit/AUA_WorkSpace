@@ -1,0 +1,144 @@
+{
+  "name": "牢大",
+  "weapon": "spartanweaponry:nickel_saber",
+  "armors": [
+    "morevanillaarmor:ender_helmet",
+    "morevanillaarmor:fiery_chestplate",
+    "morevanillaarmor:glowstone_leggings",
+    "morevanillaarmor:lapis_boots"
+  ],
+  "npcLines": [
+    "Mamba out",
+    "你见过凌晨四点的洛杉矶吗",
+    "总得有人赢，为什么不是我",
+    "爱我或者恨我，两者必有其一",
+    "获得冠军只是副产品，重要的是成为更好的自己",
+    "如果你害怕失败，那你就会失败",
+    "24，意味着24小时全力以赴",
+    "我宁愿10投0中，也不愿意9投9中"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/guardsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理毁灭者",
+          "text": "这些毁灭者太强了，没人愿意跟它们硬刚。但我们总得有人站出来，为什么不是你？帮我干掉3只，拿出你的曼巴精神来！",
+          "taskId": 0
+        },
+        {
+          "label": "击败沼泽骷髅",
+          "text": "凌晨四点的沼泽我见过，那时候沼泽骷髅最活跃，射箭特别准。不过别害怕，如果你害怕失败，那你就已经失败了。帮我收拾4只，24小时全力以赴！",
+          "taskId": 1
+        },
+        {
+          "label": "收集线",
+          "text": "我现在需要12根线做弓。获得冠军只是副产品，重要的是成为更好的自己。但这些线不好找，你要是能帮我收集，我肯定好好谢谢你。",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化山羊",
+          "text": "丧尸山羊太凶了，我宁愿跟10只普通僵尸打，也不愿意跟5只丧尸山羊硬刚。不过总有人要赢，为什么不能是你？帮我干掉5只，我记你一辈子！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "总得有人站出来，为什么不是你？帮完我肯定好好谢谢你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "钻石",
+          "text": "钻石这东西我做装备需要。爱我或者恨我，两者必有其一，不过你要是能送我一个，我肯定会爱你的！",
+          "giftId": 0
+        },
+        {
+          "label": "钻石剑",
+          "text": "钻石剑我盯着好久了，砍人特别带劲。你要是能送我一把，我肯定好好谢谢你！",
+          "giftId": 1
+        },
+        {
+          "label": "牛肉咖喱",
+          "text": "想吃牛肉咖喱了，这玩意儿吃完特别有劲儿，能让我再练8小时。你要是能送我一份，我记你一辈子！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "有几样东西我需要，你要是能送我，我肯定好好谢谢你！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理毁灭者",
+      "text": "击杀3只毁灭者（apocalypse:destroyer）",
+      "completeText": "交付 清理毁灭者",
+      "id": 0,
+      "mob": "apocalypse:destroyer"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败沼泽骷髅",
+      "text": "击杀4只沼泽骷髅（much_more_skeletons:swamp_skeleton）",
+      "completeText": "交付 击败沼泽骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:swamp_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:string",
+      "count": 12,
+      "label": "任务 收集线",
+      "text": "收集12根线（minecraft:string）",
+      "completeText": "交付 收集线",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化山羊",
+      "text": "击杀5只丧尸化的山羊（angry_animals:angry_goat）",
+      "completeText": "交付 消灭丧尸化山羊",
+      "id": 3,
+      "mob": "angry_animals:angry_goat"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:diamond",
+      "count": 1,
+      "label": "赠礼 钻石",
+      "text": "赠送1个钻石（minecraft:diamond）",
+      "completeText": "交付 钻石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:diamond_sword",
+      "count": 1,
+      "label": "赠礼 钻石剑",
+      "text": "赠送1把钻石剑（morevanillatools:diamond_sword）",
+      "completeText": "交付 钻石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:beef_curry",
+      "count": 1,
+      "label": "赠礼 牛肉咖喱",
+      "text": "赠送1份牛肉咖喱（simplefarming:beef_curry）",
+      "completeText": "交付 牛肉咖喱"
+    }
+  ],
+  "id": 121
+}

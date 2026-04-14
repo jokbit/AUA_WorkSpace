@@ -1,0 +1,144 @@
+{
+  "name": "庞光",
+  "weapon": "mob_breaker:golden_hammer",
+  "armors": [
+    "morevanillaarmor:coal_helmet",
+    "morevanillaarmor:emerald_chestplate",
+    "morevanillaarmor:ender_leggings",
+    "morevanillaarmor:fiery_boots"
+  ],
+  "npcLines": [
+    "联机被队友坑，物资全被拿",
+    "玩MC不睡觉，刷怪刷到吐",
+    "三角洲跑刀，裤裆塞不下服务器",
+    "DNF强化碎装备，直接退游",
+    "LOL排位连跪，匹配机制纯恶心人",
+    "兄弟，你血量还剩多少，别浪",
+    "这整合包的食物回复饥饿值太低",
+    "挖矿遇到洞穴蜘蛛，毒到崩溃"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/firesteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "黑暗的蛮兵",
+          "text": "僵尸蛮兵这玩意儿太猛了！我上次联机被队友坑，物资全被拿，结果还遇到这些蛮兵，差点被打死。你帮我干掉3只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "村庄的骷髅",
+          "text": "骷髅村民这玩意儿太阴了，射箭贼准！我上次玩MC不睡觉，刷怪刷到吐，结果还遇到这些骷髅村民，烦死了。你帮我收拾4只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "粘性的材料",
+          "text": "粘液球这玩意儿我需要12个，做粘性活塞用。我上次挖矿遇到洞穴蜘蛛，毒到崩溃，根本没心思去弄这个。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "森林的狡猾狐",
+          "text": "丧尸狐狸这玩意儿太狡猾了，到处跑！我上次LOL排位连跪，匹配机制纯恶心人，心情不好，不想去追这些狐狸。你帮我干掉5只，我好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "萤石粉",
+          "text": "萤石粉这玩意儿我需要，做灯用。我上次三角洲跑刀，裤裆塞不下服务器，结果被队友骂了，心情不好。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "钻石斧",
+          "text": "钻石斧这玩意儿我想要一把，砍树贼快。我上次DNF强化碎装备，直接退游了，现在玩MC想砍树发泄一下。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "汉堡",
+          "text": "汉堡这玩意儿我馋好久了，好吃得很。这整合包的食物回复饥饿值太低了，我饿死了。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 黑暗的蛮兵",
+      "text": "击杀3只僵尸蛮兵（mutantszombies:zombie_brute）",
+      "completeText": "交付 黑暗的蛮兵",
+      "id": 0,
+      "mob": "mutantszombies:zombie_brute"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 村庄的骷髅",
+      "text": "击杀4只骷髅村民（much_more_skeletons:skeleton_villager）",
+      "completeText": "交付 村庄的骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_villager"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:slime_ball",
+      "count": 12,
+      "label": "任务 粘性的材料",
+      "text": "收集12个粘液球（minecraft:slime_ball）",
+      "completeText": "交付 粘性的材料",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 森林的狡猾狐",
+      "text": "击杀5只丧尸化的狐狸（angry_animals:angry_fox）",
+      "completeText": "交付 森林的狡猾狐",
+      "id": 3,
+      "mob": "angry_animals:angry_fox"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:glowstone_dust",
+      "count": 1,
+      "label": "赠礼 萤石粉",
+      "text": "赠送1个萤石粉（minecraft:glowstone_dust）",
+      "completeText": "交付 萤石粉"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:diamond_axe",
+      "count": 1,
+      "label": "赠礼 钻石斧",
+      "text": "赠送1把钻石斧（morevanillatools:diamond_axe）",
+      "completeText": "交付 钻石斧"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:hamburger",
+      "count": 1,
+      "label": "赠礼 汉堡",
+      "text": "赠送1个汉堡（simplefarming:hamburger）",
+      "completeText": "交付 汉堡"
+    }
+  ],
+  "id": 112
+}

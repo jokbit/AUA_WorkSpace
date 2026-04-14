@@ -1,0 +1,144 @@
+{
+  "name": "甄德耀",
+  "weapon": "morevanillatools:paper_axe",
+  "armors": [
+    "minecraft:iron_helmet",
+    "minecraft:golden_chestplate",
+    "minecraft:diamond_leggings",
+    "minecraft:leather_boots"
+  ],
+  "npcLines": [
+    "烧水只敢99度，怕家里同时出现俩废物",
+    "别问，问就是膝关节手术贼成熟",
+    "我会jvav，不信你考我MC指令",
+    "爬行者很好打？上前一步直接炸飞",
+    "云玩家说HIM是官方角色，笑晕",
+    "度日如年=每天过得像过年一样缺钱",
+    "猫半夜在脸上蹦迪，想扔又舍不得",
+    "汤圆煮裂开，直接吐黑水，裂开了"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/casualsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理尸壳",
+          "text": "沙漠里的尸壳越来越多了，烦得要死。你别问我为什么不自己上，问就是...算了，说多了都是泪。你帮我干掉4只，我请你喝奶茶！",
+          "taskId": 0
+        },
+        {
+          "label": "击败流浪者",
+          "text": "流浪者射箭特别准，我上次差点被射死。这些玩意儿一个比一个危险，我试了好几次都被打回来了。你帮我收拾3只，我请你吃顿好的！",
+          "taskId": 1
+        },
+        {
+          "label": "收集火药",
+          "text": "我需要12个火药做TNT，这玩意儿不好弄啊。我试了好几次去刷爬行者，结果都被炸飞了。你要是能帮我弄点火药，回头我请你吃汤圆！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化牛",
+          "text": "丧尸牛太凶了，我差点被顶死。我试了好几次都被打回来了，太丢人了。你帮我干掉5只，我好好谢谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "说真的，最近有点烦，有几个事儿想麻烦你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "铜锭",
+          "text": "铜锭这东西我做装备需要，别问我为什么用纸斧和史莱姆锄，这是个秘密。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "金剑",
+          "text": "金剑我盯着好久了，虽然脆，但攻速快。我试了好几次去挖金矿，结果都被怪追着跑。你要是能送我一把金剑，我肯定好好谢你！",
+          "giftId": 1
+        },
+        {
+          "label": "草莓",
+          "text": "想吃草莓了，最近运气不太好，想吃点甜的安慰一下自己。你要是能送我一个，我请你吃汤圆！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "有几样东西我需要，你要是能送我就太好了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 清理尸壳",
+      "text": "击杀4只尸壳（minecraft:husk）",
+      "completeText": "交付 清理尸壳",
+      "id": 0,
+      "mob": "minecraft:husk"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败流浪者",
+      "text": "击杀3只流浪者（minecraft:stray）",
+      "completeText": "交付 击败流浪者",
+      "id": 1,
+      "mob": "minecraft:stray"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:gunpowder",
+      "count": 12,
+      "label": "任务 收集火药",
+      "text": "收集12个火药（minecraft:gunpowder）",
+      "completeText": "交付 收集火药",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化牛",
+      "text": "击杀5只丧尸化的牛（angry_animals:angry_cow）",
+      "completeText": "交付 消灭丧尸化牛",
+      "id": 3,
+      "mob": "angry_animals:angry_cow"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:copper_ingot",
+      "count": 1,
+      "label": "赠礼 铜锭",
+      "text": "赠送1个铜锭（minecraft:copper_ingot）",
+      "completeText": "交付 铜锭"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:gold_sword",
+      "count": 1,
+      "label": "赠礼 金剑",
+      "text": "赠送1把金剑（morevanillatools:gold_sword）",
+      "completeText": "交付 金剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:strawberries",
+      "count": 1,
+      "label": "赠礼 草莓",
+      "text": "赠送1个草莓（simplefarming:strawberries）",
+      "completeText": "交付 草莓"
+    }
+  ],
+  "id": 126
+}

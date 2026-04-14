@@ -1,0 +1,144 @@
+{
+  "name": "马老师",
+  "weapon": "spartanweaponry:wooden_spear",
+  "armors": [
+    "morevanillaarmor:stone_helmet",
+    "morevanillaarmor:wood_chestplate",
+    "morevanillaarmor:bone_leggings",
+    "morevanillaarmor:coal_boots"
+  ],
+  "npcLines": [
+    "年轻人不讲武德",
+    "耗子尾汁",
+    "我大意了啊，没有闪",
+    "很快啊！",
+    "传统功夫讲究的是点到为止",
+    "他突然袭击，左刺拳，过来打我脸",
+    "这两个年轻人不讲武德，来骗！来偷袭！",
+    "我六十九岁的老同志，这好吗？这不好！"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/kungfusteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理爬行者",
+          "text": "哎，我六十九岁的老同志，那天我在家练功，突然来了个爬行者，砰的一声！房子都炸没了。这好吗？这不好！这帮家伙不讲武德，来骗！来偷袭！你帮我收拾3只，我教你两招传统功夫！",
+          "taskId": 0
+        },
+        {
+          "label": "击败流浪者",
+          "text": "流浪者这帮家伙太阴了！射箭特别快，我都没反应过来。很快啊！左刺拳，右鞭腿，我大意了啊，没有闪！差点就被射中了。你帮我干掉4只，记住要讲武德！",
+          "taskId": 1
+        },
+        {
+          "label": "收集火药",
+          "text": "传统功夫讲究点到为止，但是我这正研究新配方呢，需要10个火药。年轻人，你要是能帮我找找，我肯定好好教你！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化牛",
+          "text": "丧尸牛这玩意儿太猛了！那天我在草原上练功，突然冲过来一头，我大意了啊，没有闪！差点被顶飞。你帮我收拾5只，耗子尾汁！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "年轻人，有点事儿想麻烦你，帮完我教你两招！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "铁锭",
+          "text": "年轻人，我看上铁锭了，这玩意儿做装备贼好用。你要是能送我一个，我教你传统功夫的点到为止！",
+          "giftId": 0
+        },
+        {
+          "label": "煤炭",
+          "text": "煤炭这玩意儿我需要，烧东西用。年轻人，你要是能送我一个，我肯定好好教你！",
+          "giftId": 1
+        },
+        {
+          "label": "面包",
+          "text": "哎，练功练饿了，想吃个面包。年轻人，你要是能送我一个，我教你两招！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "年轻人，有几样东西我需要，你要是能送我，我教你功夫！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理爬行者",
+      "text": "击杀3只爬行者（minecraft:creeper）",
+      "completeText": "交付 清理爬行者",
+      "id": 0,
+      "mob": "minecraft:creeper"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败流浪者",
+      "text": "击杀4只流浪者（minecraft:stray）",
+      "completeText": "交付 击败流浪者",
+      "id": 1,
+      "mob": "minecraft:stray"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:gunpowder",
+      "count": 10,
+      "label": "任务 收集火药",
+      "text": "收集10个火药（minecraft:gunpowder）",
+      "completeText": "交付 收集火药",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化牛",
+      "text": "击杀5只丧尸化的牛（angry_animals:angry_cow）",
+      "completeText": "交付 消灭丧尸化牛",
+      "id": 3,
+      "mob": "angry_animals:angry_cow"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:iron_ingot",
+      "count": 1,
+      "label": "赠礼 铁锭",
+      "text": "赠送1个铁锭（minecraft:iron_ingot）",
+      "completeText": "交付 铁锭"
+    },
+    {
+      "id": 1,
+      "item": "minecraft:coal",
+      "count": 1,
+      "label": "赠礼 煤炭",
+      "text": "赠送1个煤炭（minecraft:coal）",
+      "completeText": "交付 煤炭"
+    },
+    {
+      "id": 2,
+      "item": "minecraft:bread",
+      "count": 1,
+      "label": "赠礼 面包",
+      "text": "赠送1个面包（minecraft:bread）",
+      "completeText": "交付 面包"
+    }
+  ],
+  "id": 151
+}

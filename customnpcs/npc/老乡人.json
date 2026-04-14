@@ -1,0 +1,144 @@
+{
+  "name": "老乡人",
+  "weapon": "spartanweaponry:netherite_halberd",
+  "armors": [
+    "morevanillaarmor:paper_helmet",
+    "morevanillaarmor:prismarine_chestplate",
+    "morevanillaarmor:quartz_leggings",
+    "morevanillaarmor:redstone_boots"
+  ],
+  "npcLines": [
+    "and you,my friend, you are true hero",
+    "我是真正的英雄",
+    "你们需要我，你们需要我来拯救你们",
+    "想喝奶了",
+    "如果他们能控制我，那么他们也能控制你",
+    "没有上帝，天上飞的，只有我",
+    "我他吗想干嘛就干嘛！",
+    "正义不是盲目的，正义就是Homelander"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/white_knight.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理搜寻者",
+          "text": "搜寻者这玩意儿太烦了，到处找人！我受够了道歉，我受够了因为我的力量而被指责，这些搜寻者还来烦我。你帮我干掉3只，And you, my friend, you are true hero！",
+          "taskId": 0
+        },
+        {
+          "label": "击败地狱骷髅",
+          "text": "地狱骷髅这玩意儿太嚣张了，在地狱里到处射箭！没有上帝，天上飞的，只有我，但是这些骷髅太烦了。你帮我收拾4只，我就能拯救你们！",
+          "taskId": 1
+        },
+        {
+          "label": "收集恶魂之泪",
+          "text": "恶魂之泪这玩意儿我需要6个，做药水用！如果他们能控制我，那么他们也能控制你，所以我需要药水来增强力量。你帮我弄点来，我就能想干嘛就干嘛！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化蜜蜂",
+          "text": "丧尸蜜蜂这玩意儿太烦了，到处蜇人！正义不是盲目的，正义就是Homelander，但是这些蜜蜂太烦了。你帮我干掉5只，我就能拯救你们！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "下界之星",
+          "text": "下界之星这玩意儿我需要，做信标用！我是真正的英雄，我需要信标来增强力量。你要是能送我一个，我就能想干嘛就干嘛！",
+          "giftId": 0
+        },
+        {
+          "label": "下界剑",
+          "text": "下界剑这玩意儿我想要一把，砍人贼快！你们需要我，你们需要我来拯救你们，但是我也需要好武器。你要是能送我一把，我就能拯救你们！",
+          "giftId": 1
+        },
+        {
+          "label": "牛肉咖喱",
+          "text": "牛肉咖喱这玩意儿我馋好久了，好吃得很！我他妈想干嘛就干嘛，但是我也想吃点好吃的。你要是能送我一份，我就能想干嘛就干嘛！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理搜寻者",
+      "text": "击杀3只搜寻者（apocalypse:seeker）",
+      "completeText": "交付 清理搜寻者",
+      "id": 0,
+      "mob": "apocalypse:seeker"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败地狱骷髅",
+      "text": "击杀4只地狱骷髅（much_more_skeletons:hell_skeleton）",
+      "completeText": "交付 击败地狱骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:hell_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:ghast_tear",
+      "count": 6,
+      "label": "任务 收集恶魂之泪",
+      "text": "收集6个恶魂之泪（minecraft:ghast_tear）",
+      "completeText": "交付 收集恶魂之泪",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化蜜蜂",
+      "text": "击杀5只丧尸化的蜜蜂（angry_animals:angry_bee）",
+      "completeText": "交付 消灭丧尸化蜜蜂",
+      "id": 3,
+      "mob": "angry_animals:angry_bee"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:nether_star",
+      "count": 1,
+      "label": "赠礼 下界之星",
+      "text": "赠送1个下界之星（minecraft:nether_star）",
+      "completeText": "交付 下界之星"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:nether_sword",
+      "count": 1,
+      "label": "赠礼 下界剑",
+      "text": "赠送1把下界剑（morevanillatools:nether_sword）",
+      "completeText": "交付 下界剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:beef_curry",
+      "count": 1,
+      "label": "赠礼 牛肉咖喱",
+      "text": "赠送1份牛肉咖喱（simplefarming:beef_curry）",
+      "completeText": "交付 牛肉咖喱"
+    }
+  ],
+  "id": 134
+}

@@ -1,0 +1,144 @@
+{
+  "name": "小耄",
+  "weapon": "spartanweaponry:steel_saber",
+  "armors": [
+    "apocalypse:bucket_helm",
+    "morevanillaarmor:wood_chestplate",
+    "morevanillaarmor:wood_leggings",
+    "morevanillaarmor:wood_boots"
+  ],
+  "npcLines": [
+    "哈~",
+    "哈~~",
+    "哈~~~",
+    "哈~~~~",
+    "哈~~~~~",
+    "哈~~~~~~",
+    "哈~~~~~~~",
+    "哈~~~~~~~~"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/tribeboy.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "黑暗的爬虫",
+          "text": "爬行僵尸这玩意儿太恶心了，爬来爬去的！我上次看到它们，吓得话都说不出来，只会哈了。你帮我干掉3只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "森林的骷髅狼",
+          "text": "骷髅狼这玩意儿太凶了，骨头架子还能跑那么快！我看到它们就紧张，只会哈了。你帮我收拾4只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "猫咪的食物",
+          "text": "生鳕鱼这玩意儿我需要10条，喂猫用。我太紧张了，只会哈了，根本没心思去钓鱼。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "村庄的捣乱者",
+          "text": "丧尸猫这玩意儿太凶了！我上次看到它们，吓得只会哈了。你帮我干掉5只，我好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "生鲑鱼",
+          "text": "生鲑鱼这玩意儿我需要，喂猫用。我太紧张了，只会哈了，根本没心思去钓鱼。你要是能送我一条，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "木剑",
+          "text": "木剑这玩意儿我想要一把，砍人贼快。我看到怪物就紧张，只会哈了，根本打不过它们。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "寿司",
+          "text": "寿司这玩意儿我馋好久了，好吃得很。我太紧张了，只会哈了，根本没心思去做寿司。你要是能送我一份，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 黑暗的爬虫",
+      "text": "击杀3只爬行僵尸（mutantszombies:crawler）",
+      "completeText": "交付 黑暗的爬虫",
+      "id": 0,
+      "mob": "mutantszombies:crawler"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 森林的骷髅狼",
+      "text": "击杀4只骷髅狼（much_more_skeletons:skeleton_wolf）",
+      "completeText": "交付 森林的骷髅狼",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_wolf"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:cod",
+      "count": 10,
+      "label": "任务 猫咪的食物",
+      "text": "收集10条生鳕鱼（minecraft:cod）",
+      "completeText": "交付 猫咪的食物",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 村庄的捣乱者",
+      "text": "击杀5只丧尸化的猫（angry_animals:angry_ocelot）",
+      "completeText": "交付 村庄的捣乱者",
+      "id": 3,
+      "mob": "angry_animals:angry_ocelot"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:salmon",
+      "count": 1,
+      "label": "赠礼 生鲑鱼",
+      "text": "赠送1条生鲑鱼（minecraft:salmon）",
+      "completeText": "交付 生鲑鱼"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:wood_sword",
+      "count": 1,
+      "label": "赠礼 木剑",
+      "text": "赠送1把木剑（morevanillatools:wood_sword）",
+      "completeText": "交付 木剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:sushi",
+      "count": 1,
+      "label": "赠礼 寿司",
+      "text": "赠送1份寿司（simplefarming:sushi）",
+      "completeText": "交付 寿司"
+    }
+  ],
+  "id": 111
+}

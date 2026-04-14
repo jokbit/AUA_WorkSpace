@@ -1,0 +1,141 @@
+{
+  "name": "王大锤",
+  "weapon": "zombie_extreme:machete",
+  "armors": [
+    "morevanillaarmor:fiery_helmet",
+    "morevanillaarmor:glowstone_chestplate",
+    "morevanillaarmor:lapis_leggings",
+    "morevanillaarmor:nether_boots"
+  ],
+  "npcLines": [
+    "一锤定音，不服来战！",
+    "我这锤子敲僵尸跟敲西瓜似的！",
+    "铁匠铺的锤子哪有我的顺手",
+    "锤子要沉，力道才够劲",
+    "僵尸再多也顶不住我一锤！",
+    "你装备太轻，打怪没手感",
+    "锤子才是男人的浪漫！",
+    "我这锤子可是祖传的！"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/steve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "subTitle": "最近有点手痒，想锤点东西！有点事儿想麻烦你，帮完肯定好好谢你！",
+      "sub": [
+        {
+          "label": "清理碎骨者",
+          "text": "碎骨者这玩意儿太硬了，但是我这祖传的锤子一锤下去，它就碎了！铁匠铺的锤子哪有我的顺手。你帮我干掉4只，让我锤个痛快！",
+          "taskId": 0
+        },
+        {
+          "label": "处理丧尸化的动物",
+          "text": "丧尸猪这玩意儿太恶心了，但是我这锤子敲僵尸跟敲西瓜似的，一锤下去它就飞了！你装备太轻，打怪没手感。你帮我干掉5只，让我锤个痛快！",
+          "taskId": 1
+        },
+        {
+          "label": "对付变异僵尸",
+          "text": "变异僵尸这玩意儿太猛了，但是锤子要沉，力道才够劲，我这锤子一锤下去它就趴了！你帮我干掉3只，让我锤个痛快！",
+          "taskId": 2
+        },
+        {
+          "label": "收集铁锭材料",
+          "text": "铁锭这玩意儿我需要24个，做锤子用。锤子才是男人的浪漫！僵尸再多也顶不住我一锤！你要是能帮我弄点来，回头我请你喝酒！",
+          "taskId": 3
+        }
+      ]
+    },
+    {
+      "label": "赠礼",
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！",
+      "sub": [
+        {
+          "label": "钻石锤头",
+          "text": "钻石锤我盯着好久了，敲人特别爽。锤子才是男人的浪漫！你要是能送我一把，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "红石工具",
+          "text": "红石镐我也想要一把，挖矿特别快。我这锤子可是祖传的！你要是能送我一把，我请你喝酒！",
+          "giftId": 1
+        },
+        {
+          "label": "热带水果",
+          "text": "想吃香蕉了，一锤定音，不服来战！你要是能送我几个，我好好谢谢你！",
+          "giftId": 2
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 0,
+      "type": 2,
+      "count": 4,
+      "label": "任务 清理碎骨者",
+      "text": "击杀4只碎骨者（born_in_chaos_v1:bonescaller）",
+      "completeText": "交付 清理碎骨者"
+    },
+    {
+      "id": 1,
+      "type": 2,
+      "count": 5,
+      "label": "任务 处理丧尸化的动物",
+      "text": "击杀5只丧尸化的猪（angry_animals:angry_pig）",
+      "completeText": "交付 处理丧尸化的动物"
+    },
+    {
+      "id": 2,
+      "type": 2,
+      "count": 3,
+      "label": "任务 对付变异僵尸",
+      "text": "击杀3只变异僵尸（mutantszombies:mutant_brute）",
+      "completeText": "交付 对付变异僵尸"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:wooden_hoe",
+      "count": 24,
+      "label": "任务 收集铁锭材料",
+      "text": "收集24个铁锭（minecraft:iron_ingot）",
+      "completeText": "交付 收集铁锭材料",
+      "id": 3
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "mob_breaker:diamond_hammer",
+      "count": 1,
+      "label": "赠礼 钻石锤头",
+      "text": "赠送1把钻石锤（mob_breaker:diamond_hammer）",
+      "completeText": "交付 钻石锤头"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:redstone_pickaxe",
+      "count": 1,
+      "label": "赠礼 红石工具",
+      "text": "赠送1把红石镐（morevanillatools:redstone_pickaxe）",
+      "completeText": "交付 红石工具"
+    },
+    {
+      "id": 2,
+      "item": "spartanweaponry:electrum_warhammer",
+      "count": 5,
+      "label": "赠礼 热带水果",
+      "text": "赠送5个香蕉（simplefarming:banana）",
+      "completeText": "交付 热带水果"
+    }
+  ],
+  "id": 124
+}

@@ -1,0 +1,144 @@
+{
+  "name": "甄香",
+  "weapon": "spartanweaponry:invar_scythe",
+  "armors": [
+    "morevanillaarmor:lapis_helmet",
+    "morevanillaarmor:nether_chestplate",
+    "morevanillaarmor:obsidian_leggings",
+    "morevanillaarmor:paper_boots"
+  ],
+  "npcLines": [
+    "这整合包的光影太吃配置",
+    "材质包好看，但卡得不行",
+    "模组冲突，游戏直接崩溃",
+    "装了太多模组，启动要十分钟",
+    "卸载模组，存档直接坏了",
+    "MC更新后，旧存档用不了",
+    "某些服务器外挂满天飞，没法玩",
+    "熊孩子拆家，建的房子全没了"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/elderlysteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理腐烂变异体",
+          "text": "腐烂变异体看着恶心，但是掉的东西还挺香的。我之前说打死不碰这玩意儿，结果现在...哎，真香。你帮我干掉3只，我请你吃顿好的！",
+          "taskId": 0
+        },
+        {
+          "label": "击败丛林骷髅",
+          "text": "丛林里资源贼多，我之前说打死不进丛林，结果现在...真香。不过丛林骷髅太凶了，我试了好几次都被打回来了。你帮我收拾4只丛林骷髅，我送你点好东西！",
+          "taskId": 1
+        },
+        {
+          "label": "收集荧石粉",
+          "text": "地狱里的荧石粉做药水贼好用，我之前说地狱太危险不去，结果现在...真香。不过地狱太危险了，我试了好几次都被打回来了。你帮我弄16个，回头请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化猪",
+          "text": "丧尸猪掉的东西还挺值钱，我之前说看着恶心不碰，结果现在...真香。不过它们太凶了，我试了好几次都被追着跑。你帮我干掉5只，我肯定报答你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "说真的，最近遇到点麻烦，有几个事儿想麻烦你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "荧石粉",
+          "text": "荧石粉做药水用，我之前说不稀罕，结果现在...真香。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "石英剑",
+          "text": "石英剑砍人贼快，我之前说不好看，结果现在...真香。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "樱桃",
+          "text": "樱桃好吃得不行，我之前说不爱吃，结果现在...真香。你要是能送我一个，我肯定好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "有几样东西我需要，你要是能送我就太好了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理腐烂变异体",
+      "text": "击杀3只腐烂变异体（mutantszombies:rotten_mutant）",
+      "completeText": "交付 清理腐烂变异体",
+      "id": 0,
+      "mob": "mutantszombies:rotten_mutant"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败丛林骷髅",
+      "text": "击杀4只丛林骷髅（much_more_skeletons:jungle_skeleton）",
+      "completeText": "交付 击败丛林骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:jungle_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:glowstone_dust",
+      "count": 16,
+      "label": "任务 收集荧石粉",
+      "text": "收集16个荧石粉（minecraft:glowstone_dust）",
+      "completeText": "交付 收集荧石粉",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化猪",
+      "text": "击杀5只丧尸化的猪（angry_animals:angry_pig）",
+      "completeText": "交付 消灭丧尸化猪",
+      "id": 3,
+      "mob": "angry_animals:angry_pig"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:glowstone_dust",
+      "count": 1,
+      "label": "赠礼 荧石粉",
+      "text": "赠送1个荧石粉（minecraft:glowstone_dust）",
+      "completeText": "交付 荧石粉"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:quartz_sword",
+      "count": 1,
+      "label": "赠礼 石英剑",
+      "text": "赠送1把石英剑（morevanillatools:quartz_sword）",
+      "completeText": "交付 石英剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:cherries",
+      "count": 1,
+      "label": "赠礼 樱桃",
+      "text": "赠送1个樱桃（simplefarming:cherries）",
+      "completeText": "交付 樱桃"
+    }
+  ],
+  "id": 128
+}

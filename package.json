@@ -1,14 +1,17 @@
 {
-  "name": "MCJB",
+  "name": "00workspace",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "aua dev dir",
+  "license": "GPL-3.0-or-later",
+  "author": "jokbit",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@types/node": "^25.0.3",
-    "typescript": "^5.5.3"
-  },
-  "private": true
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
 }

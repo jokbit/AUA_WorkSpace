@@ -1,0 +1,144 @@
+{
+  "name": "大卫·戴",
+  "weapon": "spartanweaponry:nickel_quarterstaff",
+  "armors": [
+    "morevanillaarmor:bone_helmet",
+    "morevanillaarmor:quartz_chestplate",
+    "morevanillaarmor:slime_leggings",
+    "morevanillaarmor:stone_boots"
+  ],
+  "npcLines": [
+    "家人们谁懂啊，我今天吃了十桶炸鸡，还能再炫五桶",
+    "这整合包的食物系统太拉了，根本不够我吃",
+    "我跟你讲，我能把末影龙当炸鸡啃，信不？",
+    "家人们，我刚才吃了一整组牛排，现在还饿",
+    "我背包里全是食物，但是还是饿",
+    "这游戏的饱食度上限太低了，根本满足不了我",
+    "家人们，我觉得我能把整个下界的猪灵都吃了",
+    "咱们去刷怪塔吧，我要吃更多的食物"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/kingsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "收集披萨",
+          "text": "披萨这玩意儿我需要16个，我饿死了！这整合包的食物系统太拉了，根本不够我吃。我刚才吃了一整组牛排，现在还饿！你帮我弄点来呗？",
+          "taskId": 0
+        },
+        {
+          "label": "收集汉堡",
+          "text": "汉堡这玩意儿我需要16个，我饿死了！我背包里全是食物，但是还是饿，这游戏的饱食度上限太低了！你帮我弄点来呗？",
+          "taskId": 1
+        },
+        {
+          "label": "收集意大利面",
+          "text": "意大利面这玩意儿我需要16份，我饿死了！我觉得我能把整个下界的猪灵都吃了，太饿了！你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "收集寿司",
+          "text": "寿司这玩意儿我需要16份，我饿死了！我跟你讲，我能把末影龙当炸鸡啃，信不？你帮我弄点来呗？",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近饿死了，有点事儿想请你帮忙弄点吃的！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "巧克力蛋糕",
+          "text": "巧克力蛋糕这玩意儿我馋好久了，好吃得很！我今天吃了十桶炸鸡，还能再炫五桶，但是还是想吃蛋糕。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "冰淇淋圣代",
+          "text": "冰淇淋圣代这玩意儿我馋好久了，好吃得很！咱们去刷怪塔吧，我要吃更多的食物，但是先给我来个冰淇淋！你要是能送我一个，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "牛肉咖喱",
+          "text": "牛肉咖喱这玩意儿我馋好久了，好吃得很！家人们谁懂啊，我太饿了，什么都想吃！你要是能送我一份，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样吃的，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 0,
+      "item": "simplefarming:pizza",
+      "count": 16,
+      "label": "任务 收集披萨",
+      "text": "收集16个披萨（simplefarming:pizza）",
+      "completeText": "交付 收集披萨",
+      "id": 0
+    },
+    {
+      "type": 0,
+      "item": "simplefarming:hamburger",
+      "count": 16,
+      "label": "任务 收集汉堡",
+      "text": "收集16个汉堡（simplefarming:hamburger）",
+      "completeText": "交付 收集汉堡",
+      "id": 1
+    },
+    {
+      "type": 0,
+      "item": "simplefarming:spaghetti",
+      "count": 16,
+      "label": "任务 收集意大利面",
+      "text": "收集16份意大利面（simplefarming:spaghetti）",
+      "completeText": "交付 收集意大利面",
+      "id": 2
+    },
+    {
+      "type": 0,
+      "item": "simplefarming:sushi",
+      "count": 16,
+      "label": "任务 收集寿司",
+      "text": "收集16份寿司（simplefarming:sushi）",
+      "completeText": "交付 收集寿司",
+      "id": 3
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "simplefarming:chocolate_cake",
+      "count": 1,
+      "label": "赠礼 巧克力蛋糕",
+      "text": "赠送1个巧克力蛋糕（simplefarming:chocolate_cake）",
+      "completeText": "交付 巧克力蛋糕"
+    },
+    {
+      "id": 1,
+      "item": "simplefarming:ice_cream_sundae",
+      "count": 1,
+      "label": "赠礼 冰淇淋圣代",
+      "text": "赠送1个冰淇淋圣代（simplefarming:ice_cream_sundae）",
+      "completeText": "交付 冰淇淋圣代"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:beef_curry",
+      "count": 1,
+      "label": "赠礼 牛肉咖喱",
+      "text": "赠送1份牛肉咖喱（simplefarming:beef_curry）",
+      "completeText": "交付 牛肉咖喱"
+    }
+  ],
+  "id": 109
+}

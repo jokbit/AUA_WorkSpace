@@ -1,9 +1,0 @@
-[
-{"mod":"mutantszombies","name":"blister_zombie","level":2,"type":"zombie"},
-{"mod":"mutantszombies","name":"crawler","level":2,"type":"zombie"},
-{"mod":"mutantszombies","name":"zombie_brute","level":5,"type":"zombie"},
-{"mod":"mutantszombies","name":"spitter","level":5,"type":"zombie"},
-{"mod":"mutantszombies","name":"split_head_zombie","level":2,"type":"zombie"},
-{"mod":"mutantszombies","name":"mutant_brute","level":5,"type":"zombie"},
-{"mod":"mutantszombies","name":"rotten_mutant","level":2,"type":"zombie"}
-]

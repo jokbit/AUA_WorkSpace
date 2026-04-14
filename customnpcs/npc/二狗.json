@@ -1,0 +1,144 @@
+{
+  "name": "二狗",
+  "weapon": "zombie_extreme:m_9_knife",
+  "armors": [
+    "minecraft:iron_helmet",
+    "minecraft:chainmail_chestplate",
+    "minecraft:iron_leggings",
+    "minecraft:leather_boots"
+  ],
+  "npcLines": [
+    "海底遗迹难找，守卫者还多",
+    "沉船宝藏，全是垃圾",
+    "埋藏的宝藏，找不到坐标",
+    "废弃矿井，全是洞穴蜘蛛",
+    "要塞难找，末地传送门凑不齐",
+    "末地传送门，放错眼就废",
+    "地狱堡垒，全是烈焰人",
+    "堡垒遗迹，猪灵太多"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/tribeboy.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "黑暗中的枯骨",
+          "text": "说真的，废弃矿井那地方太邪门了，全是洞穴蜘蛛，我上次去差点被毒死。结果出来又遇到这些骨架，烦死了！你帮我干掉4只，回头请你吃饭！",
+          "taskId": 0
+        },
+        {
+          "label": "地狱中的骨头",
+          "text": "地狱堡垒那地方太危险了，全是烈焰人，我上次去被烧得满地跑。结果还遇到这些下界骷髅，射箭贼准！你帮我收拾3只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "金色的原料",
+          "text": "我需要12块粗金，本来想去海底遗迹找找，结果守卫者太多，我差点被淹死。埋藏的宝藏也找不到坐标，烦死了！你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "暴躁的草泥马",
+          "text": "丧尸羊驼这玩意儿太凶了！我上次想去堡垒遗迹逛逛，结果路上被这些羊驼追着吐口水，太丢人了！你帮我干掉5只，我好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近探险遇到不少麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "粗金",
+          "text": "我想要一块粗金，本来想去沉船找找，结果全是垃圾，连个金锭都没有。你要是能送我一块，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "红石剑",
+          "text": "红石剑我想要一把，探险太危险了，没把好武器不行。我上次去要塞，结果末地传送门凑不齐，白跑一趟。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "香蕉",
+          "text": "想吃香蕉了，探险太累了，想找点水果补充体力。我上次去丛林找，结果迷路了，差点饿死在里面。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 黑暗中的枯骨",
+      "text": "击杀4只骨架（born_in_chaos_v1:decrepit_skeleton）",
+      "completeText": "交付 黑暗中的枯骨",
+      "id": 0,
+      "mob": "born_in_chaos_v1:decrepit_skeleton"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 地狱中的骨头",
+      "text": "击杀3只下界骷髅（much_more_skeletons:nether_skeleton）",
+      "completeText": "交付 地狱中的骨头",
+      "id": 1,
+      "mob": "much_more_skeletons:nether_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:raw_gold",
+      "count": 12,
+      "label": "任务 金色的原料",
+      "text": "收集12块粗金（minecraft:raw_gold）",
+      "completeText": "交付 金色的原料",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 暴躁的草泥马",
+      "text": "击杀5只丧尸羊驼（angry_animals:angry_llama）",
+      "completeText": "交付 暴躁的草泥马",
+      "id": 3,
+      "mob": "angry_animals:angry_llama"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:raw_gold",
+      "count": 1,
+      "label": "赠礼 粗金",
+      "text": "赠送1块粗金（minecraft:raw_gold）",
+      "completeText": "交付 粗金"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:redstone_sword",
+      "count": 1,
+      "label": "赠礼 红石剑",
+      "text": "赠送1把红石剑（morevanillatools:redstone_sword）",
+      "completeText": "交付 红石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:banana",
+      "count": 1,
+      "label": "赠礼 香蕉",
+      "text": "赠送1个香蕉（simplefarming:banana）",
+      "completeText": "交付 香蕉"
+    }
+  ],
+  "id": 101
+}

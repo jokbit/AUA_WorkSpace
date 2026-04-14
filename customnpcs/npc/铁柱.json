@@ -1,0 +1,144 @@
+{
+  "name": "铁柱",
+  "weapon": "spartanweaponry:stone_halberd",
+  "armors": [
+    "morevanillaarmor:nether_helmet",
+    "morevanillaarmor:obsidian_chestplate",
+    "morevanillaarmor:paper_leggings",
+    "morevanillaarmor:prismarine_boots"
+  ],
+  "npcLines": [
+    "红沙土，平顶山特产",
+    "沙子挖多了，直接塌陷",
+    "砾石挖了，全是燧石",
+    "粘土块，在河边才有",
+    "海绵，在海底遗迹",
+    "海晶碎片，打守卫者掉",
+    "棱镜水晶，远古守卫者掉",
+    "这整合包的海洋内容太丰富"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/mercenarysteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理小型僵尸",
+          "text": "小型僵尸这玩意儿太嚣张了，到处惹事！这整合包的海洋内容太丰富了，我最近一直在探索海底，但是这些僵尸太烦了。你帮我干掉5只，我教你找海底遗迹！",
+          "taskId": 0
+        },
+        {
+          "label": "击败凋零流浪者",
+          "text": "凋零流浪者这玩意儿太阴了，天天在我家门口晃悠！粘土块在河边才有，砾石挖了全是燧石，沙子挖多了直接塌陷，我心情不好，这些流浪者还来烦我。你帮我收拾3只，我请你喝奶茶！",
+          "taskId": 1
+        },
+        {
+          "label": "收集生铁",
+          "text": "我需要16块生铁做装备，这东西不好找啊！海绵在海底遗迹，海晶碎片打守卫者掉，棱镜水晶远古守卫者掉，我最近一直在探索海底，但是生铁还是不够。你要是能帮我弄点来，回头我请你吃顿好的！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化山羊",
+          "text": "现在丧尸化的山羊又太凶了，到处惹事！红沙土是平顶山特产，我最近一直在探索，但是这些山羊太烦了。你帮我干掉5只，我好好谢谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "生铁",
+          "text": "我想要一块生铁！红沙土是平顶山特产，我最近一直在探索，但是生铁还是不够。你要是能送我一个，我教你找海底遗迹！",
+          "giftId": 0
+        },
+        {
+          "label": "铁斧",
+          "text": "铁斧我盯着好久了，砍树特别快！砾石挖了全是燧石，我心情不好，需要一把好斧头。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "咖啡",
+          "text": "想喝咖啡了，探索海底有点累！海绵在海底遗迹，海晶碎片打守卫者掉，我最近一直在探索海底，需要咖啡提神。你要是能送我一杯，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 清理小型僵尸",
+      "text": "击杀5只小型僵尸（mobz:small_zombie）",
+      "completeText": "交付 清理小型僵尸",
+      "id": 0,
+      "mob": "mobz:small_zombie"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败凋零流浪者",
+      "text": "击杀3只凋零流浪者（much_more_skeletons:wither_stray）",
+      "completeText": "交付 击败凋零流浪者",
+      "id": 1,
+      "mob": "much_more_skeletons:wither_stray"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:raw_iron",
+      "count": 16,
+      "label": "任务 收集生铁",
+      "text": "收集16块生铁（minecraft:raw_iron）",
+      "completeText": "交付 收集生铁",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化山羊",
+      "text": "击杀5只丧尸化的山羊（angry_animals:angry_goat）",
+      "completeText": "交付 消灭丧尸化山羊",
+      "id": 3,
+      "mob": "angry_animals:angry_goat"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:raw_iron",
+      "count": 1,
+      "label": "赠礼 生铁",
+      "text": "赠送1块生铁（minecraft:raw_iron）",
+      "completeText": "交付 生铁"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:iron_axe",
+      "count": 1,
+      "label": "赠礼 铁斧",
+      "text": "赠送1把铁斧（morevanillatools:iron_axe）",
+      "completeText": "交付 铁斧"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:coffee",
+      "count": 1,
+      "label": "赠礼 咖啡",
+      "text": "赠送1杯咖啡（simplefarming:coffee）",
+      "completeText": "交付 咖啡"
+    }
+  ],
+  "id": 144
+}

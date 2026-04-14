@@ -1,0 +1,144 @@
+{
+  "name": "钱途",
+  "weapon": "spartanweaponry:stone_battle_hammer",
+  "armors": [
+    "morevanillaarmor:ender_helmet",
+    "morevanillaarmor:fiery_chestplate",
+    "morevanillaarmor:glowstone_leggings",
+    "morevanillaarmor:lapis_boots"
+  ],
+  "npcLines": [
+    "这整合包的怪物刷新率太高",
+    "挖矿半天，没见过钻石",
+    "下界探险，被猪灵追着跑",
+    "猪灵蛮兵太猛，打不过",
+    "疣猪兽冲撞，直接撞飞",
+    "岩浆怪分裂，越打越多",
+    "烈焰人喷火，躲都躲不开",
+    "凋灵骷髅砍一下，直接中凋灵效果"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/tradersteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理坦克僵尸",
+          "text": "坦克僵尸这玩意儿太硬了，打都打不动！这整合包的怪物刷新率太高了，我一个人搞不定。挖矿半天，没见过钻石，运气太差了。你帮我干掉3只，我肯定好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "击败灵魂火骷髅",
+          "text": "灵魂火骷髅这玩意儿太诡异了，射的箭都是蓝色的火！下界探险，被猪灵追着跑，差点没回来。你帮我收拾4只，我肯定记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "收集金粒",
+          "text": "我需要20个金粒交易用！猪灵蛮兵太猛，打不过，疣猪兽冲撞直接撞飞，岩浆怪分裂越打越多，我根本不敢去下界。你要是能帮我弄点来，回头我请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭愤怒羊",
+          "text": "愤怒的羊这玩意儿太凶了！烈焰人喷火，躲都躲不开，凋灵骷髅砍一下，直接中凋灵效果，我根本不敢去下界。你帮我干掉5只，我肯定记着你的好！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "金粒",
+          "text": "金粒这玩意儿我需要，交易用！挖矿半天，没见过钻石，运气太差了，金粒我也没有。你要是能送我一个，我肯定好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "黑曜石剑",
+          "text": "黑曜石剑我盯着好久了，砍人贼快！下界探险，被猪灵追着跑，差点没回来，我需要一把好武器。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "蓝莓派",
+          "text": "想吃蓝莓派了！猪灵蛮兵太猛，打不过，运气太差了，我想吃点甜的安慰一下自己。你要是能送我一个，我肯定好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太好了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理坦克僵尸",
+      "text": "击杀3只坦克僵尸（mobz:tank_zombie）",
+      "completeText": "交付 清理坦克僵尸",
+      "id": 0,
+      "mob": "mobz:tank_zombie"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败灵魂火骷髅",
+      "text": "击杀4只灵魂火骷髅（much_more_skeletons:soul_fire_skeleton）",
+      "completeText": "交付 击败灵魂火骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:soul_fire_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:gold_nugget",
+      "count": 20,
+      "label": "任务 收集金粒",
+      "text": "收集20个金粒（minecraft:gold_nugget）",
+      "completeText": "交付 收集金粒",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭愤怒羊",
+      "text": "击杀5只愤怒的羊（angry_animals:angry_sheep）",
+      "completeText": "交付 消灭愤怒羊",
+      "id": 3,
+      "mob": "angry_animals:angry_sheep"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:gold_nugget",
+      "count": 1,
+      "label": "赠礼 金粒",
+      "text": "赠送1个金粒（minecraft:gold_nugget）",
+      "completeText": "交付 金粒"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:obsidian_sword",
+      "count": 1,
+      "label": "赠礼 黑曜石剑",
+      "text": "赠送1把黑曜石剑（morevanillatools:obsidian_sword）",
+      "completeText": "交付 黑曜石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:blueberry_pie",
+      "count": 1,
+      "label": "赠礼 蓝莓派",
+      "text": "赠送1个蓝莓派（simplefarming:blueberry_pie）",
+      "completeText": "交付 蓝莓派"
+    }
+  ],
+  "id": 143
+}

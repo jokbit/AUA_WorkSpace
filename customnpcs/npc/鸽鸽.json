@@ -1,0 +1,144 @@
+{
+  "name": "鸽鸽",
+  "weapon": "spartanweaponry:stone_flanged_mace",
+  "armors": [
+    "apocalypse:bucket_helm",
+    "morevanillaarmor:nether_chestplate",
+    "morevanillaarmor:obsidian_leggings",
+    "morevanillaarmor:paper_boots"
+  ],
+  "npcLines": [
+    "鸡你太美",
+    "只因你太美",
+    "你干嘛",
+    "练习时长两年半",
+    "唱跳rap篮球",
+    "我是练习生蔡徐坤",
+    "喜欢唱跳rap和篮球",
+    "music"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/casualsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理普通僵尸",
+          "text": "你干嘛～哎哟！僵尸这玩意儿太烦人了，天天晚上在我家门口转悠。我练习时长两年半，喜欢唱跳rap和篮球，但是这些僵尸老是打断我练习。你帮我干掉5只，我给你表演个唱跳rap！",
+          "taskId": 0
+        },
+        {
+          "label": "击败丛林骷髅",
+          "text": "丛林骷髅射箭太准了！那天我在丛林里找灵感，准备写首新歌，突然就被射了一箭，疼死我了。只因你太美，鸡你太美！你帮我收拾3只，music起！",
+          "taskId": 1
+        },
+        {
+          "label": "收集羽毛",
+          "text": "鸡你太美！我需要16根羽毛，做箭用。这玩意儿不好找啊，我自己找了半天都没凑够。你要是能帮我，我肯定好好报答你！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化鸡",
+          "text": "丧尸鸡这玩意儿太恶心了！本来鸡挺好的，还给我鸡蛋让我做蛋糕，结果变成了丧尸，看着就难受。你帮我干掉5只，我给你表演个篮球！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "你干嘛～有点事儿想麻烦你，帮完给你表演！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "金锭",
+          "text": "金锭这玩意儿我需要，做装备用。你要是能送我一个，我给你表演个唱跳rap篮球！",
+          "giftId": 0
+        },
+        {
+          "label": "南瓜派",
+          "text": "哎，练舞练饿了，想吃南瓜派了，这玩意儿好吃。你要是能送我一个，我肯定记着你的好！",
+          "giftId": 1
+        },
+        {
+          "label": "音符盒",
+          "text": "音符盒这玩意儿我盯着好久了，做音乐用。你要是能送我一个，我给你唱首歌！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "有几样东西我需要，你要是能送我，我给你表演！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 清理普通僵尸",
+      "text": "击杀5只普通僵尸（minecraft:zombie）",
+      "completeText": "交付 清理普通僵尸",
+      "id": 0,
+      "mob": "minecraft:zombie"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败丛林骷髅",
+      "text": "击杀3只丛林骷髅（much_more_skeletons:jungle_skeleton）",
+      "completeText": "交付 击败丛林骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:jungle_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:feather",
+      "count": 16,
+      "label": "任务 收集羽毛",
+      "text": "收集16根羽毛（minecraft:feather）",
+      "completeText": "交付 收集羽毛",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化鸡",
+      "text": "击杀5只丧尸化的鸡（angry_animals:angry_chicken）",
+      "completeText": "交付 消灭丧尸化鸡",
+      "id": 3,
+      "mob": "angry_animals:angry_chicken"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:gold_ingot",
+      "count": 1,
+      "label": "赠礼 金锭",
+      "text": "赠送1个金锭（minecraft:gold_ingot）",
+      "completeText": "交付 金锭"
+    },
+    {
+      "id": 1,
+      "item": "minecraft:pumpkin_pie",
+      "count": 1,
+      "label": "赠礼 南瓜派",
+      "text": "赠送1个南瓜派（minecraft:pumpkin_pie）",
+      "completeText": "交付 南瓜派"
+    },
+    {
+      "id": 2,
+      "item": "minecraft:note_block",
+      "count": 1,
+      "label": "赠礼 音符盒",
+      "text": "赠送1个音符盒（minecraft:note_block）",
+      "completeText": "交付 音符盒"
+    }
+  ],
+  "id": 152
+}

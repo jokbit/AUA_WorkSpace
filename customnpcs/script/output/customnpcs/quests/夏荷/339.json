@@ -1,0 +1,50 @@
+
+        {
+    "Type": 2,
+    "QuestCompletion": 0,
+    "QuestCommand": "",
+    "QuestFactionPoints": {
+        "DecreaseFaction2Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFaction1Points": 100,
+        "OptionFactions2": -1,
+        "OptionFactions1": -1,
+        "DecreaseFaction1Points": 0b
+    },
+    
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "CompleterNpc": "夏荷",
+    "NextQuestId": -1,
+    "CompleteText": "交付 不死的骨头",
+    "Text": "击杀4只不死骷髅（much_more_skeletons:undead_skeleton）",
+    "QuestMail": {
+        "Subject": "",
+        "MailQuest": -1,
+        "BeenRead": 0b,
+        "MailItems": [
+        ],
+        "Sender": "",
+        "Message": {
+        },
+        "Time": 0L,
+        "TimePast": 1775662558498L
+    },
+    "RandomReward": 0b,
+    
+       "Title": "任务 不死的骨头",
+    
+        "QuestDialogs": [
+            {
+                "Value": 4,
+                "Slot": "much_more_skeletons:undead_skeleton"
+            }
+        ],
+        
+    "QuestRepeat": 0,
+    "RewardExp": 0,
+    "ModRev": 18
+}
+        

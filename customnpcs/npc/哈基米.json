@@ -1,0 +1,144 @@
+{
+  "name": "哈基米",
+  "weapon": "morevanillatools:prismarine_axe",
+  "armors": [
+    "morevanillaarmor:glowstone_helmet",
+    "morevanillaarmor:lapis_chestplate",
+    "morevanillaarmor:nether_leggings",
+    "morevanillaarmor:bone_boots"
+  ],
+  "npcLines": [
+    "哈基米窝南北绿豆阿西哈压",
+    "哈基米啊南北绿豆",
+    "南北绿豆哈吉嘎西",
+    "椰打耶南北绿豆",
+    "哦嘛自立曼波哈基米",
+    "哈基米哈基，哈基米阿",
+    "哈基苦路西，南北咕噜",
+    "哈基西米露，哈基米喔南北绿豆"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/wizardsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "沼泽的泡泡",
+          "text": "水泡僵尸这玩意儿太恶心了，全身都是水泡，看着就想吐！我上次遇到它们，差点被恶心死。你帮我干掉4只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "草原的骷髅牛",
+          "text": "骷髅牛这玩意儿太诡异了，骨头架子还能产奶，想想就反胃！我上次想去草原逛逛，结果遇到这些玩意儿，吓死我了。你帮我收拾3只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "哈基米的材料",
+          "text": "粘液球这玩意儿我需要8个，做粘性活塞用。我上次去沼泽找史莱姆，结果被粘得满身都是，太恶心了！你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "丛林的魅影",
+          "text": "丧尸豹猫这玩意儿太凶了！本来豹猫挺可爱的，结果变成了丧尸，看着就难受。我上次去丛林，差点被它们抓死。你帮我干掉5只，我好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "可可豆",
+          "text": "可可豆这玩意儿我需要，做巧克力用。我上次去丛林找可可豆，结果迷路了，差点饿死在里面。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "钻石剑",
+          "text": "钻石剑这玩意儿我想要一把，砍人贼快。我上次去挖钻石，结果遇到一堆僵尸，差点被打死。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "苹果派",
+          "text": "苹果派这玩意儿我馋好久了，好吃得很。我上次自己做苹果派，结果烤糊了，厨房都快烧了。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 沼泽的泡泡",
+      "text": "击杀4只水泡僵尸（mutantszombies:blister_zombie）",
+      "completeText": "交付 沼泽的泡泡",
+      "id": 0,
+      "mob": "mutantszombies:blister_zombie"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 草原的骷髅牛",
+      "text": "击杀3只骷髅牛（much_more_skeletons:skeleton_cow）",
+      "completeText": "交付 草原的骷髅牛",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_cow"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:slime_ball",
+      "count": 8,
+      "label": "任务 哈基米的材料",
+      "text": "收集8个粘液球（minecraft:slime_ball）",
+      "completeText": "交付 哈基米的材料",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 丛林的魅影",
+      "text": "击杀5只丧尸豹猫（angry_animals:angry_ocelot）",
+      "completeText": "交付 丛林的魅影",
+      "id": 3,
+      "mob": "angry_animals:angry_ocelot"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:cocoa_beans",
+      "count": 1,
+      "label": "赠礼 可可豆",
+      "text": "赠送1个可可豆（minecraft:cocoa_beans）",
+      "completeText": "交付 可可豆"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:diamond_sword",
+      "count": 1,
+      "label": "赠礼 钻石剑",
+      "text": "赠送1把钻石剑（morevanillatools:diamond_sword）",
+      "completeText": "交付 钻石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:apple_pie",
+      "count": 1,
+      "label": "赠礼 苹果派",
+      "text": "赠送1个苹果派（simplefarming:apple_pie）",
+      "completeText": "交付 苹果派"
+    }
+  ],
+  "id": 107
+}

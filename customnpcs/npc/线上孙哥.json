@@ -1,0 +1,144 @@
+{
+  "name": "线上孙哥",
+  "weapon": "spartanweaponry:netherite_flanged_mace",
+  "armors": [
+    "minecraft:netherite_helmet",
+    "minecraft:diamond_chestplate",
+    "minecraft:iron_leggings",
+    "minecraft:golden_boots"
+  ],
+  "npcLines": [
+    "你吼辣么大声干什么嘛",
+    "我们终究会变成自己最讨厌的样子",
+    "我自闭，嘴臭，抽象，但我是一个儒雅的男孩子",
+    "那你去找物管啊",
+    "让我们笑着说再见",
+    "我不会怨天尤人，这只是我没本事罢了",
+    "这武器biss",
+    "想你了，老大"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/pinstripessteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理腐烂僵尸",
+          "text": "腐烂僵尸这玩意儿太恶心了，全身都是腐烂的肉！你吼辣么大声干什么嘛，这些僵尸吵死了。你帮我干掉4只，让我们笑着说再见！",
+          "taskId": 0
+        },
+        {
+          "label": "击败黑暗骷髅",
+          "text": "黑暗骷髅这玩意儿太黑了，根本看不见！我们终究会变成自己最讨厌的样子，这些骷髅太阴了。你帮我收拾3只，这武器biss！",
+          "taskId": 1
+        },
+        {
+          "label": "收集骨头",
+          "text": "骨头这玩意儿我需要16根，做骨粉用！我自闭，嘴臭，抽象，但我是一个儒雅的男孩子，我需要骨粉来种花。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化猪",
+          "text": "丧尸猪这玩意儿太恶心了！那你去找物管啊，这些猪到处乱跑，烦死了。你帮我干掉5只，想你了，老大！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "绿宝石",
+          "text": "绿宝石这玩意儿我需要，交易用！我不会怨天尤人，这只是我没本事罢了，但是绿宝石我还是需要的。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "钻石斧",
+          "text": "钻石斧这玩意儿我想要一把，砍树贼快！我不会怨天尤人，这只是我没本事罢了，但是钻石斧我还是想要的。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "玉米",
+          "text": "玉米这玩意儿我馋好久了，好吃得很！我不会怨天尤人，这只是我没本事罢了，但是玉米我还是想吃的。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 清理腐烂僵尸",
+      "text": "击杀4只腐烂僵尸（mutantszombies:rotten_mutant）",
+      "completeText": "交付 清理腐烂僵尸",
+      "id": 0,
+      "mob": "mutantszombies:rotten_mutant"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败黑暗骷髅",
+      "text": "击杀3只黑暗骷髅（much_more_skeletons:dark_skeleton）",
+      "completeText": "交付 击败黑暗骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:dark_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:bone",
+      "count": 16,
+      "label": "任务 收集骨头",
+      "text": "收集16个骨头（minecraft:bone）",
+      "completeText": "交付 收集骨头",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化猪",
+      "text": "击杀5只丧尸化的猪（angry_animals:angry_pig）",
+      "completeText": "交付 消灭丧尸化猪",
+      "id": 3,
+      "mob": "angry_animals:angry_pig"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:emerald",
+      "count": 1,
+      "label": "赠礼 绿宝石",
+      "text": "赠送1个绿宝石（minecraft:emerald）",
+      "completeText": "交付 绿宝石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:diamond_axe",
+      "count": 1,
+      "label": "赠礼 钻石斧",
+      "text": "赠送1把钻石斧（morevanillatools:diamond_axe）",
+      "completeText": "交付 钻石斧"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:corn",
+      "count": 1,
+      "label": "赠礼 玉米",
+      "text": "赠送1个玉米（simplefarming:corn）",
+      "completeText": "交付 玉米"
+    }
+  ],
+  "id": 131
+}

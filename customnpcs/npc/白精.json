@@ -1,0 +1,144 @@
+{
+  "name": "白精",
+  "weapon": "spartanweaponry:copper_halberd",
+  "armors": [
+    "morevanillaarmor:prismarine_helmet",
+    "morevanillaarmor:quartz_chestplate",
+    "morevanillaarmor:redstone_leggings",
+    "morevanillaarmor:slime_boots"
+  ],
+  "npcLines": [
+    "合成表复杂，查攻略都麻烦",
+    "模组道具和原版冲突，用不了",
+    "任务奖励太拉，不想做",
+    "整合包难度太高，新手劝退",
+    "简单模式都打不过，太菜了",
+    "和平模式没怪，玩着没意思",
+    "困难模式怪太猛，直接被秒",
+    "极限模式死一次，存档没了"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/white_knight.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "击败死神",
+          "text": "说真的，这整合包的合成表太复杂了，查攻略都麻烦。死神这玩意儿太强了，我一个人搞不定。你帮我干掉3只，我肯定好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "击败诡异骷髅",
+          "text": "模组道具和原版冲突，用不了，烦死人了。诡异骷髅这玩意儿太诡异了，到处瞬移。你帮我收拾4只，我肯定好好谢你！",
+          "taskId": 1
+        },
+        {
+          "label": "收集海洋之心",
+          "text": "任务奖励太拉，不想做，不过这个任务例外。海洋之心我需要1个做潮涌核心。你要是能帮我弄来，回头我请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化豹猫",
+          "text": "整合包难度太高，新手劝退，简单模式我都打不过，太菜了。丧尸豹猫这玩意儿太凶了。你帮我干掉5只，我肯定好好谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "说真的，这整合包有点难，有几个事儿想麻烦你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "海洋之心",
+          "text": "海洋之心做潮涌核心用，和平模式没怪，玩着没意思。你要是能送我一个，我肯定好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "下界剑",
+          "text": "下界剑我盯着好久了，砍人贼快。困难模式怪太猛，直接被秒。你要是能送我一把，我请你吃顿好的！",
+          "giftId": 1
+        },
+        {
+          "label": "汉堡",
+          "text": "汉堡好吃得很，极限模式死一次存档就没了，太吓人了。你要是能送我一个，我肯定好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "有几样东西我需要，你要是能送我就太好了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败死神",
+      "text": "击杀3只死神（graveyard:reaper）",
+      "completeText": "交付 击败死神",
+      "id": 0,
+      "mob": "graveyard:reaper"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败诡异骷髅",
+      "text": "击杀4只诡异骷髅（much_more_skeletons:warped_skeleton）",
+      "completeText": "交付 击败诡异骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:warped_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:heart_of_the_sea",
+      "count": 1,
+      "label": "任务 收集海洋之心",
+      "text": "收集1个海洋之心（minecraft:heart_of_the_sea）",
+      "completeText": "交付 收集海洋之心",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化豹猫",
+      "text": "击杀5只愤怒的豹猫（angry_animals:angry_ocelot）",
+      "completeText": "交付 消灭丧尸化豹猫",
+      "id": 3,
+      "mob": "angry_animals:angry_ocelot"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:heart_of_the_sea",
+      "count": 1,
+      "label": "赠礼 海洋之心",
+      "text": "赠送1个海洋之心（minecraft:heart_of_the_sea）",
+      "completeText": "交付 海洋之心"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:nether_sword",
+      "count": 1,
+      "label": "赠礼 下界剑",
+      "text": "赠送1把下界剑（morevanillatools:nether_sword）",
+      "completeText": "交付 下界剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:hamburger",
+      "count": 1,
+      "label": "赠礼 汉堡",
+      "text": "赠送1个汉堡（simplefarming:hamburger）",
+      "completeText": "交付 汉堡"
+    }
+  ],
+  "id": 129
+}

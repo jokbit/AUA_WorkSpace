@@ -1,0 +1,58 @@
+
+        {
+    "Type": 0,
+    "QuestCompletion": 0,
+    "QuestCommand": "",
+    "QuestFactionPoints": {
+        "DecreaseFaction2Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFaction1Points": 100,
+        "OptionFactions2": -1,
+        "OptionFactions1": -1,
+        "DecreaseFaction1Points": 0b
+    },
+    
+    "LeaveItems": 0b,
+    "IgnoreNBT": 0b,
+        
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "CompleterNpc": "宋老虎",
+    "NextQuestId": -1,
+    "CompleteText": "交付 解渴的西瓜",
+    "Text": "收集16片西瓜片（minecraft:melon_slice）",
+    "QuestMail": {
+        "Subject": "",
+        "MailQuest": -1,
+        "BeenRead": 0b,
+        "MailItems": [
+        ],
+        "Sender": "",
+        "Message": {
+        },
+        "Time": 0L,
+        "TimePast": 1775662558498L
+    },
+    "RandomReward": 0b,
+    
+        "IgnoreDamage": 0b,
+        
+       "Title": "任务 解渴的西瓜",
+    
+        "Items": {
+            "NpcMiscInv": [
+                {
+                    "Slot": 0b,
+                    "id": "minecraft:melon_slice",
+                    "Count": 16
+                }
+            ]
+        },
+        
+    "QuestRepeat": 0,
+    "RewardExp": 0,
+    "ModRev": 18
+}
+        

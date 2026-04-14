@@ -1,0 +1,144 @@
+{
+  "name": "贾话",
+  "weapon": "spartanweaponry:wooden_longsword",
+  "armors": [
+    "morevanillaarmor:obsidian_helmet",
+    "morevanillaarmor:paper_chestplate",
+    "morevanillaarmor:prismarine_leggings",
+    "morevanillaarmor:quartz_boots"
+  ],
+  "npcLines": [
+    "冒险模式不能挖方块，难受",
+    "旁观者模式只能看，不能玩",
+    "创造模式爽归爽，没挑战性",
+    "生存模式才是MC的精髓",
+    "玩MC不建房子，跟咸鱼没区别",
+    "建的房子太丑，不好意思发",
+    "别人的建筑像艺术品，我的像狗窝",
+    "红石大炮，打不准还炸自己"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/wizardsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理骷髅Boss",
+          "text": "说真的，生存模式才是MC的精髓，但这骷髅Boss也太离谱了！我上次想用红石陷阱干掉它，结果陷阱没触发，反被它追着打。你帮我干掉2只，我好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "击败绯红骷髅",
+          "text": "绯红骷髅这玩意儿太诡异了，我本来想建个防御塔慢慢磨死它们，结果房子建得太丑，自己都不好意思进去。你帮我收拾4只，我记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "收集火焰弹",
+          "text": "我需要10个火焰弹做发射器，想搞个自动防御系统。不过以我的红石水平，估计做出来又是个打不准还炸自己的玩意儿。你帮我弄点来，回头请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭愤怒蜜蜂",
+          "text": "愤怒的蜜蜂太凶了！我本来想建个蜂房养蜜蜂，结果房子建得太丑，蜜蜂都不愿意住，还追着我蛰。你帮我干掉5只，我记着你的好！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "火焰弹",
+          "text": "我想要一个火焰弹，想试试做个红石发射器。不过以我的水平，估计又是个打不准还炸自己的玩意儿。你要是能送我一个，我好好谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "下界剑",
+          "text": "下界剑我盯着好久了，生存模式没把好武器太难了。我本来想自己去做一把，结果在地狱被打了回来，房子都没建好呢。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "草莓",
+          "text": "想吃草莓了，最近建房子建得心烦，想找点甜的东西安慰一下自己。我的建筑水平太差了，建的房子自己都看不下去。你要是能送我一个草莓，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 2,
+      "label": "任务 清理骷髅Boss",
+      "text": "击杀2只骷髅Boss（mobz:boss_skeleton）",
+      "completeText": "交付 清理骷髅Boss",
+      "id": 0,
+      "mob": "mobz:boss_skeleton"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败绯红骷髅",
+      "text": "击杀4只绯红骷髅（much_more_skeletons:crimson_skeleton）",
+      "completeText": "交付 击败绯红骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:crimson_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:fire_charge",
+      "count": 10,
+      "label": "任务 收集火焰弹",
+      "text": "收集10个火焰弹（minecraft:fire_charge）",
+      "completeText": "交付 收集火焰弹",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭愤怒蜜蜂",
+      "text": "击杀5只愤怒的蜜蜂（angry_animals:angry_bee）",
+      "completeText": "交付 消灭愤怒蜜蜂",
+      "id": 3,
+      "mob": "angry_animals:angry_bee"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:fire_charge",
+      "count": 1,
+      "label": "赠礼 火焰弹",
+      "text": "赠送1个火焰弹（minecraft:fire_charge）",
+      "completeText": "交付 火焰弹"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:nether_sword",
+      "count": 1,
+      "label": "赠礼 下界剑",
+      "text": "赠送1把下界剑（morevanillatools:nether_sword）",
+      "completeText": "交付 下界剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:strawberries",
+      "count": 1,
+      "label": "赠礼 草莓",
+      "text": "赠送1个草莓（simplefarming:strawberries）",
+      "completeText": "交付 草莓"
+    }
+  ],
+  "id": 139
+}

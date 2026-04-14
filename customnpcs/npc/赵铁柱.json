@@ -1,0 +1,144 @@
+{
+  "name": "赵铁柱",
+  "weapon": "minecraft:diamond_pickaxe",
+  "armors": [
+    "morevanillaarmor:redstone_helmet",
+    "morevanillaarmor:slime_chestplate",
+    "morevanillaarmor:stone_leggings",
+    "morevanillaarmor:wood_boots"
+  ],
+  "npcLines": [
+    "砍手岩别挖，纯纯浪费时间",
+    "挖矿全是石头，心态炸了",
+    "20铁不牛，我钻石套",
+    "我会jvav，教你写指令",
+    "MC特性比bug多，官方摆烂",
+    "咱俩像NPC，重复对话",
+    "我是被忽略的宝箱，没人理",
+    "bud是特性，不是bug"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/minersteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "修理"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "水泡僵尸清理",
+          "text": "水泡僵尸这玩意儿太恶心了，全身都是水泡。我玩MC这么多年，啥怪没见过，但这玩意儿真是让人恶心。你帮我干掉5只，我肯定记着你的好！",
+          "taskId": 0
+        },
+        {
+          "label": "坦克僵尸太硬了",
+          "text": "坦克僵尸这玩意儿太硬了，打都打不动！我玩MC这么多年，还是第一次遇到这么硬的僵尸。你帮我收拾4只，我肯定好好谢你！",
+          "taskId": 1
+        },
+        {
+          "label": "小丑别闹了",
+          "text": "小丑僵尸这玩意儿太诡异了，看着就渗人！我玩MC这么多年，啥怪没见过，但这玩意儿真是让人毛骨悚然。你帮我干掉5只，我肯定记着你的好！",
+          "taskId": 2
+        },
+        {
+          "label": "黑曜石碎片收集",
+          "text": "我需要32个黑曜石碎片做装备，这东西不好找啊。我玩MC这么多年，挖矿挖得手都酸了。你要是能帮我弄点来，回头我请你吃饭！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "我玩MC这么多年，有点事儿想麻烦你，帮完我肯定记着你的好！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "铁锤工具",
+          "text": "我想要一把铁锤，砸东西用。我玩MC这么多年，工具用得顺手才行。你要是能送我一把，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "热带水果拼盘",
+          "text": "想吃芒果了，我玩MC这么多年，还是第一次想吃水果。你要是能送我几个，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "青金石颜料",
+          "text": "我想要点青金石，染色用。我玩MC这么多年，装备染色还是第一次。你要是能送我一些，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 水泡僵尸清理",
+      "text": "击杀5只水泡僵尸（mutantszombies:blister_zombie）",
+      "completeText": "交付 水泡僵尸清理",
+      "id": 0,
+      "mob": "mutantszombies:blister_zombie"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 坦克僵尸太硬了",
+      "text": "击杀4只坦克僵尸（mobz:tank_zombie）",
+      "completeText": "交付 坦克僵尸太硬了",
+      "id": 1,
+      "mob": "mobz:tank_zombie"
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 小丑别闹了",
+      "text": "击杀5只小丑僵尸（born_in_chaos_v1:zombie_clown）",
+      "completeText": "交付 小丑别闹了",
+      "id": 2,
+      "mob": "born_in_chaos_v1:zombie_clown"
+    },
+    {
+      "type": 0,
+      "item": "morevanillatools:obsidian_shard",
+      "count": 32,
+      "label": "任务 黑曜石碎片收集",
+      "text": "收集32个黑曜石碎片（morevanillatools:obsidian_shard）",
+      "completeText": "交付 黑曜石碎片收集",
+      "id": 3
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "mob_breaker:iron_hammer",
+      "count": 1,
+      "label": "赠礼 铁锤工具",
+      "text": "赠送1把铁锤（mob_breaker:iron_hammer）",
+      "completeText": "交付 铁锤工具"
+    },
+    {
+      "id": 1,
+      "item": "simplefarming:mango",
+      "count": 5,
+      "label": "赠礼 热带水果拼盘",
+      "text": "赠送5个芒果（simplefarming:mango）",
+      "completeText": "交付 热带水果拼盘"
+    },
+    {
+      "id": 2,
+      "item": "minecraft:lapis_lazuli",
+      "count": 5,
+      "label": "赠礼 青金石颜料",
+      "text": "赠送5个青金石（minecraft:lapis_lazuli）",
+      "completeText": "交付 青金石颜料"
+    }
+  ],
+  "id": 140
+}

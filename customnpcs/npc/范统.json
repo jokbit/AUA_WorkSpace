@@ -1,0 +1,144 @@
+{
+  "name": "范统",
+  "weapon": "spartanweaponry:constantan_battleaxe",
+  "armors": [
+    "minecraft:chainmail_helmet",
+    "minecraft:leather_chestplate",
+    "minecraft:golden_leggings",
+    "minecraft:iron_boots"
+  ],
+  "npcLines": [
+    "1994年端点人造MC？云玩家别扯",
+    "挖钻石全靠运气，非酋永远挖不到",
+    "附魔台永远附不到想要的属性",
+    "村民交易纯纯坑人，绿宝石难赚",
+    "地狱门搭错，直接传到奇怪地方",
+    "末地城找不到，飞半天全是虚空",
+    "鞘翅飞着飞着没耐久，直接摔死",
+    "潜影盒装太多，卡成PPT"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/minersteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理水泡僵尸",
+          "text": "水泡僵尸这玩意儿太恶心了，全身都是水泡！1994年端点人造MC？云玩家别扯，这些僵尸太烦了。你帮我干掉3只，我肯定好好谢你！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅狼",
+          "text": "骷髅狼这玩意儿太阴了，骨头架子还能跑那么快！挖钻石全靠运气，非酋永远挖不到，我心情不好，这些狼还来烦我。你帮我收拾4只，我肯定记着你的好！",
+          "taskId": 1
+        },
+        {
+          "label": "收集腐肉",
+          "text": "腐肉这玩意儿我需要20块，喂狼用！附魔台永远附不到想要的属性，我心情不好，没空去找腐肉。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸豹猫",
+          "text": "丧尸豹猫这玩意儿太凶了！村民交易纯纯坑人，绿宝石难赚，我心情不好，这些豹猫还来烦我。你帮我干掉5只，我肯定记着你的好！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "木棍",
+          "text": "木棍这玩意儿我需要，做工具用！地狱门搭错，直接传到奇怪地方，我心情不好，没空去找木棍。你要是能送我一�，我肯定记着你的好！",
+          "giftId": 0
+        },
+        {
+          "label": "煤剑",
+          "text": "煤剑这玩意儿我想要一把，砍人贼快！末地城找不到，飞半天全是虚空，我心情不好，需要一把好武器。你要是能送我一把，我请你吃饭！",
+          "giftId": 1
+        },
+        {
+          "label": "巧克力蛋糕",
+          "text": "巧克力蛋糕这玩意儿我馋好久了，好吃得很！鞘翅飞着飞着没耐久，直接摔死，我心情不好，想吃点甜的安慰一下自己。你要是能送我一个，我好好谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理水泡僵尸",
+      "text": "击杀3只水泡僵尸（mutantszombies:blister_zombie）",
+      "completeText": "交付 清理水泡僵尸",
+      "id": 0,
+      "mob": "mutantszombies:blister_zombie"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败骷髅狼",
+      "text": "击杀4只骷髅狼（much_more_skeletons:skeleton_wolf）",
+      "completeText": "交付 击败骷髅狼",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_wolf"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:rotten_flesh",
+      "count": 20,
+      "label": "任务 收集腐肉",
+      "text": "收集20块腐肉（minecraft:rotten_flesh）",
+      "completeText": "交付 收集腐肉",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸豹猫",
+      "text": "击杀5只丧尸豹猫（angry_animals:angry_ocelot）",
+      "completeText": "交付 消灭丧尸豹猫",
+      "id": 3,
+      "mob": "angry_animals:angry_ocelot"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:stick",
+      "count": 1,
+      "label": "赠礼 木棍",
+      "text": "赠送1根木棍（minecraft:stick）",
+      "completeText": "交付 木棍"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:coal_sword",
+      "count": 1,
+      "label": "赠礼 煤剑",
+      "text": "赠送1把煤剑（morevanillatools:coal_sword）",
+      "completeText": "交付 煤剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:chocolate_cake",
+      "count": 1,
+      "label": "赠礼 巧克力蛋糕",
+      "text": "赠送1个巧克力蛋糕（simplefarming:chocolate_cake）",
+      "completeText": "交付 巧克力蛋糕"
+    }
+  ],
+  "id": 136
+}

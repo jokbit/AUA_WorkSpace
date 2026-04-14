@@ -1,0 +1,144 @@
+{
+  "name": "翠花",
+  "weapon": "spartanweaponry:silver_greatsword",
+  "armors": [
+    "morevanillaarmor:copper_helmet",
+    "morevanillaarmor:emerald_chestplate",
+    "morevanillaarmor:ender_leggings",
+    "morevanillaarmor:fiery_boots"
+  ],
+  "npcLines": [
+    "废弃传送门，物资少得可怜",
+    "这整合包的结构生成太少",
+    "找个村庄，飞半天都找不到",
+    "村庄村民，全是傻子",
+    "铁匠铺箱子，全是垃圾",
+    "雪屋地下室，有僵尸村民",
+    "丛林神庙，陷阱多到炸",
+    "沙漠神殿，踩压力板直接没"
+  ],
+  "texture": "customnpcs:textures/entity/humanfemale/townsmanstephanie.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "强化"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理骷髅爆破手",
+          "text": "翠花来啦！骷髅爆破手这玩意儿太危险了，到处炸。俺们村的路都被它们炸坏了。你帮俺干掉3只，俺给你做酸菜！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅猪灵",
+          "text": "骷髅猪灵这玩意儿太凶了，在下界到处跑。俺们村的人都不敢去下界了。你帮俺收拾4只，俺给你做饺子！",
+          "taskId": 1
+        },
+        {
+          "label": "收集纸",
+          "text": "纸这玩意儿俺们村需要20张，写字用。俺们村的孩子都要上学了。你帮俺弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸猪",
+          "text": "丧尸猪这玩意儿太恶心了，俺们村的猪都被吓跑了。你帮俺干掉5只，俺给你做红烧肉！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "翠花来啦！有点事儿想麻烦你，帮完俺给你做酸菜！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "甘蔗",
+          "text": "甘蔗这玩意儿俺们村没有，俺想尝尝。你送俺一根呗？俺给你做酸菜！",
+          "giftId": 0
+        },
+        {
+          "label": "红石镐",
+          "text": "红石镐这玩意儿俺们村需要，挖矿用。你送俺一把呗？俺给你做饺子！",
+          "giftId": 1
+        },
+        {
+          "label": "冰淇淋",
+          "text": "冰淇淋这玩意儿俺们村没有，俺想尝尝。你送俺一个呗？俺给你做红烧肉！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "翠花来啦！有几样东西俺们村需要，你送俺呗？"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理骷髅爆破手",
+      "text": "击杀3只骷髅爆破手（born_in_chaos_v1:skeleton_demoman）",
+      "completeText": "交付 清理骷髅爆破手",
+      "id": 0,
+      "mob": "born_in_chaos_v1:skeleton_demoman"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败骷髅猪灵",
+      "text": "击杀4只骷髅猪灵（much_more_skeletons:skeleton_piglin）",
+      "completeText": "交付 击败骷髅猪灵",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_piglin"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:paper",
+      "count": 20,
+      "label": "任务 收集纸",
+      "text": "收集20张纸（minecraft:paper）",
+      "completeText": "交付 收集纸",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸猪",
+      "text": "击杀5只丧尸猪（angry_animals:angry_pig）",
+      "completeText": "交付 消灭丧尸猪",
+      "id": 3,
+      "mob": "angry_animals:angry_pig"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:sugar_cane",
+      "count": 1,
+      "label": "赠礼 甘蔗",
+      "text": "赠送1根甘蔗（minecraft:sugar_cane）",
+      "completeText": "交付 甘蔗"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:redstone_pickaxe",
+      "count": 1,
+      "label": "赠礼 红石镐",
+      "text": "赠送1把红石镐（morevanillatools:redstone_pickaxe）",
+      "completeText": "交付 红石镐"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:ice_cream",
+      "count": 1,
+      "label": "赠礼 冰淇淋",
+      "text": "赠送1个冰淇淋（simplefarming:ice_cream）",
+      "completeText": "交付 冰淇淋"
+    }
+  ],
+  "id": 132
+}

@@ -1,0 +1,144 @@
+{
+  "name": "金锁",
+  "weapon": "spartanweaponry:silver_halberd",
+  "armors": [
+    "morevanillaarmor:bone_helmet",
+    "morevanillaarmor:coal_chestplate",
+    "morevanillaarmor:copper_leggings",
+    "morevanillaarmor:emerald_boots"
+  ],
+  "npcLines": [
+    "今天在地铁上被挤得脚都离地了，体验了一把悬空的感觉",
+    "公司的网速慢得要死，打开一个网页要等半天",
+    "同事今天带了一堆零食分给大家，到我这就剩包装袋了",
+    "中午去食堂晚了，菜都没了，只能吃泡面凑合",
+    "今天被领导点名表扬了，但是奖金一分没有，白高兴了",
+    "下班的时候下雨了，没带伞淋了一路，到家全身湿透",
+    "公司的空调开太低，冻得我穿了两件外套还是冷",
+    "今天加班到十一点，回家路上一个人都没有，有点害怕"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/tribeman.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理僵尸矿工",
+          "text": "哎，我这人就是倒霉，干啥都不顺。僵尸矿工到处挖洞，烦得要死。你帮我干掉3只吧，让我能清静清静！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅唤魔者",
+          "text": "骷髅唤魔者这玩意儿太诡异了，能召唤小骷髅。我这倒霉体质，每次遇到都被围攻。你帮我收拾2只，我请你吃顿好的！",
+          "taskId": 1
+        },
+        {
+          "label": "收集钻石",
+          "text": "我需要8颗钻石做装备，但是我的运气你是知道的，挖了半天啥都没挖到。你要是能帮我弄点来，回头我请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化羊驼",
+          "text": "丧尸羊驼这玩意儿太凶了！我这倒霉体质，每次遇到都被追着跑。你帮我干掉5只，我好好谢谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "哎，我这人就是倒霉，有点事儿想麻烦你，帮完我肯定好好谢你！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "钻石",
+          "text": "我想要一颗钻石，做装备用。但是我的运气你是知道的，挖了半天啥都没挖到。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "金剑",
+          "text": "金剑我盯着好久了，砍人特别快。但是我这倒霉体质，去挖矿就被怪追。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "寿司",
+          "text": "想吃寿司了，最近倒霉事太多了，想吃点好的安慰一下自己。你要是能送我一份，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理僵尸矿工",
+      "text": "击杀3只僵尸矿工（born_in_chaos_v1:zombie_miner）",
+      "completeText": "交付 清理僵尸矿工",
+      "id": 0,
+      "mob": "born_in_chaos_v1:zombie_miner"
+    },
+    {
+      "type": 2,
+      "count": 2,
+      "label": "任务 击败骷髅唤魔者",
+      "text": "击杀2只骷髅唤魔者（much_more_skeletons:skeleton_evoker）",
+      "completeText": "交付 击败骷髅唤魔者",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_evoker"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:diamond",
+      "count": 8,
+      "label": "任务 收集钻石",
+      "text": "收集8颗钻石（minecraft:diamond）",
+      "completeText": "交付 收集钻石",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化羊驼",
+      "text": "击杀5只丧尸化的羊驼（angry_animals:angry_llama）",
+      "completeText": "交付 消灭丧尸化羊驼",
+      "id": 3,
+      "mob": "angry_animals:angry_llama"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:diamond",
+      "count": 1,
+      "label": "赠礼 钻石",
+      "text": "赠送1颗钻石（minecraft:diamond）",
+      "completeText": "交付 钻石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:gold_sword",
+      "count": 1,
+      "label": "赠礼 金剑",
+      "text": "赠送1把金剑（morevanillatools:gold_sword）",
+      "completeText": "交付 金剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:sushi",
+      "count": 1,
+      "label": "赠礼 寿司",
+      "text": "赠送1个寿司（simplefarming:sushi）",
+      "completeText": "交付 寿司"
+    }
+  ],
+  "id": 142
+}

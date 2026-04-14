@@ -1,0 +1,144 @@
+{
+  "name": "老8",
+  "weapon": "morevanillatools:ender_sword",
+  "armors": [
+    "morevanillaarmor:glowstone_helmet",
+    "morevanillaarmor:lapis_chestplate",
+    "morevanillaarmor:nether_leggings",
+    "morevanillaarmor:obsidian_boots"
+  ],
+  "npcLines": [
+    "一日三餐没烦恼，今天就吃老八秘制小汉堡",
+    "臭豆腐，腐乳，加柠檬",
+    "你看这汉堡它做的行不行，奥利给，兄弟们，造它就完了",
+    "不管是腥还是臭，到我嘴里都是肉",
+    "不吃好的，不吃贵的，咱今天整俩嘎嘣脆的",
+    "都说圆葱它很辣，到我嘴里我得盘它",
+    "遇到了困难不要怕，我们一起战胜它",
+    "臭豆腐腐乳老干妈，中国人民是一家"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/chefsteve.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理感染者",
+          "text": "哎，一日三餐没烦恼，今天就吃老八秘制小汉堡！不过现在感染者越来越多了，到处感染人，烦得要死。臭豆腐、腐乳、加柠檬，做个汉堡压压惊。你帮我干掉4只，回头请你吃我做的汉堡！",
+          "taskId": 0
+        },
+        {
+          "label": "击败灵魂沙骷髅",
+          "text": "灵魂沙骷髅太阴了，在灵魂沙上走得慢，还射箭特别准！不管是腥还是臭，到我嘴里都是肉，但是这玩意儿看着就没胃口。你帮我收拾3只，我教你做我的秘制小汉堡！",
+          "taskId": 1
+        },
+        {
+          "label": "收集生猪肉",
+          "text": "生猪肉我需要10块，做汉堡用。不吃好的，不吃贵的，咱今天整俩嘎嘣脆的！你要是能帮我弄点来，我肯定好好谢谢你！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化狐狸",
+          "text": "丧尸狐狸太凶了，我差点被它们咬到！遇到了困难不要怕，我们一起战胜它。你帮我干掉5只，奥利给！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "一日三餐没烦恼，有点事儿想麻烦你，帮完请你吃小汉堡！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "熟牛肉",
+          "text": "熟牛肉我需要，做汉堡用。你看这汉堡它做的行不行？奥利给！你要是能送我一个，我肯定好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "煤斧",
+          "text": "煤斧这玩意儿砍树贼快，这样我就能做更多汉堡了！都说圆葱它很辣，到我嘴里我得盘它。你要是能送我一把，我教你做臭豆腐腐乳老干妈！",
+          "giftId": 1
+        },
+        {
+          "label": "汉堡",
+          "text": "汉堡这玩意儿我爱吃，好吃得很。臭豆腐腐乳老干妈，中国人民是一家！你要是能送我一个，我肯定好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "有几样东西我需要，你要是能送我就太好了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 清理感染者",
+      "text": "击杀4只感染者（zombie_extreme:infected）",
+      "completeText": "交付 清理感染者",
+      "id": 0,
+      "mob": "zombie_extreme:infected"
+    },
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 击败灵魂沙骷髅",
+      "text": "击杀3只灵魂沙骷髅（much_more_skeletons:soul_sand_skeleton）",
+      "completeText": "交付 击败灵魂沙骷髅",
+      "id": 1,
+      "mob": "much_more_skeletons:soul_sand_skeleton"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:porkchop",
+      "count": 10,
+      "label": "任务 收集生猪肉",
+      "text": "收集10块生猪肉（minecraft:porkchop）",
+      "completeText": "交付 收集生猪肉",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化狐狸",
+      "text": "击杀5只丧尸化的狐狸（angry_animals:angry_fox）",
+      "completeText": "交付 消灭丧尸化狐狸",
+      "id": 3,
+      "mob": "angry_animals:angry_fox"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:cooked_beef",
+      "count": 1,
+      "label": "赠礼 熟牛肉",
+      "text": "赠送1个熟牛肉（minecraft:cooked_beef）",
+      "completeText": "交付 熟牛肉"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:coal_axe",
+      "count": 1,
+      "label": "赠礼 煤斧",
+      "text": "赠送1把煤斧（morevanillatools:coal_axe）",
+      "completeText": "交付 煤斧"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:hamburger",
+      "count": 1,
+      "label": "赠礼 汉堡",
+      "text": "赠送1个汉堡（simplefarming:hamburger）",
+      "completeText": "交付 汉堡"
+    }
+  ],
+  "id": 133
+}

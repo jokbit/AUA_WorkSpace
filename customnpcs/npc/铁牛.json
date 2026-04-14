@@ -1,0 +1,144 @@
+{
+  "name": "铁牛",
+  "weapon": "spartanweaponry:netherite_scythe",
+  "armors": [
+    "morevanillaarmor:quartz_helmet",
+    "morevanillaarmor:redstone_chestplate",
+    "morevanillaarmor:slime_leggings",
+    "morevanillaarmor:stone_boots"
+  ],
+  "npcLines": [
+    "下班前最后一分钟被叫去开会，我内心已经骂了一百句了",
+    "今天打车去公司堵了四十分钟，司机跟我聊了一路房价",
+    "办公室的空调要么冷得要死要么热得要死，永远调不到合适的温度",
+    "同事跳槽了工资翻了一倍，我还在原公司当牛做马，酸了",
+    "今天加班没赶上最后一班公交，打了辆车回家心都在滴血",
+    "公司的打印机又坏了，一堆文件等着打印，烦躁",
+    "摸鱼摸了一下午，快下班了才想起来有一堆活没干，赶紧赶",
+    "今天被借调到别的部门帮忙，人生地不熟尴尬得要死"
+  ],
+  "texture": "customnpcs:textures/entity/humanmale/tribehunter2.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "治疗"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理腐朽僵尸",
+          "text": "哎，今天下班前最后一分钟被叫去开会，我内心已经骂了一百句了。现在腐朽僵尸又太嚣张了，到处惹事。你帮我干掉3只，我请你喝奶茶！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅劫掠兽",
+          "text": "今天打车去公司堵了四十分钟，司机跟我聊了一路房价，烦死人了。现在骷髅劫掠兽又太凶了，到处都是。你帮我收拾2只，我请你吃顿好的！",
+          "taskId": 1
+        },
+        {
+          "label": "收集铁锭",
+          "text": "办公室的空调要么冷得要死要么热得要死，永远调不到合适的温度，烦死人了。现在我需要16个铁锭做装备，这东西不好找啊。你要是能帮我弄点来，回头我请你吃饭！",
+          "taskId": 2
+        },
+        {
+          "label": "消灭愤怒狐狸",
+          "text": "同事跳槽了工资翻了一倍，我还在原公司当牛做马，酸死我了。现在愤怒的狐狸又太凶了，到处惹事。你帮我干掉5只，我好好谢谢你！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点烦人事儿，还有几个麻烦想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "铁锭",
+          "text": "我想要一个铁锭，今天加班没赶上最后一班公交，打了辆车回家心都在滴血。你要是能送我一个，我好好谢谢你！",
+          "giftId": 0
+        },
+        {
+          "label": "铁剑",
+          "text": "铁剑我盯着好久了，公司的打印机又坏了，一堆文件等着打印，烦躁。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "意大利面",
+          "text": "想吃意大利面了，摸鱼摸了一下午，快下班了才想起来有一堆活没干，赶紧赶。你要是能送我一份，我好好谢谢你！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理腐朽僵尸",
+      "text": "击杀3只腐朽僵尸（born_in_chaos_v1:decaying_zombie）",
+      "completeText": "交付 清理腐朽僵尸",
+      "id": 0,
+      "mob": "born_in_chaos_v1:decaying_zombie"
+    },
+    {
+      "type": 2,
+      "count": 2,
+      "label": "任务 击败骷髅劫掠兽",
+      "text": "击杀2只骷髅劫掠兽（much_more_skeletons:skeleton_ravager）",
+      "completeText": "交付 击败骷髅劫掠兽",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_ravager"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:iron_ingot",
+      "count": 16,
+      "label": "任务 收集铁锭",
+      "text": "收集16个铁锭（minecraft:iron_ingot）",
+      "completeText": "交付 收集铁锭",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭愤怒狐狸",
+      "text": "击杀5只愤怒的狐狸（angry_animals:angry_fox）",
+      "completeText": "交付 消灭愤怒狐狸",
+      "id": 3,
+      "mob": "angry_animals:angry_fox"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:iron_ingot",
+      "count": 1,
+      "label": "赠礼 铁锭",
+      "text": "赠送1个铁锭（minecraft:iron_ingot）",
+      "completeText": "交付 铁锭"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:iron_sword",
+      "count": 1,
+      "label": "赠礼 铁剑",
+      "text": "赠送1把铁剑（morevanillatools:iron_sword）",
+      "completeText": "交付 铁剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:spaghetti",
+      "count": 1,
+      "label": "赠礼 意大利面",
+      "text": "赠送1份意大利面（simplefarming:spaghetti）",
+      "completeText": "交付 意大利面"
+    }
+  ],
+  "id": 145
+}

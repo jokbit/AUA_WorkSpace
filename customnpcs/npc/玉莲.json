@@ -1,0 +1,144 @@
+{
+  "name": "玉莲",
+  "weapon": "spartanweaponry:platinum_battle_hammer",
+  "armors": [
+    "morevanillaarmor:quartz_helmet",
+    "morevanillaarmor:redstone_chestplate",
+    "morevanillaarmor:slime_leggings",
+    "morevanillaarmor:stone_boots"
+  ],
+  "npcLines": [
+    "今天在地铁上被踩了三脚，每脚都精准踩在小白鞋上",
+    "公司的打印机又卡纸了，修了半天还是坏的",
+    "同事今天带了一堆零食分给大家，我抢到了最后一包薯片",
+    "中午去食堂吃饭，排队排了二十分钟，菜都没了",
+    "今天被领导表扬了，但是没有奖金，白高兴一场",
+    "下班的时候下雨了，没带伞，淋了一路回家",
+    "公司的空调开太低，冻得我一直在打喷嚏",
+    "今天加班到九点，回家路上看到月亮还挺圆的"
+  ],
+  "texture": "customnpcs:textures/entity/humanfemale/stephanie.png",
+  "dialogs": [
+    {
+      "label": "请教"
+    },
+    {
+      "label": "闲聊"
+    },
+    {
+      "label": "索取"
+    },
+    {
+      "label": "任务",
+      "sub": [
+        {
+          "label": "清理僵尸猎人",
+          "text": "僵尸猎人这玩意儿太烦了，天天在附近晃悠！今天在地铁上被踩了三脚，每脚都精准踩在小白鞋上，心情本来就不好，这些僵尸猎人还来烦我。你帮我干掉3只，让我清静清静！",
+          "taskId": 0
+        },
+        {
+          "label": "击败骷髅掠夺者",
+          "text": "骷髅掠夺者这玩意儿太凶了，射箭还贼准！公司的打印机又卡纸了，修了半天还是坏的，我心情不好，这些骷髅掠夺者还来烦我。你帮我收拾4只，我请你喝奶茶！",
+          "taskId": 1
+        },
+        {
+          "label": "收集绿宝石",
+          "text": "绿宝石这玩意儿我需要12颗，交易用！同事今天带了一堆零食分给大家，我抢到了最后一包薯片，但是绿宝石我还是没有。你帮我弄点来呗？",
+          "taskId": 2
+        },
+        {
+          "label": "消灭丧尸化羊",
+          "text": "丧尸羊这玩意儿太烦了，天天在草原上晃悠！中午去食堂吃饭，排队排了二十分钟，菜都没了，我心情不好，这些丧尸羊还来烦我。你帮我干掉5只，让我清静清静！",
+          "taskId": 3
+        }
+      ],
+      "subTitle": "最近遇到点麻烦，有点事儿想请你帮忙！"
+    },
+    {
+      "label": "赠礼",
+      "sub": [
+        {
+          "label": "绿宝石",
+          "text": "绿宝石这玩意儿我需要，交易用！今天被领导表扬了，但是没有奖金，白高兴一场，我需要绿宝石来交易赚点钱。你要是能送我一�，我请你喝奶茶！",
+          "giftId": 0
+        },
+        {
+          "label": "绿宝石剑",
+          "text": "绿宝石剑这玩意儿我想要一把，砍人贼快！下班的时候下雨了，没带伞，淋了一路回家，我心情不好，想要把好武器防身。你要是能送我一把，我请你喝奶茶！",
+          "giftId": 1
+        },
+        {
+          "label": "咖啡",
+          "text": "咖啡这玩意儿我馋好久了，提神用！公司的空调开太低，冻得我一直在打喷嚏，我需要咖啡来暖暖身子。你要是能送我一杯，我请你喝奶茶！",
+          "giftId": 2
+        }
+      ],
+      "subTitle": "最近缺几样东西，你要是能送我就太感谢了！"
+    }
+  ],
+  "tasks": [
+    {
+      "type": 2,
+      "count": 3,
+      "label": "任务 清理僵尸猎人",
+      "text": "击杀3只僵尸猎人（born_in_chaos_v1:zombie_hunter）",
+      "completeText": "交付 清理僵尸猎人",
+      "id": 0,
+      "mob": "born_in_chaos_v1:zombie_hunter"
+    },
+    {
+      "type": 2,
+      "count": 4,
+      "label": "任务 击败骷髅掠夺者",
+      "text": "击杀4只骷髅掠夺者（much_more_skeletons:skeleton_looter）",
+      "completeText": "交付 击败骷髅掠夺者",
+      "id": 1,
+      "mob": "much_more_skeletons:skeleton_looter"
+    },
+    {
+      "type": 0,
+      "item": "minecraft:emerald",
+      "count": 12,
+      "label": "任务 收集绿宝石",
+      "text": "收集12颗绿宝石（minecraft:emerald）",
+      "completeText": "交付 收集绿宝石",
+      "id": 2
+    },
+    {
+      "type": 2,
+      "count": 5,
+      "label": "任务 消灭丧尸化羊",
+      "text": "击杀5只丧尸化的羊（angry_animals:angry_sheep）",
+      "completeText": "交付 消灭丧尸化羊",
+      "id": 3,
+      "mob": "angry_animals:angry_sheep"
+    }
+  ],
+  "gifts": [
+    {
+      "id": 0,
+      "item": "minecraft:emerald",
+      "count": 1,
+      "label": "赠礼 绿宝石",
+      "text": "赠送1颗绿宝石（minecraft:emerald）",
+      "completeText": "交付 绿宝石"
+    },
+    {
+      "id": 1,
+      "item": "morevanillatools:emerald_sword",
+      "count": 1,
+      "label": "赠礼 绿宝石剑",
+      "text": "赠送1把绿宝石剑（morevanillatools:emerald_sword）",
+      "completeText": "交付 绿宝石剑"
+    },
+    {
+      "id": 2,
+      "item": "simplefarming:coffee",
+      "count": 1,
+      "label": "赠礼 咖啡",
+      "text": "赠送1杯咖啡（simplefarming:coffee）",
+      "completeText": "交付 咖啡"
+    }
+  ],
+  "id": 123
+}

@@ -1,0 +1,2552 @@
+{
+  TransformHasDisplay: 0b,
+  AttackInvisible: 0b,
+  IsStatue: 0b,
+  AbsorptionAmount: 0.0f,
+  SpawnCycle: 3,
+  Accuracy: 60,
+  MovingPatern: 0,
+  HideBodyWhenKilled: 0b,
+  ArmorItems: [
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  ReturnToStart: 1b,
+  CloakTexture: "",
+  ActiveRange: 32,
+  TransformHasAdvanced: 0b,
+  Resistances: {
+    Knockback: 1.0084506f,
+    Explosion: 1.0056338f,
+    Melee: 1.0028169f,
+    Arrow: 1.0f 
+  },
+  FactionPoints: {
+    DecreaseFaction2Points: 0b,
+    OptionFaction2Points: 100,
+    OptionFactions2: -1,
+    OptionFaction1Points: 100,
+    OptionFactions1: -1,
+    DecreaseFaction1Points: 0b 
+  },
+  ForgeCaps: {
+    curios: inventory: {
+      Curios: [
+        
+      ]
+    },
+    mutantmore: mutantshulkershieldshoottimer: {
+      ShootTime: 0 
+    },
+    tacz: synced_entity_data: [
+      
+    ],
+    advancedhostility: hate: {
+      
+    },
+    tconstruct: persistent_data: {
+      
+    },
+    mutantmore: entityheat: {
+      CoolDelay: 0,
+      HeatAmount: -0.025d 
+    }
+  },
+  HandDropChances: [
+    0.085f,
+    0.085f 
+  ],
+  OverlayGlowing: 1b,
+  Weapons: [
+    {
+      Slot: 0b,
+      id: "morevanillatools:iron_axe",
+      Count: 1b,
+      tag: {
+        Damage: 0 
+      }
+    }
+  ],
+  pSize: 5,
+  BossColor: 0,
+  BossBar: 0b,
+  MovingState: 1,
+  pRender3D: 1b,
+  FireRate: 5,
+  pArea: 0,
+  NPCDialogOptions: [
+    {
+      DialogSlot: 0,
+      NPCDialog: {
+        OptionType: 1,
+        Title: "铁柱",
+        Dialog: 1421,
+        DialogCommand: "",
+        DialogColor: 14737632 
+      }
+    }
+  ],
+  GroundSound: "minecraft:block.stone.break",
+  OnAttack: 0,
+  MovingPause: 1b,
+  FiringSound: "minecraft:entity.arrow.shoot",
+  Scripts: [
+    {
+      Script: "",
+      Console: [
+        
+      ],
+      ScriptList: [
+        {
+          Line: "01_asker.js" 
+        },
+        {
+          Line: "01_content.js" 
+        },
+        {
+          Line: "10_npc.js" 
+        },
+        {
+          Line: "00_common.js" 
+        }
+      ]
+    }
+  ],
+  ShowName: 0,
+  LinkedNpcName: "",
+  ReactsToFire: 0b,
+  Armor: [
+    {
+      Slot: 0b,
+      id: "minecraft:iron_helmet",
+      Count: 1b,
+      tag: {
+        Damage: 0 
+      }
+    },
+    {
+      Slot: 1b,
+      id: "morevanillaarmor:iron_chestplate",
+      Count: 1b,
+      tag: {
+        Damage: 0 
+      }
+    },
+    {
+      Slot: 2b,
+      id: "minecraft:iron_leggings",
+      Count: 1b,
+      tag: {
+        Damage: 0 
+      }
+    },
+    {
+      Slot: 3b,
+      id: "morevanillaarmor:iron_boots",
+      Count: 1b,
+      tag: {
+        Damage: 0 
+      }
+    }
+  ],
+  CanSprint: 0b,
+  ForgeData: {
+    enhancedai: {
+      leaders: {
+        
+      },
+      targeting: {
+        alert_range: 32,
+        follow_ranges_processed: 1b 
+      },
+      spawning: {
+        
+      }
+    },
+    cnpcmarkdata: {
+      marks: [
+        
+      ]
+    },
+    insanelib: {
+      tags: {
+        spawn_type: 2b 
+      }
+    }
+  },
+  LootMode: 0,
+  PotionEffect: 0,
+  NpcInteractNPCLines: {
+    Lines: [
+      {
+        Song: "",
+        Slot: 0,
+        Line: "红沙土，平顶山特产" 
+      },
+      {
+        Song: "",
+        Slot: 1,
+        Line: "沙子挖多了，直接塌陷" 
+      },
+      {
+        Song: "",
+        Slot: 2,
+        Line: "砾石挖了，全是燧石" 
+      },
+      {
+        Song: "",
+        Slot: 3,
+        Line: "粘土块，在河边才有" 
+      },
+      {
+        Song: "",
+        Slot: 4,
+        Line: "海绵，在海底遗迹" 
+      },
+      {
+        Song: "",
+        Slot: 5,
+        Line: "海晶碎片，打守卫者掉" 
+      },
+      {
+        Song: "",
+        Slot: 6,
+        Line: "棱镜水晶，远古守卫者掉" 
+      },
+      {
+        Song: "",
+        Slot: 7,
+        Line: "这整合包的海洋内容太丰富" 
+      }
+    ]
+  },
+  SkinUrl: "",
+  IgnoreCobweb: 0b,
+  PositionOffsetZ: 5.0f,
+  Orientation: 0,
+  StandingState: 0,
+  MoveSpeed: 7,
+  Fire: -1s,
+  ModRev: 18,
+  CombatRegen: 0,
+  KilledTime: 0L,
+  WalkingRange: 10,
+  DeathTime: 0s,
+  CanDrown: 0b,
+  pStick: 0b,
+  pDamage: 4,
+  DropChance: [
+    {
+      Slot: 0,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 1,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 2,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 3,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 4,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 5,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 6,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 7,
+      Integer: 100.0f 
+    },
+    {
+      Slot: 8,
+      Integer: 100.0f 
+    }
+  ],
+  NpcAttackLines: {
+    Lines: [
+      
+    ]
+  },
+  TransformHasRole: 0b,
+  HitSound: "minecraft:entity.arrow.hit",
+  AggroRange: 16,
+  OnGround: 1b,
+  MaxFiringRange: 15,
+  pEffect: 0,
+  pPhysics: 1b,
+  NpcScenes: {
+    Scenes: [
+      
+    ]
+  },
+  CanLeap: 0b,
+  Attributes: [
+    {
+      Name: "minecraft:generic.attack_knockback",
+      Base: 0.0d 
+    },
+    {
+      Name: "minecraft:generic.armor_toughness",
+      Base: 16.0d 
+    },
+    {
+      Name: "minecraft:generic.knockback_resistance",
+      Base: 0.0d 
+    },
+    {
+      Name: "minecraft:generic.movement_speed",
+      Base: 0.3499999940395355d 
+    },
+    {
+      Name: "minecraft:generic.max_health",
+      Base: 200.0d 
+    },
+    {
+      Name: "forge:entity_gravity",
+      Base: 0.08d 
+    },
+    {
+      Name: "forge:step_height_addition",
+      Base: 0.0d 
+    },
+    {
+      Name: "forge:entity_reach",
+      Base: 0.8282856485126004d 
+    },
+    {
+      Name: "minecraft:generic.follow_range",
+      Base: 32.0d 
+    },
+    {
+      Name: "forge:swim_speed",
+      Base: 11.199999809265137d 
+    },
+    {
+      Name: "minecraft:generic.attack_speed",
+      Base: 4.0d 
+    },
+    {
+      Name: "minecraft:generic.flying_speed",
+      Base: 0.699999988079071d 
+    },
+    {
+      Name: "minecraft:generic.attack_damage",
+      Base: 5.0d 
+    },
+    {
+      Name: "minecraft:generic.armor",
+      Base: 0.0d 
+    }
+  ],
+  FactionID: 0,
+  TransformHasJob: 0b,
+  Name: "铁柱",
+  NpcAngrySound: "",
+  VisibleAvailability: {
+    AvailabilityScoreboardObjective: "",
+    AvailabilityDialog3Id: -1,
+    AvailabilityFaction2Stance: 0,
+    AvailabilityDialog4: 0,
+    AvailabilityQuest2: 0,
+    AvailabilityFaction: 0,
+    AvailabilityDialog2Id: -1,
+    AvailabilityQuest3Id: -1,
+    AvailabilityQuest: 0,
+    AvailabilityMinPlayerLevel: 0,
+    AvailabilityQuest4Id: -1,
+    AvailabilityQuest2Id: -1,
+    AvailabilityDialog3: 0,
+    AvailabilityDayTime: 0,
+    AvailabilityScoreboard2Type: 1,
+    AvailabilityScoreboard2Objective: "",
+    AvailabilityDialog: 0,
+    AvailabilityDialog4Id: -1,
+    AvailabilityQuestId: -1,
+    AvailabilityDialogId: -1,
+    AvailabilityScoreboardType: 1,
+    AvailabilityDialog2: 0,
+    AvailabilityQuest3: 0,
+    AvailabilityQuest4: 0,
+    AvailabilityFactionId: -1,
+    AvailabilityFactionStance: 0,
+    AvailabilityFaction2: 0,
+    AvailabilityFaction2Id: -1,
+    AvailabilityScoreboardValue: 1,
+    AvailabilityScoreboard2Value: 1,
+    ModRev: 18 
+  },
+  npcInteracting: 1b,
+  FindShelter: 2,
+  FireIndirect: 0,
+  HurtByTimestamp: 3907,
+  AttackStrenght: 5,
+  ScriptEnabled: 1b,
+  HealthRegen: 0,
+  pXlr8: 0b,
+  NpcStepSound: "",
+  MovementType: 0,
+  CitadelData: {
+    
+  },
+  Size: 5,
+  Role: 0,
+  DoorInteract: 1,
+  DirectLOS: 1b,
+  TransformIsActive: 0b,
+  SkinColor: 16777215,
+  PositionOffsetX: 5.0f,
+  NoFallDamage: 0b,
+  BurstCount: 1,
+  pSpeed: 10,
+  TransformHasAI: 0b,
+  AttackRange: 2,
+  pTrail: 0,
+  id: "customnpcs:customnpc",
+  AttackSpeed: 20,
+  Title: "",
+  pGlows: 0b,
+  GuardTargets: [
+    {
+      Line: "entity.angry_animals.angry_bee" 
+    },
+    {
+      Line: "entity.angry_animals.angry_chicken" 
+    },
+    {
+      Line: "entity.angry_animals.angry_cow" 
+    },
+    {
+      Line: "entity.angry_animals.angry_fox" 
+    },
+    {
+      Line: "entity.angry_animals.angry_goat" 
+    },
+    {
+      Line: "entity.angry_animals.angry_golden_pig" 
+    },
+    {
+      Line: "entity.angry_animals.angry_llama" 
+    },
+    {
+      Line: "entity.angry_animals.angry_ocelot" 
+    },
+    {
+      Line: "entity.angry_animals.angry_panda" 
+    },
+    {
+      Line: "entity.angry_animals.angry_pig" 
+    },
+    {
+      Line: "entity.angry_animals.angry_sheep" 
+    },
+    {
+      Line: "entity.angry_animals.angry_wolf" 
+    },
+    {
+      Line: "entity.angry_animals.shadow_angry_cow" 
+    },
+    {
+      Line: "entity.apocalypse.destroyer" 
+    },
+    {
+      Line: "entity.apocalypse.fearwolf" 
+    },
+    {
+      Line: "entity.apocalypse.ghost" 
+    },
+    {
+      Line: "entity.apocalypse.grump" 
+    },
+    {
+      Line: "entity.apocalypse.seeker" 
+    },
+    {
+      Line: "entity.apocalypse.shadefiend" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.baby_skeleton" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.baby_skeleton_minion" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.baby_spider" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.barrel_zombie" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.bloody_gadfly" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.bone_imp" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.bone_imp_minion" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.bonescaller" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.bonescaller_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.corpse_fish" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.corpse_fly" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.dark_vortex" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.decaying_zombie" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.decaying_zombie_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.decrepit_skeleton" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.diamond_termite" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.dire_hound_leader" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.door_knight" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.door_knight_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.dread_hound" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.dread_hound_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.fallen_chaos_knight" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.felsteed" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.firelight" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.firelight_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.glutton_fish" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.krampus" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.krampus_henchman" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.lifestealer" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.lifestealer_true_form" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.lord_pumpkinhead" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.lord_pumpkinhead_head" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.lord_pumpkinhead_withouta_horse" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.lord_the_headless" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.lords_felsteed" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.maggot" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.missionary_raider" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.missioner" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.mother_spider" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.mr_pumpkin" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.mrs_pumpkin" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.nightmare_stalker" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.phantom_bomb_entity" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.pumpkin_bomb" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.pumpkin_bruiser" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.pumpkin_dunce" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.pumpkinhead" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.restless_spirit" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.scarlet_persecutor" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.seared_spirit" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.seared_spirit_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.senor_pumpkin" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.siamese_skeletons" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.siamese_skeletonsleft" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.siamese_skeletonsright" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.sir_pumpkinhead" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.sir_pumpkinhead_without_horse" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.sir_the_headless" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.skeleton_demoman" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.skeleton_thrasher" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.skeleton_thrasher_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.spirit_guide" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.spirit_guide_assistant" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.spiritof_chaos" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.supreme_bonescaller" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.supreme_bonescaller_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.supreme_bonescaller_stage_2" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.swarmer" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.zombie_bruiser" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.zombie_clown" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.zombie_clown_not_despawn" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.zombie_fisherman" 
+    },
+    {
+      Line: "entity.born_in_chaos_v1.zombie_lumberjack" 
+    },
+    {
+      Line: "entity.deadlyworld.chest_mimic" 
+    },
+    {
+      Line: "entity.deadlyworld.jukebox_mimic" 
+    },
+    {
+      Line: "entity.deadlyworld.micro_ghast" 
+    },
+    {
+      Line: "entity.deadlyworld.mini_chest_mimic" 
+    },
+    {
+      Line: "entity.deadlyworld.mini_skeleton" 
+    },
+    {
+      Line: "entity.deadlyworld.mini_spawner_mimic" 
+    },
+    {
+      Line: "entity.deadlyworld.mini_spider" 
+    },
+    {
+      Line: "entity.deadlyworld.mini_zombie" 
+    },
+    {
+      Line: "entity.deadlyworld.spawner_mimic" 
+    },
+    {
+      Line: "entity.dreamcaslib.impact_wave" 
+    },
+    {
+      Line: "entity.dreamcaslib.seismic_wave" 
+    },
+    {
+      Line: "entity.giants_overhaul.giant_drowned" 
+    },
+    {
+      Line: "entity.giants_overhaul.giant_husk" 
+    },
+    {
+      Line: "entity.graveyard.acolyte" 
+    },
+    {
+      Line: "entity.graveyard.corrupted_pillager" 
+    },
+    {
+      Line: "entity.graveyard.corrupted_vindicator" 
+    },
+    {
+      Line: "entity.graveyard.falling_corpse" 
+    },
+    {
+      Line: "entity.graveyard.ghoul" 
+    },
+    {
+      Line: "entity.graveyard.lich" 
+    },
+    {
+      Line: "entity.graveyard.nightmare" 
+    },
+    {
+      Line: "entity.graveyard.reaper" 
+    },
+    {
+      Line: "entity.graveyard.revenant" 
+    },
+    {
+      Line: "entity.graveyard.wraith" 
+    },
+    {
+      Line: "entity.infectious.acid_zombie" 
+    },
+    {
+      Line: "entity.infectious.ancient_zombie_boss" 
+    },
+    {
+      Line: "entity.infectious.angry_zombie" 
+    },
+    {
+      Line: "entity.infectious.armless_zombie" 
+    },
+    {
+      Line: "entity.infectious.balloon_zombie" 
+    },
+    {
+      Line: "entity.infectious.balloon_zombie_no_balloon" 
+    },
+    {
+      Line: "entity.infectious.barrel_zombie" 
+    },
+    {
+      Line: "entity.infectious.baseball_bat_zombie" 
+    },
+    {
+      Line: "entity.infectious.beehive_zombie" 
+    },
+    {
+      Line: "entity.infectious.beekeeper_zombie" 
+    },
+    {
+      Line: "entity.infectious.bees" 
+    },
+    {
+      Line: "entity.infectious.big_zombie" 
+    },
+    {
+      Line: "entity.infectious.blind_zombie" 
+    },
+    {
+      Line: "entity.infectious.bodyless_zombie" 
+    },
+    {
+      Line: "entity.infectious.bouncer_zombie" 
+    },
+    {
+      Line: "entity.infectious.brain_zombie" 
+    },
+    {
+      Line: "entity.infectious.bucket_zombie" 
+    },
+    {
+      Line: "entity.infectious.burned_zombie" 
+    },
+    {
+      Line: "entity.infectious.burning_zombie" 
+    },
+    {
+      Line: "entity.infectious.chained_zombie" 
+    },
+    {
+      Line: "entity.infectious.claw_zombie" 
+    },
+    {
+      Line: "entity.infectious.construction_worker_zombie" 
+    },
+    {
+      Line: "entity.infectious.crawling_zombie" 
+    },
+    {
+      Line: "entity.infectious.deep_sea_diver_zombie" 
+    },
+    {
+      Line: "entity.infectious.disco_zombie" 
+    },
+    {
+      Line: "entity.infectious.doom_zombie" 
+    },
+    {
+      Line: "entity.infectious.door_zombie" 
+    },
+    {
+      Line: "entity.infectious.enchanted_zombie" 
+    },
+    {
+      Line: "entity.infectious.fat_zombie" 
+    },
+    {
+      Line: "entity.infectious.fire_fighter_zombie" 
+    },
+    {
+      Line: "entity.infectious.firework_zombie" 
+    },
+    {
+      Line: "entity.infectious.football_player_zombie" 
+    },
+    {
+      Line: "entity.infectious.franklin_zombie" 
+    },
+    {
+      Line: "entity.infectious.frozen_zombie" 
+    },
+    {
+      Line: "entity.infectious.fungal_zombie" 
+    },
+    {
+      Line: "entity.infectious.giant_zombie" 
+    },
+    {
+      Line: "entity.infectious.glitched_zombie" 
+    },
+    {
+      Line: "entity.infectious.golden_zombie" 
+    },
+    {
+      Line: "entity.infectious.hazmat_zombie" 
+    },
+    {
+      Line: "entity.infectious.headless_zombie" 
+    },
+    {
+      Line: "entity.infectious.infectious_zombie" 
+    },
+    {
+      Line: "entity.infectious.iron_door_zombie" 
+    },
+    {
+      Line: "entity.infectious.maggot_zombie" 
+    },
+    {
+      Line: "entity.infectious.mc_donalds_worker_zombie" 
+    },
+    {
+      Line: "entity.infectious.mecha_zombie" 
+    },
+    {
+      Line: "entity.infectious.muddy_zombie" 
+    },
+    {
+      Line: "entity.infectious.mummy" 
+    },
+    {
+      Line: "entity.infectious.muscular_zombie" 
+    },
+    {
+      Line: "entity.infectious.mutant_zombie" 
+    },
+    {
+      Line: "entity.infectious.old_zombie" 
+    },
+    {
+      Line: "entity.infectious.pool_tube_zombie" 
+    },
+    {
+      Line: "entity.infectious.psycho_zombie" 
+    },
+    {
+      Line: "entity.infectious.pumpkin_zombie" 
+    },
+    {
+      Line: "entity.infectious.pylon_zombie" 
+    },
+    {
+      Line: "entity.infectious.radioactive_zombie" 
+    },
+    {
+      Line: "entity.infectious.robotic_zombie" 
+    },
+    {
+      Line: "entity.infectious.screamer" 
+    },
+    {
+      Line: "entity.infectious.security_zombie" 
+    },
+    {
+      Line: "entity.infectious.sleepy_zombie" 
+    },
+    {
+      Line: "entity.infectious.spore_zombie" 
+    },
+    {
+      Line: "entity.infectious.swat_zombie" 
+    },
+    {
+      Line: "entity.infectious.tower_zombie" 
+    },
+    {
+      Line: "entity.infectious.tower_zombie_1" 
+    },
+    {
+      Line: "entity.infectious.tower_zombie_2" 
+    },
+    {
+      Line: "entity.infectious.tower_zombie_3" 
+    },
+    {
+      Line: "entity.infectious.tower_zombie_4" 
+    },
+    {
+      Line: "entity.infectious.withered_zombie" 
+    },
+    {
+      Line: "entity.infectious.zombie" 
+    },
+    {
+      Line: "entity.infectious.zombie_agent" 
+    },
+    {
+      Line: "entity.infectious.zombie_archer" 
+    },
+    {
+      Line: "entity.infectious.zombie_astronaut" 
+    },
+    {
+      Line: "entity.infectious.zombie_batman" 
+    },
+    {
+      Line: "entity.infectious.zombie_bomber" 
+    },
+    {
+      Line: "entity.infectious.zombie_boxer" 
+    },
+    {
+      Line: "entity.infectious.zombie_breeder" 
+    },
+    {
+      Line: "entity.infectious.zombie_climber" 
+    },
+    {
+      Line: "entity.infectious.zombie_clown" 
+    },
+    {
+      Line: "entity.infectious.zombie_cook" 
+    },
+    {
+      Line: "entity.infectious.zombie_dancer" 
+    },
+    {
+      Line: "entity.infectious.zombie_diver" 
+    },
+    {
+      Line: "entity.infectious.zombie_doctor" 
+    },
+    {
+      Line: "entity.infectious.zombie_farmer" 
+    },
+    {
+      Line: "entity.infectious.zombie_fisherman" 
+    },
+    {
+      Line: "entity.infectious.zombie_girl" 
+    },
+    {
+      Line: "entity.infectious.zombie_head" 
+    },
+    {
+      Line: "entity.infectious.zombie_hitler" 
+    },
+    {
+      Line: "entity.infectious.zombie_horseman" 
+    },
+    {
+      Line: "entity.infectious.zombie_horseman_no_horse" 
+    },
+    {
+      Line: "entity.infectious.zombie_lumberjack" 
+    },
+    {
+      Line: "entity.infectious.zombie_miner" 
+    },
+    {
+      Line: "entity.infectious.zombie_on_stelts" 
+    },
+    {
+      Line: "entity.infectious.zombie_painter" 
+    },
+    {
+      Line: "entity.infectious.zombie_police" 
+    },
+    {
+      Line: "entity.infectious.zombie_prisoner" 
+    },
+    {
+      Line: "entity.infectious.zombie_runner" 
+    },
+    {
+      Line: "entity.infectious.zombie_scientist" 
+    },
+    {
+      Line: "entity.infectious.zombie_screamer" 
+    },
+    {
+      Line: "entity.infectious.zombie_soldier" 
+    },
+    {
+      Line: "entity.infectious.zombie_spiter" 
+    },
+    {
+      Line: "entity.infectious.zombie_warrior" 
+    },
+    {
+      Line: "entity.infectious.zombified_bear" 
+    },
+    {
+      Line: "entity.infectious.zombified_bird" 
+    },
+    {
+      Line: "entity.infectious.zombified_bird_flying" 
+    },
+    {
+      Line: "entity.infectious.zombified_boar" 
+    },
+    {
+      Line: "entity.infectious.zombified_chicken" 
+    },
+    {
+      Line: "entity.infectious.zombified_spider" 
+    },
+    {
+      Line: "entity.infectious.zombified_wolf" 
+    },
+    {
+      Line: "entity.minecraft.blaze" 
+    },
+    {
+      Line: "entity.minecraft.cave_spider" 
+    },
+    {
+      Line: "entity.minecraft.drowned" 
+    },
+    {
+      Line: "entity.minecraft.elder_guardian" 
+    },
+    {
+      Line: "entity.minecraft.ender_dragon" 
+    },
+    {
+      Line: "entity.minecraft.enderman" 
+    },
+    {
+      Line: "entity.minecraft.endermite" 
+    },
+    {
+      Line: "entity.minecraft.ghast" 
+    },
+    {
+      Line: "entity.minecraft.giant" 
+    },
+    {
+      Line: "entity.minecraft.guardian" 
+    },
+    {
+      Line: "entity.minecraft.hoglin" 
+    },
+    {
+      Line: "entity.minecraft.husk" 
+    },
+    {
+      Line: "entity.minecraft.illusioner" 
+    },
+    {
+      Line: "entity.minecraft.magma_cube" 
+    },
+    {
+      Line: "entity.minecraft.phantom" 
+    },
+    {
+      Line: "entity.minecraft.piglin" 
+    },
+    {
+      Line: "entity.minecraft.piglin_brute" 
+    },
+    {
+      Line: "entity.minecraft.shulker" 
+    },
+    {
+      Line: "entity.minecraft.silverfish" 
+    },
+    {
+      Line: "entity.minecraft.skeleton" 
+    },
+    {
+      Line: "entity.minecraft.slime" 
+    },
+    {
+      Line: "entity.minecraft.spider" 
+    },
+    {
+      Line: "entity.minecraft.stray" 
+    },
+    {
+      Line: "entity.minecraft.warden" 
+    },
+    {
+      Line: "entity.minecraft.wither" 
+    },
+    {
+      Line: "entity.minecraft.wither_skeleton" 
+    },
+    {
+      Line: "entity.minecraft.zoglin" 
+    },
+    {
+      Line: "entity.minecraft.zombie" 
+    },
+    {
+      Line: "entity.minecraft.zombie_villager" 
+    },
+    {
+      Line: "entity.minecraft.zombified_piglin" 
+    },
+    {
+      Line: "entity.mobz.andriu" 
+    },
+    {
+      Line: "entity.mobz.archer" 
+    },
+    {
+      Line: "entity.mobz.armored_zombie" 
+    },
+    {
+      Line: "entity.mobz.bigboss" 
+    },
+    {
+      Line: "entity.mobz.blue_spider" 
+    },
+    {
+      Line: "entity.mobz.boss_skeleton" 
+    },
+    {
+      Line: "entity.mobz.boss_zombie" 
+    },
+    {
+      Line: "entity.mobz.bowman" 
+    },
+    {
+      Line: "entity.mobz.charles" 
+    },
+    {
+      Line: "entity.mobz.dwarf" 
+    },
+    {
+      Line: "entity.mobz.ender" 
+    },
+    {
+      Line: "entity.mobz.ender_knight" 
+    },
+    {
+      Line: "entity.mobz.ender_zombie" 
+    },
+    {
+      Line: "entity.mobz.fast_zombie" 
+    },
+    {
+      Line: "entity.mobz.frost_blaze" 
+    },
+    {
+      Line: "entity.mobz.honey_slime" 
+    },
+    {
+      Line: "entity.mobz.illusioner" 
+    },
+    {
+      Line: "entity.mobz.iron_steve" 
+    },
+    {
+      Line: "entity.mobz.knight" 
+    },
+    {
+      Line: "entity.mobz.lord_of_darkness" 
+    },
+    {
+      Line: "entity.mobz.lost_skeleton" 
+    },
+    {
+      Line: "entity.mobz.nether_skeleton" 
+    },
+    {
+      Line: "entity.mobz.overgrown_skeleton" 
+    },
+    {
+      Line: "entity.mobz.pigman" 
+    },
+    {
+      Line: "entity.mobz.purple_spider" 
+    },
+    {
+      Line: "entity.mobz.small_spider" 
+    },
+    {
+      Line: "entity.mobz.small_zombie" 
+    },
+    {
+      Line: "entity.mobz.spider_mage" 
+    },
+    {
+      Line: "entity.mobz.spirit_of_death" 
+    },
+    {
+      Line: "entity.mobz.tank_zombie" 
+    },
+    {
+      Line: "entity.mobz.templar" 
+    },
+    {
+      Line: "entity.mobz.tiny_spider" 
+    },
+    {
+      Line: "entity.mobz.warrior" 
+    },
+    {
+      Line: "entity.mobz.william" 
+    },
+    {
+      Line: "entity.mobz.withender" 
+    },
+    {
+      Line: "entity.mobz.wither_blaze" 
+    },
+    {
+      Line: "entity.mobz.zombie_mage" 
+    },
+    {
+      Line: "entity.mozombies_wave.disco_zombie" 
+    },
+    {
+      Line: "entity.mozombies_wave.nether_zombie" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_chef" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_cyborg" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_dwarf" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_herobrine" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_king" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_knight" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_miner" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_notch" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_pa" 
+    },
+    {
+      Line: "entity.mozombies_wave.zombie_pirate" 
+    },
+    {
+      Line: "entity.much_more_skeletons.amethyst_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.angry_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.bloody_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.corrupted_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.crimson_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.dark_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.drowned_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.ender_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.fire_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.fire_stray" 
+    },
+    {
+      Line: "entity.much_more_skeletons.giant_girl_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.giant_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.giant_stray" 
+    },
+    {
+      Line: "entity.much_more_skeletons.giant_wither_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.giant_zombie_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.girl_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.hell_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.husk_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.infected_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.jungle_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.jungle_stray" 
+    },
+    {
+      Line: "entity.much_more_skeletons.lava_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.lush_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.mangrove_swamp_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.melon_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.nether_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.pigman_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.porkchop_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.sculk_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_cat" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_chicken" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_cow" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_enderman" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_fox" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_ghast" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_hoglin" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_pig" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_piglin" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_ravager" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_silverfish" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_snow_golem" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_spider" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_steve" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_villager" 
+    },
+    {
+      Line: "entity.much_more_skeletons.skeleton_wolf" 
+    },
+    {
+      Line: "entity.much_more_skeletons.soul_fire_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.soul_sand_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.soul_wither_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.swamp_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.tainted_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.tainted_stay" 
+    },
+    {
+      Line: "entity.much_more_skeletons.toxic_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.toxic_stray" 
+    },
+    {
+      Line: "entity.much_more_skeletons.undead_pigman_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.undead_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.warped_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.wither_skeleton_cat" 
+    },
+    {
+      Line: "entity.much_more_skeletons.wither_skeleton_enderman" 
+    },
+    {
+      Line: "entity.much_more_skeletons.wither_skeleton_fox" 
+    },
+    {
+      Line: "entity.much_more_skeletons.wither_skeleton_hoglin" 
+    },
+    {
+      Line: "entity.much_more_skeletons.wither_skeleton_villager" 
+    },
+    {
+      Line: "entity.much_more_skeletons.wither_skeleton_wolf" 
+    },
+    {
+      Line: "entity.much_more_skeletons.wither_stray" 
+    },
+    {
+      Line: "entity.much_more_skeletons.zombie_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.zombie_wither_skeleton" 
+    },
+    {
+      Line: "entity.much_more_skeletons.zombified_skeleton" 
+    },
+    {
+      Line: "entity.mutantmonsters.endersoul_clone" 
+    },
+    {
+      Line: "entity.mutantmonsters.mutant_creeper" 
+    },
+    {
+      Line: "entity.mutantmonsters.mutant_enderman" 
+    },
+    {
+      Line: "entity.mutantmonsters.mutant_skeleton" 
+    },
+    {
+      Line: "entity.mutantmonsters.mutant_zombie" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_blaze" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_frozen_zombie" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_hoglin" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_husk" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_jungle_zombie" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_phantom" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_shulker" 
+    },
+    {
+      Line: "entity.mutantmore.mutant_wither_skeleton" 
+    },
+    {
+      Line: "entity.mutantsbuff.explosion" 
+    },
+    {
+      Line: "entity.mutantsbuff.invul" 
+    },
+    {
+      Line: "entity.mutantsbuff.polarider" 
+    },
+    {
+      Line: "entity.mutantsbuff.stable_explosion" 
+    },
+    {
+      Line: "entity.mutantszombies.blister_zombie" 
+    },
+    {
+      Line: "entity.mutantszombies.crawler" 
+    },
+    {
+      Line: "entity.mutantszombies.mutant_brute" 
+    },
+    {
+      Line: "entity.mutantszombies.rotten_mutant" 
+    },
+    {
+      Line: "entity.mutantszombies.spitter" 
+    },
+    {
+      Line: "entity.mutantszombies.split_head_zombie" 
+    },
+    {
+      Line: "entity.mutantszombies.zombie_brute" 
+    },
+    {
+      Line: "entity.nether_zombies.crimson_zombie" 
+    },
+    {
+      Line: "entity.nether_zombies.magma_cube_zombie" 
+    },
+    {
+      Line: "entity.nether_zombies.soul_zombie" 
+    },
+    {
+      Line: "entity.nether_zombies.warped_zombie" 
+    },
+    {
+      Line: "entity.netherskeletons.basalt_skeleton" 
+    },
+    {
+      Line: "entity.netherskeletons.charred_skeleton" 
+    },
+    {
+      Line: "entity.netherskeletons.crimson_skeleton" 
+    },
+    {
+      Line: "entity.netherskeletons.crying_obby_skeleton" 
+    },
+    {
+      Line: "entity.netherskeletons.netherborn_skeleton" 
+    },
+    {
+      Line: "entity.netherskeletons.skelly_ghast" 
+    },
+    {
+      Line: "entity.netherskeletons.skelly_piglin" 
+    },
+    {
+      Line: "entity.netherskeletons.soul_skeleton" 
+    },
+    {
+      Line: "entity.netherskeletons.warped_skeleton" 
+    },
+    {
+      Line: "entity.player_mobs.player_mob" 
+    },
+    {
+      Line: "entity.quark.forgotten" 
+    },
+    {
+      Line: "entity.quark.foxhound" 
+    },
+    {
+      Line: "entity.quark.wraith" 
+    },
+    {
+      Line: "entity.rotted.adventurer" 
+    },
+    {
+      Line: "entity.rotted.doctor" 
+    },
+    {
+      Line: "entity.rotted.farmer" 
+    },
+    {
+      Line: "entity.rotted.flusk" 
+    },
+    {
+      Line: "entity.rotted.marine" 
+    },
+    {
+      Line: "entity.rotted.miner" 
+    },
+    {
+      Line: "entity.rotted.shielder" 
+    },
+    {
+      Line: "entity.rottencreatures.burned" 
+    },
+    {
+      Line: "entity.rottencreatures.dead_beard" 
+    },
+    {
+      Line: "entity.rottencreatures.frostbitten" 
+    },
+    {
+      Line: "entity.rottencreatures.glacial_hunter" 
+    },
+    {
+      Line: "entity.rottencreatures.immortal" 
+    },
+    {
+      Line: "entity.rottencreatures.mummy" 
+    },
+    {
+      Line: "entity.rottencreatures.skeleton_lackey" 
+    },
+    {
+      Line: "entity.rottencreatures.swampy" 
+    },
+    {
+      Line: "entity.rottencreatures.undead_miner" 
+    },
+    {
+      Line: "entity.rottencreatures.zap" 
+    },
+    {
+      Line: "entity.rottencreatures.zombie_lackey" 
+    },
+    {
+      Line: "entity.specialmobs.abyssaldrowned" 
+    },
+    {
+      Line: "entity.specialmobs.albinosilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.armoredblaze" 
+    },
+    {
+      Line: "entity.specialmobs.babycavespider" 
+    },
+    {
+      Line: "entity.specialmobs.babyghast" 
+    },
+    {
+      Line: "entity.specialmobs.babyspider" 
+    },
+    {
+      Line: "entity.specialmobs.blackberryslime" 
+    },
+    {
+      Line: "entity.specialmobs.blaze" 
+    },
+    {
+      Line: "entity.specialmobs.blindingenderman" 
+    },
+    {
+      Line: "entity.specialmobs.blindingsilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.blueberryslime" 
+    },
+    {
+      Line: "entity.specialmobs.bouncingmagmacube" 
+    },
+    {
+      Line: "entity.specialmobs.brutedrowned" 
+    },
+    {
+      Line: "entity.specialmobs.bruteskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.brutewitherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.brutezombie" 
+    },
+    {
+      Line: "entity.specialmobs.brutezombifiedpiglin" 
+    },
+    {
+      Line: "entity.specialmobs.caramelslime" 
+    },
+    {
+      Line: "entity.specialmobs.cavespider" 
+    },
+    {
+      Line: "entity.specialmobs.cinderblaze" 
+    },
+    {
+      Line: "entity.specialmobs.conflagrationblaze" 
+    },
+    {
+      Line: "entity.specialmobs.corporealshiftghast" 
+    },
+    {
+      Line: "entity.specialmobs.desertcavespider" 
+    },
+    {
+      Line: "entity.specialmobs.desertspider" 
+    },
+    {
+      Line: "entity.specialmobs.desiccatedsilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.drowned" 
+    },
+    {
+      Line: "entity.specialmobs.emberblaze" 
+    },
+    {
+      Line: "entity.specialmobs.enderman" 
+    },
+    {
+      Line: "entity.specialmobs.fighterghast" 
+    },
+    {
+      Line: "entity.specialmobs.firecavespider" 
+    },
+    {
+      Line: "entity.specialmobs.firesilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.fireskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.firespider" 
+    },
+    {
+      Line: "entity.specialmobs.firezombie" 
+    },
+    {
+      Line: "entity.specialmobs.fishingdrowned" 
+    },
+    {
+      Line: "entity.specialmobs.fishingsilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.fishingzombie" 
+    },
+    {
+      Line: "entity.specialmobs.fishingzombifiedpiglin" 
+    },
+    {
+      Line: "entity.specialmobs.flameenderman" 
+    },
+    {
+      Line: "entity.specialmobs.flyingcavespider" 
+    },
+    {
+      Line: "entity.specialmobs.flyingsilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.flyingspider" 
+    },
+    {
+      Line: "entity.specialmobs.frozendrowned" 
+    },
+    {
+      Line: "entity.specialmobs.frozenslime" 
+    },
+    {
+      Line: "entity.specialmobs.frozenzombie" 
+    },
+    {
+      Line: "entity.specialmobs.gatlingskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.gatlingwitherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.ghast" 
+    },
+    {
+      Line: "entity.specialmobs.giantdrowned" 
+    },
+    {
+      Line: "entity.specialmobs.giantskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.giantspider" 
+    },
+    {
+      Line: "entity.specialmobs.giantwitherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.giantzombie" 
+    },
+    {
+      Line: "entity.specialmobs.giantzombifiedpiglin" 
+    },
+    {
+      Line: "entity.specialmobs.grapeslime" 
+    },
+    {
+      Line: "entity.specialmobs.hardenedmagmacube" 
+    },
+    {
+      Line: "entity.specialmobs.hellfireblaze" 
+    },
+    {
+      Line: "entity.specialmobs.hungrydrowned" 
+    },
+    {
+      Line: "entity.specialmobs.hungryspider" 
+    },
+    {
+      Line: "entity.specialmobs.hungryzombie" 
+    },
+    {
+      Line: "entity.specialmobs.hungryzombifiedpiglin" 
+    },
+    {
+      Line: "entity.specialmobs.huskzombie" 
+    },
+    {
+      Line: "entity.specialmobs.icyenderman" 
+    },
+    {
+      Line: "entity.specialmobs.infernoblaze" 
+    },
+    {
+      Line: "entity.specialmobs.joltblaze" 
+    },
+    {
+      Line: "entity.specialmobs.kingghast" 
+    },
+    {
+      Line: "entity.specialmobs.knightdrowned" 
+    },
+    {
+      Line: "entity.specialmobs.knightskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.knightwitherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.knightzombifiedpiglin" 
+    },
+    {
+      Line: "entity.specialmobs.lemonslime" 
+    },
+    {
+      Line: "entity.specialmobs.lightningenderman" 
+    },
+    {
+      Line: "entity.specialmobs.madscientistzombie" 
+    },
+    {
+      Line: "entity.specialmobs.magmacube" 
+    },
+    {
+      Line: "entity.specialmobs.minienderman" 
+    },
+    {
+      Line: "entity.specialmobs.mirageenderman" 
+    },
+    {
+      Line: "entity.specialmobs.mothercavespider" 
+    },
+    {
+      Line: "entity.specialmobs.motherspider" 
+    },
+    {
+      Line: "entity.specialmobs.ninjaskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.ninjawitherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.palecavespider" 
+    },
+    {
+      Line: "entity.specialmobs.palespider" 
+    },
+    {
+      Line: "entity.specialmobs.pirateskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.plaguedrowned" 
+    },
+    {
+      Line: "entity.specialmobs.plaguezombie" 
+    },
+    {
+      Line: "entity.specialmobs.plaguezombifiedpiglin" 
+    },
+    {
+      Line: "entity.specialmobs.poisonsilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.poisonskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.poisonspider" 
+    },
+    {
+      Line: "entity.specialmobs.potionslime" 
+    },
+    {
+      Line: "entity.specialmobs.puffersilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.queenghast" 
+    },
+    {
+      Line: "entity.specialmobs.runicenderman" 
+    },
+    {
+      Line: "entity.specialmobs.silverfish" 
+    },
+    {
+      Line: "entity.specialmobs.skeleton" 
+    },
+    {
+      Line: "entity.specialmobs.slabghast" 
+    },
+    {
+      Line: "entity.specialmobs.slime" 
+    },
+    {
+      Line: "entity.specialmobs.sniperskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.sniperwitherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.spider" 
+    },
+    {
+      Line: "entity.specialmobs.spitfireskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.spitfirewitherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.stickymagmacube" 
+    },
+    {
+      Line: "entity.specialmobs.strawberryslime" 
+    },
+    {
+      Line: "entity.specialmobs.strayskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.thiefenderman" 
+    },
+    {
+      Line: "entity.specialmobs.toughsilverfish" 
+    },
+    {
+      Line: "entity.specialmobs.tropicaldrowned" 
+    },
+    {
+      Line: "entity.specialmobs.undeadwitch" 
+    },
+    {
+      Line: "entity.specialmobs.unholyghast" 
+    },
+    {
+      Line: "entity.specialmobs.vampirezombifiedpiglin" 
+    },
+    {
+      Line: "entity.specialmobs.volatilemagmacube" 
+    },
+    {
+      Line: "entity.specialmobs.watercavespider" 
+    },
+    {
+      Line: "entity.specialmobs.watermelonslime" 
+    },
+    {
+      Line: "entity.specialmobs.waterspider" 
+    },
+    {
+      Line: "entity.specialmobs.weatheredskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.webcavespider" 
+    },
+    {
+      Line: "entity.specialmobs.webspider" 
+    },
+    {
+      Line: "entity.specialmobs.wildfireblaze" 
+    },
+    {
+      Line: "entity.specialmobs.witchcavespider" 
+    },
+    {
+      Line: "entity.specialmobs.witchspider" 
+    },
+    {
+      Line: "entity.specialmobs.witherskeleton" 
+    },
+    {
+      Line: "entity.specialmobs.zombie" 
+    },
+    {
+      Line: "entity.specialmobs.zombifiedpiglin" 
+    },
+    {
+      Line: "entity.tconstruct.ender_slime" 
+    },
+    {
+      Line: "entity.tconstruct.sky_slime" 
+    },
+    {
+      Line: "entity.tconstruct.terracube" 
+    },
+    {
+      Line: "entity.tinyskeletons.baby_skeleton" 
+    },
+    {
+      Line: "entity.tinyskeletons.baby_stray" 
+    },
+    {
+      Line: "entity.tinyskeletons.baby_wither_skeleton" 
+    },
+    {
+      Line: "entity.undead_revamp2.axestrom" 
+    },
+    {
+      Line: "entity.undead_revamp2.bigsucker" 
+    },
+    {
+      Line: "entity.undead_revamp2.bomber" 
+    },
+    {
+      Line: "entity.undead_revamp2.clogger" 
+    },
+    {
+      Line: "entity.undead_revamp2.crackleball" 
+    },
+    {
+      Line: "entity.undead_revamp2.deadclogger" 
+    },
+    {
+      Line: "entity.undead_revamp2.invisiblebidy" 
+    },
+    {
+      Line: "entity.undead_revamp2.invisiclogger" 
+    },
+    {
+      Line: "entity.undead_revamp2.invisiimmortal" 
+    },
+    {
+      Line: "entity.undead_revamp2.invisilehcery" 
+    },
+    {
+      Line: "entity.undead_revamp2.lechery" 
+    },
+    {
+      Line: "entity.undead_revamp2.neocrorines" 
+    },
+    {
+      Line: "entity.undead_revamp2.propball_1" 
+    },
+    {
+      Line: "entity.undead_revamp2.slaveman" 
+    },
+    {
+      Line: "entity.undead_revamp2.sucker" 
+    },
+    {
+      Line: "entity.undead_revamp2.the_moonflower" 
+    },
+    {
+      Line: "entity.undead_revamp2.thebeartamer" 
+    },
+    {
+      Line: "entity.undead_revamp2.thebidy" 
+    },
+    {
+      Line: "entity.undead_revamp2.thebidyupside" 
+    },
+    {
+      Line: "entity.undead_revamp2.thedungeon" 
+    },
+    {
+      Line: "entity.undead_revamp2.thegliter" 
+    },
+    {
+      Line: "entity.undead_revamp2.theheavy" 
+    },
+    {
+      Line: "entity.undead_revamp2.thehorrors" 
+    },
+    {
+      Line: "entity.undead_revamp2.thehorrorsdecoys" 
+    },
+    {
+      Line: "entity.undead_revamp2.thehunter" 
+    },
+    {
+      Line: "entity.undead_revamp2.theimmortal" 
+    },
+    {
+      Line: "entity.undead_revamp2.thelurker" 
+    },
+    {
+      Line: "entity.undead_revamp2.theordure" 
+    },
+    {
+      Line: "entity.undead_revamp2.theposessive" 
+    },
+    {
+      Line: "entity.undead_revamp2.thepregnant" 
+    },
+    {
+      Line: "entity.undead_revamp2.therabidus" 
+    },
+    {
+      Line: "entity.undead_revamp2.therod" 
+    },
+    {
+      Line: "entity.undead_revamp2.theskeeper" 
+    },
+    {
+      Line: "entity.undead_revamp2.thesmoker" 
+    },
+    {
+      Line: "entity.undead_revamp2.thesomnolence" 
+    },
+    {
+      Line: "entity.undead_revamp2.thespectre" 
+    },
+    {
+      Line: "entity.undead_revamp2.thespitter" 
+    },
+    {
+      Line: "entity.undead_revamp2.theswarmer" 
+    },
+    {
+      Line: "entity.undead_revamp2.thewolf" 
+    },
+    {
+      Line: "entity.undead_revamp2.weakspot" 
+    },
+    {
+      Line: "entity.undeadvariants.drowned_piglin" 
+    },
+    {
+      Line: "entity.undeadvariants.drowned_villager" 
+    },
+    {
+      Line: "entity.undeadvariants.drowning_piglin" 
+    },
+    {
+      Line: "entity.undeadvariants.drowning_zombie_villager" 
+    },
+    {
+      Line: "entity.undeadvariants.husk_villager" 
+    },
+    {
+      Line: "entity.undeadvariants.zombified_piglin_brute" 
+    },
+    {
+      Line: "entity.warwither.war_wither" 
+    },
+    {
+      Line: "entity.zombie_extreme.assasin_black_ops" 
+    },
+    {
+      Line: "entity.zombie_extreme.boomer" 
+    },
+    {
+      Line: "entity.zombie_extreme.chainsaw" 
+    },
+    {
+      Line: "entity.zombie_extreme.clicker" 
+    },
+    {
+      Line: "entity.zombie_extreme.crawler" 
+    },
+    {
+      Line: "entity.zombie_extreme.demolisher" 
+    },
+    {
+      Line: "entity.zombie_extreme.devestated" 
+    },
+    {
+      Line: "entity.zombie_extreme.divided" 
+    },
+    {
+      Line: "entity.zombie_extreme.faceless" 
+    },
+    {
+      Line: "entity.zombie_extreme.fetus" 
+    },
+    {
+      Line: "entity.zombie_extreme.goon" 
+    },
+    {
+      Line: "entity.zombie_extreme.infected" 
+    },
+    {
+      Line: "entity.zombie_extreme.infected_hazmat" 
+    },
+    {
+      Line: "entity.zombie_extreme.infected_juggernaut" 
+    },
+    {
+      Line: "entity.zombie_extreme.infected_military" 
+    },
+    {
+      Line: "entity.zombie_extreme.infected_police" 
+    },
+    {
+      Line: "entity.zombie_extreme.inflated" 
+    },
+    {
+      Line: "entity.zombie_extreme.military" 
+    },
+    {
+      Line: "entity.zombie_extreme.night_hunter" 
+    },
+    {
+      Line: "entity.zombie_extreme.parasite" 
+    },
+    {
+      Line: "entity.zombie_extreme.ram" 
+    },
+    {
+      Line: "entity.zombie_extreme.rat_king" 
+    },
+    {
+      Line: "entity.zombie_extreme.revived" 
+    },
+    {
+      Line: "entity.zombie_extreme.runner" 
+    },
+    {
+      Line: "entity.zombie_extreme.zero_patient" 
+    }
+  ],
+  HurtTime: 0s,
+  FallFlying: 0b,
+  GlowTexture: "",
+  NpcLines: {
+    Lines: [
+      {
+        Song: "",
+        Slot: 0,
+        Line: "红沙土，平顶山特产" 
+      },
+      {
+        Song: "",
+        Slot: 1,
+        Line: "沙子挖多了，直接塌陷" 
+      },
+      {
+        Song: "",
+        Slot: 2,
+        Line: "砾石挖了，全是燧石" 
+      },
+      {
+        Song: "",
+        Slot: 3,
+        Line: "粘土块，在河边才有" 
+      },
+      {
+        Song: "",
+        Slot: 4,
+        Line: "海绵，在海底遗迹" 
+      },
+      {
+        Song: "",
+        Slot: 5,
+        Line: "海晶碎片，打守卫者掉" 
+      },
+      {
+        Song: "",
+        Slot: 6,
+        Line: "棱镜水晶，远古守卫者掉" 
+      },
+      {
+        Song: "",
+        Slot: 7,
+        Line: "这整合包的海洋内容太丰富" 
+      }
+    ]
+  },
+  MountControl: 0b,
+  MaxExp: 0,
+  CanUpdate: 1b,
+  AimWhileShooting: 0b,
+  pImpact: 0,
+  ShowLayers: 1b,
+  ImmuneToFire: 0b,
+  DisablePitch: 0b,
+  LeftHanded: 0b,
+  minDelay: 20,
+  MoveState: 0,
+  NpcInteractLines: {
+    Lines: [
+      
+    ]
+  },
+  Invulnerable: 0b,
+  DefendFaction: 0b,
+  NpcJob: 3,
+  ArmorDropChances: [
+    0.085f,
+    0.085f,
+    0.085f,
+    0.085f 
+  ],
+  KnockBack: 0,
+  NpcIdleSound: "",
+  NpcInv: [
+    
+  ],
+  pSpin: 0b,
+  AttackOtherFactions: 1b,
+  stopAndInteract: 1b,
+  pDur: 5,
+  NpcVisible: 0,
+  MovingPos: 0,
+  TransformEditingModus: 0b,
+  NpcsTimers: [
+    
+  ],
+  Tags: [
+    "ctrlArmorToM1",
+    "collective.checked",
+    "ctrlHealthM1",
+    "ctrlDamageM1",
+    "ctrlArmorM1",
+    "ctrlArmorToS1" 
+  ],
+  RespawnTime: 0,
+  OrderedLines: 0b,
+  ShotCount: 1,
+  PotionAmp: 0,
+  maxDelay: 40,
+  ScriptLanguage: "ECMAScript",
+  MarkovGeneratorId: 8,
+  Motion: [
+    0.0d,
+    -0.0784000015258789d,
+    0.0d 
+  ],
+  CanPickUpLoot: 0b,
+  PersistenceRequired: 0b,
+  PotionImmune: 0b,
+  NpcDeathSound: "minecraft:entity.player.hurt",
+  TrackedData: {
+    
+  },
+  NpcModelData: {
+    ExtraData: {
+      
+    },
+    HeadConfig: {
+      ScaleY: 1.0f,
+      TransY: 0.0f,
+      ScaleZ: 1.0f,
+      TransX: 0.0f,
+      ScaleX: 1.0f,
+      NotShared: 0b,
+      TransZ: 0.0f 
+    },
+    LastEdited: 1775379687391L,
+    ArmsConfig: {
+      ScaleY: 1.0f,
+      TransY: 0.0f,
+      ScaleZ: 1.0f,
+      TransX: 0.0f,
+      ScaleX: 1.0f,
+      NotShared: 0b,
+      TransZ: 0.0f 
+    },
+    Legs2Config: {
+      ScaleY: 1.0f,
+      TransY: 0.0f,
+      ScaleZ: 1.0f,
+      TransX: 0.0f,
+      ScaleX: 1.0f,
+      NotShared: 0b,
+      TransZ: 0.0f 
+    },
+    MoveAnimation: 16,
+    ModelType: 0,
+    BodyConfig: {
+      ScaleY: 1.0f,
+      TransY: 0.0f,
+      ScaleZ: 1.0f,
+      TransX: 0.0f,
+      ScaleX: 1.0f,
+      NotShared: 0b,
+      TransZ: 0.0f 
+    },
+    NewParts: [
+      
+    ],
+    Animation: 0,
+    LegsConfig: {
+      ScaleY: 1.0f,
+      TransY: 0.0f,
+      ScaleZ: 1.0f,
+      TransX: 0.0f,
+      ScaleX: 1.0f,
+      NotShared: 0b,
+      TransZ: 0.0f 
+    },
+    WingMode: 0,
+    SimpleRender: 0b,
+    Arms2Config: {
+      ScaleY: 1.0f,
+      TransY: 0.0f,
+      ScaleZ: 1.0f,
+      TransX: 0.0f,
+      ScaleX: 1.0f,
+      NotShared: 0b,
+      TransZ: 0.0f 
+    },
+    CustomSkinUrl: "",
+    DisplayName: "",
+    Parts: [
+      
+    ]
+  },
+  BurnInSun: 0b,
+  NoLivingAnimation: 0b,
+  TransformHasStats: 0b,
+  CreatureType: 0,
+  PotionDuration: 5,
+  pEffAmp: 0,
+  TotalTicksAlive: 623374L,
+  Brain: {
+    memories: {
+      
+    }
+  },
+  TransformHasInv: 0b,
+  Texture: "customnpcs:textures/entity/humanmale/mercenarysteve.png",
+  Rotation: [
+    58.035797f,
+    0.0f 
+  ],
+  MinExp: 0,
+  NpcKilledLines: {
+    Lines: [
+      
+    ]
+  },
+  NpcKillLines: {
+    Lines: [
+      
+    ]
+  },
+  DistanceToMelee: 0,
+  AvoidsSun: 0b,
+  Air: 300s,
+  HandItems: [
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  PositionOffsetY: 5.0f,
+  AvoidsWater: 1b,
+  MarkovGender: 0,
+  NpcHurtSound: "minecraft:entity.player.hurt",
+  FallDistance: 0.0f,
+  CanSwim: 1b,
+  MaxHealth: 200,
+  Health: 200.0f,
+  UsingSkinUrl: 0b,
+  PortalCooldown: 0
+}
